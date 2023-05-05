@@ -14,8 +14,9 @@ const Footer = () => {
           <Heading
             fontFamily={'body'}
             size="sm"
-            children="@6 Pack Programmer"
-            color={'yellow.400'}
+            textAlign={"center"}
+            children="Copyright © 2023 | InternPixel"
+            color={'blue.400'}
           />
         </VStack>
 

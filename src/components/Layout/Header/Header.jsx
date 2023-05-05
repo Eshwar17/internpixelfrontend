@@ -12,6 +12,7 @@ import {
   useDisclosure,
 } from '@chakra-ui/react';
 import { RiMenu5Fill,RiLogoutBoxLine,RiDashboardFill } from 'react-icons/ri';
+import logo from "../../../assets/images/Intern.png";
 import { Link } from 'react-router-dom';
 
 const LinkButton = ({ url = '/', title = 'Home', onClose }) => (
@@ -52,7 +53,9 @@ function Header() {
       <Drawer placement="left" onClose={onClose} isOpen={isOpen}>
         <DrawerOverlay backdropFilter={'blur(1px)'} />
         <DrawerContent>
-          <DrawerHeader borderBottomWidth={'1px'}>IteTech</DrawerHeader>
+          <DrawerHeader borderBottomWidth={'1px'}>
+            <img src={logo} alt="logo"/>
+          </DrawerHeader>
           <DrawerBody>
             <VStack spacing={'6'} alignItems={'flex-start'}>
               <LinkButton onClose={onClose} url="/" title="Home" />
@@ -71,11 +74,11 @@ function Header() {
                   <VStack>
                     <HStack>
                     <Link onClick={onClose} to="/profile">
-                    <Button variant={"ghost"} colorScheme={'blue'}>Profile</Button>
+                    <Button variant={"ghost"} colorScheme={'blue'}></Button>
                     </Link>
                     <Button variant={"ghost"} onClick={logoutHandler}>
-                    <RiLogoutBoxLine />
-                    Logout</Button>
+                    {/* <RiLogoutBoxLine /> */}
+                    </Button>
                     </HStack>
 
 
@@ -83,7 +86,7 @@ function Header() {
   user && user.role==="admin" && <Link onClick={onClose} to='/admin/dashboard'>
     <Button colorScheme={"purple"} variant={"ghost"}>
     <RiDashboardFill style={{margin:'4px'}}/>
-    Dashboard</Button>
+    Leaderboard</Button>
   </Link>
 }
 

@@ -43,7 +43,7 @@ export const LineChart = ({ views = [] }) => {
     labels,
     datasets: [
       {
-        label: 'Views',
+        label: 'Intern Achievers',
         data: views,
         borderColor: 'rgba(107,70,193,0.5)',
         backgroundColor: '#6b46c1',
@@ -56,7 +56,7 @@ export const LineChart = ({ views = [] }) => {
 
 export const DoughnutChart = ({ users = [] }) => {
   const data = {
-    labels: ['Subscribed', 'Not Subscribed'],
+    labels: ['Intern Achievers', 'Intern Wannabes'],
     datasets: [
       {
         label: 'Views',

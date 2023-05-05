@@ -14,11 +14,11 @@ const Sidebar = () => {
     <VStack spacing={'8'} p="16" boxShadow={'-2px 0 10px rgba(107,70,193,0.5)'}>
       <LinkButton
         Icon={RiDashboardFill}
-        text="Dashboard"
+        text="Leaderboard"
         url={'dashboard'}
         active={location.pathname === '/admin/dashboard'}
       />
-      <LinkButton
+      {/* <LinkButton
         Icon={RiAddCircleFill}
         text="Create Internship"
         url={'createinternship'}
@@ -28,11 +28,11 @@ const Sidebar = () => {
         Icon={RiEyeFill}
         text="Internships"
         url={'internships'}
-        active={location.pathname === '/admin/internships'}
-      />
+        active={location.pathname === '/internships'}
+      /> */}
       <LinkButton
         Icon={RiUser3Fill}
-        text="Users"
+        text="Pro Interns"
         url={'users'}
         active={location.pathname === '/admin/users'}
       />

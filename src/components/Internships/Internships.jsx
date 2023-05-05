@@ -8,9 +8,11 @@ import {
   Stack,
   Text,
   VStack,
+
 } from '@chakra-ui/react';
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
+
 
 const Internship = ({
   views,
@@ -33,39 +35,39 @@ const Internship = ({
         children={title}
         size={'sm'}
       />
-      <Text children={description} noOfLines={'2'} />
+      <Text children={description} noOfLines={'15'} />
       <HStack>
         <Text
           children={'Creator'}
           fontWeight={'bold'}
           textTransform={'uppercase'}
-          noOfLines={'2'}
+          noOfLines={'1'}
         />
         <Text
           children={creator}
           fontFamily={'body'}
           textTransform={'uppercase'}
-          noOfLines={'2'}
+          noOfLines={'1'}
         />
       </HStack>
       <Heading
         textAlign={'center'}
         size={'xs'}
         textTransform={'uppercase'}
-        children={`Lecture - ${lectureCount}`}
+        children={`Tasks - ${lectureCount}`}
       />
       <Heading
         size={'xs'}
         textTransform={'uppercase'}
-        children={`Views - ${views}`}
+        children={`Enrolled - ${views}`}
       />
       <Stack direction={['column', 'row']}
       alignItems={"center"}
       >
         <Link to={`/internship/${id}`}>
-            <Button colorScheme='blue'>Watch Now</Button>
+            <Button colorScheme='blue'>Curriculum</Button>
         </Link>
-        <Button colorScheme='blue' variant={"ghost"} onClick={()=>addToPlaylistHandler(id)}>Add to wishlist</Button>
+        {/* <Button colorScheme='blue' variant={"ghost"} onClick={()=>addToPlaylistHandler(id)}>Add to wishlist</Button> */}
       </Stack>
     </VStack>
   );
@@ -93,12 +95,12 @@ const Internships = () => {
   return (
     <Container minH={'95vh'} maxW={'container.lg'} paddingY={'8'}>
       <Heading children="All Internships" m={'8'} />
-      <Input
+      {/* <Input
         value={keyword}
         onChange={e => setKeyword(e.target.value)}
         placeholder="Search an internship..."
         type="text"
-      />
+      /> */}
 
       <HStack
         overflowX={'auto'}
@@ -122,12 +124,12 @@ const Internships = () => {
         alignItems={['center', 'flex-start']}
       >
         <Internship
-          title={'Sample'}
-          description={'Sample'}
+          title={'Front End Development'}
+          description={'Our web development internship program using HTML, CSS, and JavaScript provides hands-on experience in building modern and responsive websites. Interns will learn front-end web development fundamentals, responsive design principles, and JavaScript programming concepts. By the end of the internship, they will have practical skills that can be applied to real-world projects.'}
           views={23}
           imageSrc={'https://media.istockphoto.com/id/1408445036/photo/programming-web-pages-with-html-and-css-code-on-a-desktop-computer.jpg?b=1&s=170667a&w=0&k=20&c=8bzVsHnZpYnd11a97dRNSgGuuzXMP3qA5zqTGB7j97c='}
-          id={'Sample'}
-          creator={'Sample boy'}
+          id={'Eshwar'}
+          creator={'Eshwar Nagaraj'}
           lectureCount={2}
           addToPlaylistHandler={addToPlaylistHandler}
         />

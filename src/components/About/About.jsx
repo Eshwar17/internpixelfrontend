@@ -8,15 +8,18 @@ import {
   Stack,
   Text,
   VStack,
+
 } from '@chakra-ui/react';
 import React from 'react';
 import { Link } from 'react-router-dom';
-import introVideo from '../../assets/videos/intro.mp4';
+import introVideo from '../../assets/videos/intro1.mp4';
 import { RiSecurePaymentFill } from 'react-icons/ri';
 import termsAndCondition from '../../assets/docs/termsAndCondition';
 
+
 const Founder = () => {
   return (
+    
     <Stack direction={['column', 'row']} spacing={['4', '16']} padding={'8'}>
       <VStack>
         <Avatar

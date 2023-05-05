@@ -2,6 +2,7 @@ import { Container, Heading, VStack, Button, Box, FormLabel, Input, Textarea } f
 import React, {useState} from 'react';
 import { Link } from 'react-router-dom';
 
+
 const Contact = () => {
 
 
@@ -12,6 +13,7 @@ const Contact = () => {
   return (
     <Container h="92vh">
       <VStack h={"full"} justifyContent={"center"} spacing={'16'}>
+      
         <Heading children="Contact Us" />
         <form style={{ width: '100%' }}>
         <Box my={'4'}>
