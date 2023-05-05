@@ -65,7 +65,7 @@ const Internship = ({
       alignItems={"center"}
       >
         <Link to={`/internship/${id}`}>
-            <Button colorScheme='blue'>Curriculum</Button>
+            <Button isDisabled="true" colorScheme='blue'>Curriculum</Button>
         </Link>
         {/* <Button colorScheme='blue' variant={"ghost"} onClick={()=>addToPlaylistHandler(id)}>Add to wishlist</Button> */}
       </Stack>
@@ -123,6 +123,26 @@ const Internships = () => {
         justifyContent={['flex-start', 'space-evenly']}
         alignItems={['center', 'flex-start']}
       >
+        <Internship
+          title={'Front End Development'}
+          description={'Our front end development internship program using HTML, CSS, and JavaScript provides hands-on experience in building modern and responsive websites. Interns will learn front-end web development fundamentals, responsive design principles, and JavaScript programming concepts. By the end of the internship, they will have practical skills that can be applied to real-world projects.'}
+          views={23}
+          imageSrc={'https://media.istockphoto.com/id/1408445036/photo/programming-web-pages-with-html-and-css-code-on-a-desktop-computer.jpg?b=1&s=170667a&w=0&k=20&c=8bzVsHnZpYnd11a97dRNSgGuuzXMP3qA5zqTGB7j97c='}
+          id={'Eshwar'}
+          creator={'Eshwar Nagaraj'}
+          lectureCount={2}
+          addToPlaylistHandler={addToPlaylistHandler}
+        />
+        <Internship
+          title={'Back End Development'}
+          description={'Looking to deepen your backend development skills? Our Node.js internship will teach you how to build scalable and efficient web applications using the powerful JavaScript runtime. Learn how to work with popular Node.js frameworks like Express. Gain real-world experience by building and deploying your own Node.js projects. Join our Node.js internship program and take your backend development skills to the next level!'}
+          views={23}
+          imageSrc={'https://wallpapercave.com/dwp1x/wp10318694.png'}
+          id={'Eshwar'}
+          creator={'Eshwar Nagaraj'}
+          lectureCount={0}
+          addToPlaylistHandler={addToPlaylistHandler}
+        />
         <Internship
           title={'Front End Development'}
           description={'Our web development internship program using HTML, CSS, and JavaScript provides hands-on experience in building modern and responsive websites. Interns will learn front-end web development fundamentals, responsive design principles, and JavaScript programming concepts. By the end of the internship, they will have practical skills that can be applied to real-world projects.'}

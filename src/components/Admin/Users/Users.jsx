@@ -6,13 +6,13 @@ import { RiDeleteBin7Fill } from 'react-icons/ri'
 
 const Users = () => {
   const users = [{
-    _id:"1",
-    name:"Eshu",
-    role:'Master',
+    _id:"",
+    name:"",
+    role:'',
     enrollment:{
       status:'active'
     },
-    email:"esh@gmail.com"
+    email:""
   }]
 
 
