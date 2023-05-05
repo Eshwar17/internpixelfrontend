@@ -24,6 +24,7 @@ import CreateInternship from './components/Admin/CreateInternship/CreateInternsh
 import AdminInternships from './components/Admin/AdminInternships/AdminInternships';
 import Users from './components/Admin/Users/Users';
 
+
 function App() {
   // window.addEventListener("contextmenu", (e)=>{
   //   e.preventDefault();

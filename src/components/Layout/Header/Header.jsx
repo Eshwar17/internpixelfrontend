@@ -10,6 +10,7 @@ import {
   VStack,
   HStack,
   useDisclosure,
+  Img
 } from '@chakra-ui/react';
 import { RiMenu5Fill,RiLogoutBoxLine,RiDashboardFill } from 'react-icons/ri';
 import logo from "../../../assets/images/Intern.png";
@@ -35,7 +36,7 @@ function Header() {
 
   return (
     <>
-      <ColorModeSwitcher />
+      <ColorModeSwitcher zIndex="1000"/>
 
       <Button
         onClick={onOpen}
@@ -46,7 +47,7 @@ function Header() {
         position={'fixed'}
         top="6"
         left="6"
-        zIndex={"10"}
+        zIndex={"1000"}
       >
         <RiMenu5Fill />
       </Button>
@@ -54,7 +55,8 @@ function Header() {
         <DrawerOverlay backdropFilter={'blur(1px)'} />
         <DrawerContent>
           <DrawerHeader borderBottomWidth={'1px'}>
-            <img src={logo} alt="logo"/>
+            {/* <img src={logo} alt="logo" width="400"/> */}
+            <Img src={logo} />
           </DrawerHeader>
           <DrawerBody>
             <VStack spacing={'6'} alignItems={'flex-start'}>

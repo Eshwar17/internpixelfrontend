@@ -1,22 +1,21 @@
 import { Box, Heading, HStack, Stack, VStack } from '@chakra-ui/react';
 import React from 'react';
 import {
-  TiSocialYoutubeCircular,
-  TiSocialInstagramCircular,
+  TiSocialLinkedinCircular,
+  TiSocialTwitter,
 } from 'react-icons/ti';
-import { DiGithub } from 'react-icons/di';
+import { FaTelegram } from 'react-icons/fa';
 const Footer = () => {
   return (
-    <Box padding={'4'} bg="blackAlpha.900" minH={'10vh'}>
+    <Box padding={'4'} bg="blackAlpha.800" minH={'10vh'}>
       <Stack direction={['column', 'row']}>
         <VStack alignItems={['center', 'flex-start']} width="full">
           <Heading children="All Rights Reserved" color={'white'} />
           <Heading
-            fontFamily={'body'}
             size="sm"
             textAlign={"center"}
             children="Copyright © 2023 | InternPixel"
-            color={'blue.400'}
+            color={'white'}
           />
         </VStack>
 
@@ -27,13 +26,15 @@ const Footer = () => {
           fontSize="50"
         >
           <a href="#" target={'blank'}>
-            <TiSocialYoutubeCircular />
+            {/* <TiSocialYoutubeCircular /> */}
+            <TiSocialLinkedinCircular />
           </a>
           <a href="#" target={'blank'}>
-            <TiSocialInstagramCircular />
+            {/* <TiSocialInstagramCircular /> */}
+            <TiSocialTwitter />
           </a>
           <a href="#" target={'blank'}>
-            <DiGithub />
+            <FaTelegram />
           </a>
         </HStack>
       </Stack>

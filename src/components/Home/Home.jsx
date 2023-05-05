@@ -105,18 +105,18 @@ function Home() {
             <Heading
               children="Internpixel"
               size={"2xl"}
-              pr='8'
+              pr='6'
             />
             <Text
               textAlign={["center", "left"]}
               fontSize={"1.8rem"}
               children="Where Coffee Runs and Learning Happens!"
-              pr='8'
+              pr='6'
             />
             <Text
               textAlign={["center", "left"]}
               fontSize={"1rem"}
-              pr='8'
+              pr='6'
               children="At Internpixel, we know that coffee runs are an essential part of any internship experience. And while you're sipping on that latte, why not also gain some valuable skills and experience in your chosen industry? We promise we won't judge you if you spill your coffee during a video call with your boss, but we will encourage you to keep learning and growing in your internship. Join us today and let's make your coffee-fueled internship dreams a reality!"
             />
             <Link to="/internships">
@@ -141,14 +141,14 @@ function Home() {
           marginTop="4px"
         >
           {/* <SiUdemy /> */}
-          <h1 className="company">Cognizant</h1>
-          <h1 className="company">Wipro</h1>
-          <h1 className="company">Zoho</h1>
-          <h1 className="company">IBM</h1>
-          <h1 className="company">Focus Edumatics</h1>
-          <h1 className="company">Accenture</h1>
-          <h1 className="company">Sutherland</h1>
-          <h1 className="company">Acuvate</h1>
+          <h2 className="company">Cognizant</h2>
+          <h2 className="company">Wipro</h2>
+          <h2 className="company">Zoho</h2>
+          <h2 className="company">IBM</h2>
+          <h2 className="company">Focus Edumatics</h2>
+          <h2 className="company">Accenture</h2>
+          <h2 className="company">Sutherland</h2>
+          <h2 className="company">Acuvate</h2>
           {/* <CgGoogle /> */}
           {/* <CgYoutube />
           <SiCoursera />
