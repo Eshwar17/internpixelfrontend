@@ -7,6 +7,7 @@ import {
   Heading,
   Input,
   VStack,
+  Textarea
 } from '@chakra-ui/react';
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
@@ -30,6 +31,7 @@ const Register = () => {
   const [password, setPassword] = useState('');
   const [imagePrev, setImagePrev] = useState('');
   const [image, setImage] = useState('');
+  const [internship, setInternship] = useState('');
 
   const changeImageHandler = (e) => {
     const file = e.target.files[0];
@@ -88,6 +90,18 @@ const Register = () => {
               focusBorderColor="blue.500"
             />
           </Box>
+          <Box my={'4'}>
+            <FormLabel htmlFor="internship" children="Internship" />
+            <Textarea
+              required
+              id="internship"
+              value={internship}
+              onChange={e => setInternship(e.target.value)}
+              placeholder="Explain the internship details..."
+              focusBorderColor="blue.500"
+            />
+          </Box>
+
           <Box my={'4'}>
             <FormLabel htmlFor="chooseAvatar" children="Choose Avatar" />
             <Input
