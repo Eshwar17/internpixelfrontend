@@ -34,14 +34,16 @@ const CreateInternship = () => {
   ];
 
   const changeImageHandler = e => {
-    const file = e.target.files[0];
+    const file1 = e.target.files[0];
     const reader = new FileReader();
 
-    reader.readAsDataURL(file);
+    reader.readAsDataURL(file1);
 
     reader.onloadend = () => {
-      setImagePrev(reader.result);
-      setImage(file);
+      // setImagePrev(reader.result);
+      // setImage(file);
+      // file=file1;
+      console.log(file1);
     };
   };
 
@@ -64,7 +66,7 @@ const CreateInternship = () => {
       minH={'100vh'}
       templateColumns={['1fr', '5fr 1fr']}
     >
-      <Container py="16">
+      <Container py="8">
         <form onSubmit={submitHandler}>
           <Heading
             textTransform={'uppercase'}
