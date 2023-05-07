@@ -36,7 +36,7 @@ const Internship = ({
         children={title}
         size={'sm'}
       />
-      <Text children={description} noOfLines={'15'} />
+      <Text children={description} noOfLines={'17'} />
       <HStack>
         <Text
           children={'Creator'}
@@ -126,7 +126,7 @@ const Internships = () => {
       >
         <Internship
           title={'Front End Development'}
-          description={'Our front end development internship program using HTML, CSS, and JavaScript provides hands-on experience in building modern and responsive websites. Interns will learn front-end web development fundamentals, responsive design principles, and JavaScript programming concepts. By the end of the internship, they will have practical skills that can be applied to real-world projects.'}
+          description={'Our front end development internship program using HTML, CSS, and JavaScript provides hands-on experience in building modern and responsive websites. Interns will learn front-end web development fundamentals, responsive design principles, and JavaScript programming concepts. By the end of the internship, they will have practical skills that can be applied to real-world projects. Join Us and upskill yourself for your better career!'}
           views={23}
           imageSrc={'https://media.istockphoto.com/id/1408445036/photo/programming-web-pages-with-html-and-css-code-on-a-desktop-computer.jpg?b=1&s=170667a&w=0&k=20&c=8bzVsHnZpYnd11a97dRNSgGuuzXMP3qA5zqTGB7j97c='}
           id={'Eshwar'}
@@ -145,10 +145,10 @@ const Internships = () => {
           addToPlaylistHandler={addToPlaylistHandler}
         />
         <Internship
-          title={'Front End Development'}
-          description={'Our web development internship program using HTML, CSS, and JavaScript provides hands-on experience in building modern and responsive websites. Interns will learn front-end web development fundamentals, responsive design principles, and JavaScript programming concepts. By the end of the internship, they will have practical skills that can be applied to real-world projects.'}
+          title={'Full Stack Development'}
+          description={'Our full-stack development internship program using HTML, CSS, and JavaScript provides hands-on experience in building modern and responsive web applications. Interns will learn full-stack web development fundamentals, including server-side programming with Node.js, database management with MongoDB. By the end of the internship, they will have practical skills that can be applied to real-world full-stack development projects.'}
           views={23}
-          imageSrc={'https://media.istockphoto.com/id/1408445036/photo/programming-web-pages-with-html-and-css-code-on-a-desktop-computer.jpg?b=1&s=170667a&w=0&k=20&c=8bzVsHnZpYnd11a97dRNSgGuuzXMP3qA5zqTGB7j97c='}
+          imageSrc={'https://e1.pxfuel.com/desktop-wallpaper/574/84/desktop-wallpaper-net-full-stack-developer-full-stack.jpg'}
           id={'Eshwar'}
           creator={'Eshwar Nagaraj'}
           lectureCount={2}

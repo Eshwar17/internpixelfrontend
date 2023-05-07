@@ -18,7 +18,7 @@ import vg1 from "../../assets/images/standing.png";
 import introVideo from "../../assets/videos/Introduction.mp4";
 import Features from "../Features/Features";
 import Faq from "../Faq/Faq";
-import SuccessPopup from "../../popups/SuccessPopup";
+
 
 
 
@@ -84,7 +84,6 @@ function Home() {
       />
       {/* features */}
       <Features />
-<SuccessPopup />
       {/* second hero */}
       <div className="container1">
         <Stack

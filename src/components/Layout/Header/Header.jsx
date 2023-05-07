@@ -56,7 +56,7 @@ function Header() {
         <DrawerContent>
           <DrawerHeader borderBottomWidth={'1px'}>
             {/* <img src={logo} alt="logo" width="400"/> */}
-            <Img src={logo} />
+            <Img src={logo} maxW="100%" h="auto" />
           </DrawerHeader>
           <DrawerBody>
             <VStack spacing={'6'} alignItems={'flex-start'}>
@@ -74,14 +74,7 @@ function Header() {
               >
                 {isAuthenticated?(<>
                   <VStack>
-                    <HStack>
-                    <Link onClick={onClose} to="/profile">
-                    <Button variant={"ghost"} colorScheme={'blue'}></Button>
-                    </Link>
-                    <Button variant={"ghost"} onClick={logoutHandler}>
-                    {/* <RiLogoutBoxLine /> */}
-                    </Button>
-                    </HStack>
+                    
 
 
 {
