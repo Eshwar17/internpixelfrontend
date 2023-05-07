@@ -10,11 +10,8 @@ import {
 import React from "react";
 import { useState } from "react";
 import { Link } from "react-router-dom";
-import './Request.css'
-import SuccessPopup from "../../popups/SuccessPopup";
-import Confetti from 'react-confetti';
-// import './Popup.css';
-
+import "./Request.css";
+import Confetti from "react-confetti";
 
 const Request = () => {
   const [data, setData] = useState({
@@ -45,7 +42,15 @@ const Request = () => {
         }
       );
       await response.json();
-      setData({...data,name:"",email:"",whatsapp:"",domain:"",transactionId:"",date:""});
+      setData({
+        ...data,
+        name: "",
+        email: "",
+        whatsapp: "",
+        domain: "",
+        transactionId: "",
+        date: "",
+      });
     } catch (err) {
       console.log(err);
     }
@@ -56,11 +61,10 @@ const Request = () => {
   const togglePopup = () => {
     setIsOpen(!isOpen);
     setShowConfetti(!showConfetti);
-  }
-
+  };
 
   return (
-    <Container h="92vh" mb={'16'}>
+    <Container h="92vh" mb={"16"}>
       <VStack h="full" justifyContent={"center"} spacing="16">
         <Heading children="Request New Course" />
 
@@ -147,19 +151,38 @@ const Request = () => {
             Send Mail
           </Button> */}
           <div className="popup-container">
-      <button className="register-button" type='submit' onClick={togglePopup}>Send</button>
-      {isOpen &&
-        <div className="popup">
-          <div className="popup-inner">
-            <img className="success-icon" src="https://cdn-icons-png.flaticon.com/512/4997/4997714.png" alt="Success Icon" />
-            <h2>Success!</h2>
-            <p>Thank you for submitting your application for the internship. Our team will review your application and get back to you soon.</p>
-            <button className="close-button" onClick={togglePopup}>Close</button>
+            <button
+              className="register-button"
+              type="submit"
+              onClick={togglePopup}
+              disabled={!name || !email || !whatsapp || !domain || !transactionId || !date}
+            >
+              Send
+            </button>
+            {isOpen && (
+              <div className="popup">
+                <div className="popup-inner">
+                  <img
+                    className="success-icon"
+                    src="https://cdn-icons-png.flaticon.com/512/4997/4997714.png"
+                    alt="Success Icon"
+                  />
+                  <h2>Success!</h2>
+                  <p>
+                    Thank you for submitting your application for the
+                    internship. Our team will review your application and get
+                    back to you soon.
+                  </p>
+                  <button className="close-button" onClick={togglePopup}>
+                    Close
+                  </button>
+                </div>
+              </div>
+            )}
+            {showConfetti && (
+              <Confetti width={window.innerWidth} height={window.innerHeight} />
+            )}
           </div>
-        </div>
-      }
-      {showConfetti && <Confetti width={window.innerWidth} height={window.innerHeight} />}
-    </div>
 
           <Box my="4">
             See available Courses!{" "}
