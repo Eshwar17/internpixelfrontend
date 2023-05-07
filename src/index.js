@@ -16,8 +16,8 @@ root.render(
     <ReduxProvider store={store}>
     <ChakraProvider theme={theme}>
       <ColorModeScript />
-      <Popups />
       <App />
+      <Popups />
     </ChakraProvider>
     </ReduxProvider>
   </StrictMode>

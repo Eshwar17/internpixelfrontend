@@ -11,7 +11,7 @@ import {
 } from "@chakra-ui/react";
 import React from "react";
 import { Link } from "react-router-dom";
-import introVideo from "../../assets/videos/intro1.mp4";
+import introVideo from "../../assets/videos/Introduction1.mp4";
 import { RiSecurePaymentFill } from "react-icons/ri";
 import termsAndCondition from "../../assets/docs/termsAndCondition";
 

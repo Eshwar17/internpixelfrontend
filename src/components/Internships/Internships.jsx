@@ -86,7 +86,7 @@ const Internships = () => {
     'Web Development',
     'Java Development',
     'Python Development',
-    'Data Structures and Algorithms',
+    'DSA',
     'Front End Development',
     'Back End Development',
     'Ruby Development',

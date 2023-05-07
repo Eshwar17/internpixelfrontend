@@ -16,7 +16,7 @@ const Enroll = () => {
     <>
       <Container h={"90vh"} padding={"8"}>
         <Heading
-          children="Pay us, impress your parents"
+          children="Pay now or forever hold your intern-ship!"
           my={"8"}
           textAlign={"center"}
         />
@@ -27,7 +27,7 @@ const Enroll = () => {
           spacing={"0"}
         >
           <Box bg={"blue.400"} p={"4"} css={{ borderRadius: "8px 8px 0 0" }}>
-            <Text color={"black"} children={`Pro Pack - ₹7999.00`} />
+            <Text color={"black"} >Pro Pack - ₹<strike>7999.00</strike> 1599.00/-</Text>
           </Box>
 
           <Box p={"4"}>

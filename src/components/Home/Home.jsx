@@ -15,9 +15,12 @@ import "./home.css";
 import { Link } from "react-router-dom";
 import vg from "../../assets/images/studying.png";
 import vg1 from "../../assets/images/standing.png";
-import introVideo from "../../assets/videos/intro1.mp4";
+import introVideo from "../../assets/videos/Introduction.mp4";
 import Features from "../Features/Features";
 import Faq from "../Faq/Faq";
+import SuccessPopup from "../../popups/SuccessPopup";
+
+
 
 
 function Home() {
@@ -81,6 +84,7 @@ function Home() {
       />
       {/* features */}
       <Features />
+<SuccessPopup />
       {/* second hero */}
       <div className="container1">
         <Stack

@@ -10,6 +10,10 @@ import {
 import React from "react";
 import { useState } from "react";
 import { Link } from "react-router-dom";
+import './Request.css'
+import SuccessPopup from "../../popups/SuccessPopup";
+import Confetti from 'react-confetti';
+// import './Popup.css';
 
 
 const Request = () => {
@@ -46,9 +50,17 @@ const Request = () => {
       console.log(err);
     }
   };
+  const [isOpen, setIsOpen] = useState(false);
+  const [showConfetti, setShowConfetti] = useState(false);
+
+  const togglePopup = () => {
+    setIsOpen(!isOpen);
+    setShowConfetti(!showConfetti);
+  }
+
 
   return (
-    <Container h="92vh">
+    <Container h="92vh" mb={'16'}>
       <VStack h="full" justifyContent={"center"} spacing="16">
         <Heading children="Request New Course" />
 
@@ -131,9 +143,23 @@ const Request = () => {
             />
           </Box>
 
-          <Button my="4" colorScheme={"blue"} type="submit">
+          {/* <Button my="4" colorScheme={"blue"} type="submit">
             Send Mail
-          </Button>
+          </Button> */}
+          <div className="popup-container">
+      <button className="register-button" type='submit' onClick={togglePopup}>Send</button>
+      {isOpen &&
+        <div className="popup">
+          <div className="popup-inner">
+            <img className="success-icon" src="https://cdn-icons-png.flaticon.com/512/4997/4997714.png" alt="Success Icon" />
+            <h2>Success!</h2>
+            <p>Thank you for submitting your application for the internship. Our team will review your application and get back to you soon.</p>
+            <button className="close-button" onClick={togglePopup}>Close</button>
+          </div>
+        </div>
+      }
+      {showConfetti && <Confetti width={window.innerWidth} height={window.innerHeight} />}
+    </div>
 
           <Box my="4">
             See available Courses!{" "}
