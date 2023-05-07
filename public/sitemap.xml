@@ -1,16 +1,94 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<urlset
-      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
-      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-      xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
-            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
-<!-- created with Free Online Sitemap Generator www.xml-sitemaps.com -->
-
-
+﻿<?xml version="1.0" encoding="UTF-8"?>
+		<!--	created with www.mysitemapgenerator.com	-->
+		<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 <url>
-  <loc>https://www.internpixel.fun/</loc>
-  <lastmod>2023-05-06T05:07:10+00:00</lastmod>
+	<loc>https://www.internpixel.fun/</loc>
+	<lastmod>2023-05-07T06:30:09+01:00</lastmod>
+	<priority>0.6</priority>
 </url>
-
-
+<url>
+	<loc>https://www.internpixel.fun/enroll</loc>
+	<lastmod>2023-05-07T06:30:09+01:00</lastmod>
+	<priority>1.0</priority>
+</url>
+<url>
+	<loc>https://www.internpixel.fun/internships</loc>
+	<lastmod>2023-05-07T06:30:09+01:00</lastmod>
+	<priority>1.0</priority>
+</url>
+<url>
+	<loc>https://www.internpixel.fun/contact</loc>
+	<lastmod>2023-05-07T06:30:09+01:00</lastmod>
+	<priority>1.0</priority>
+</url>
+<url>
+	<loc>https://www.internpixel.fun/request</loc>
+	<lastmod>2023-05-07T06:30:09+01:00</lastmod>
+	<priority>1.0</priority>
+</url>
+<url>
+	<loc>https://www.internpixel.fun/about</loc>
+	<lastmod>2023-05-07T06:30:09+01:00</lastmod>
+	<priority>1.0</priority>
+</url>
+<url>
+	<loc>https://www.internpixel.fun/profile</loc>
+	<lastmod>2023-05-07T06:30:09+01:00</lastmod>
+	<priority>1.0</priority>
+</url>
+<url>
+	<loc>https://www.internpixel.fun/changepassword</loc>
+	<lastmod>2023-05-07T06:30:09+01:00</lastmod>
+	<priority>1.0</priority>
+</url>
+<url>
+	<loc>https://www.internpixel.fun/updateprofile</loc>
+	<lastmod>2023-05-07T06:30:09+01:00</lastmod>
+	<priority>1.0</priority>
+</url>
+<url>
+	<loc>https://www.internpixel.fun/login</loc>
+	<lastmod>2023-05-07T06:30:09+01:00</lastmod>
+	<priority>1.0</priority>
+</url>
+<url>
+	<loc>https://www.internpixel.fun/register</loc>
+	<lastmod>2023-05-07T06:30:09+01:00</lastmod>
+	<priority>1.0</priority>
+</url>
+<url>
+	<loc>https://www.internpixel.fun/forgetpassword</loc>
+	<lastmod>2023-05-07T06:30:09+01:00</lastmod>
+	<priority>1.0</priority>
+</url>
+<url>
+	<loc>https://www.internpixel.fun/paymentsuccess</loc>
+	<lastmod>2023-05-07T06:30:09+01:00</lastmod>
+	<priority>1.0</priority>
+</url>
+<url>
+	<loc>https://www.internpixel.fun/paymentfail</loc>
+	<lastmod>2023-05-07T06:30:09+01:00</lastmod>
+	<priority>1.0</priority>
+</url>
+<url>
+	<loc>https://www.internpixel.fun/admin/dashboard</loc>
+	<lastmod>2023-05-07T06:30:09+01:00</lastmod>
+	<priority>0.8</priority>
+</url>
+<url>
+	<loc>https://www.internpixel.fun/admin/createinternship</loc>
+	<lastmod>2023-05-07T06:30:09+01:00</lastmod>
+	<priority>0.8</priority>
+</url>
+<url>
+	<loc>https://www.internpixel.fun/admin/internships</loc>
+	<lastmod>2023-05-07T06:30:09+01:00</lastmod>
+	<priority>0.8</priority>
+</url>
+<url>
+	<loc>https://www.internpixel.fun/admin/users</loc>
+	<lastmod>2023-05-07T06:30:09+01:00</lastmod>
+	<priority>0.8</priority>
+</url>
 </urlset>
