@@ -53,7 +53,7 @@ const Internship = ({
         textAlign={"center"}
         size={"xs"}
         textTransform={"uppercase"}
-        children={`Price - ${lectureCount}`}
+        children={`Assignments - ${lectureCount}`}
       />
       <Heading
         size={"xs"}
