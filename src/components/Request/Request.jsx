@@ -20,9 +20,10 @@ const Request = () => {
     whatsapp: "",
     domain: "",
     transactionId: "",
+    referralId: "",
     date: "",
   });
-  const { name, email, whatsapp, domain, transactionId, date } = data;
+  const { name, email, whatsapp, domain, transactionId, referralId, date } = data;
   const handleChange = (e) =>
     setData({ ...data, [e.target.name]: e.target.value });
 
@@ -37,7 +38,7 @@ const Request = () => {
             "Content-Type": "application/json",
           },
           body: JSON.stringify([
-            [name, email, whatsapp, domain, transactionId, date],
+            [name, email, whatsapp, domain, transactionId,referralId, date],
           ]),
         }
       );
@@ -49,6 +50,7 @@ const Request = () => {
         whatsapp: "",
         domain: "",
         transactionId: "",
+        referralId: "",
         date: "",
       });
     } catch (err) {
@@ -64,8 +66,8 @@ const Request = () => {
   };
 
   return (
-    <Container h="92vh" mb={"16"}>
-      <VStack h="full" justifyContent={"center"} spacing="16">
+    <Container h="100vh" mb={"16"}>
+      <VStack h="full" justifyContent={"center"} spacing="8">
         <Heading children="Request New Course" />
 
         <form onSubmit={handleSubmit} style={{ width: "100%" }}>
@@ -135,6 +137,20 @@ const Request = () => {
             />
           </Box>
           <Box my={"4"}>
+            <FormLabel
+              htmlFor="referralnId"
+              children="Referral Id (If you have one)"
+            />
+            <Input
+              name="referralId"
+              value={referralId}
+              type="text"
+              onChange={handleChange}
+              placeholder="Enter the referral Id"
+              focusBorderColor="blue.500"
+            />
+          </Box>
+          <Box my={"4"}>
             <FormLabel htmlFor="date" children="Date" />
             <Input
               required
@@ -184,7 +200,7 @@ const Request = () => {
             )}
           </div>
 
-          <Box my="4">
+          <Box my="2">
             See available Courses!{" "}
             <Link to="/internships">
               <Button colorScheme={"blue"} variant="link">

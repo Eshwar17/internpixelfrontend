@@ -67,7 +67,7 @@ const Internship = ({
           </Button>
         </Link>
         <Button
-  colorScheme='blue'
+  colorScheme='green'
   variant={"ghost"}
   onClick={() => {
     if (title === "Front End Development") {
