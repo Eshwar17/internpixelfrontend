@@ -14,6 +14,7 @@ const Footer = () => {
           <Heading
             size="sm"
             textAlign={"center"}
+            fontWeight={'200'}
             children="Copyright © 2023 | InternPixel"
             color={'white'}
           />
@@ -25,15 +26,15 @@ const Footer = () => {
           color={'white'}
           fontSize="50"
         >
-          <a href="#" target={'blank'}>
+          <a href="https://www.linkedin.com/company/internpixel/" target={'blank'}>
             {/* <TiSocialYoutubeCircular /> */}
             <TiSocialLinkedinCircular />
           </a>
-          <a href="#" target={'blank'}>
+          <a href="https://twitter.com/InternPixel" target={'blank'}>
             {/* <TiSocialInstagramCircular /> */}
             <TiSocialTwitter />
           </a>
-          <a href="#" target={'blank'}>
+          <a href="https://telegram.dog/internpixel" target={'blank'}>
             <FaTelegram />
           </a>
         </HStack>

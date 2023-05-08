@@ -3,8 +3,9 @@ import React from 'react'
 import cursor from '../../../assets/images/cursor.png'
 import Sidebar from '../Sidebar'
 import { RiArrowDownLine, RiArrowUpLine } from 'react-icons/ri'
-import { DoughnutChart, LineChart } from './Chart';
+import { DoughnutChart} from './Chart';
 import logo from "../../../assets/images/Intern.png";
+import Linechart from './Linechart'
 
 const DataBox = ({title,qty,qtyPercentage,profit})=>(
     <Box w={['full','20%']} boxShadow={'-2px 0 10px rgba(107,70,193,0.5)'} p={'8'} borderRadius={'lg'} >
@@ -41,22 +42,22 @@ const Dashboard = () => {
             <Text textAlign={'center'} opacity={'0.5'} children={`Last changed was on ${String(new Date()).split('G')[0]}`}/>
             <Heading children="Leaderboard" ml={['0','16']} mb={'16'} textAlign={['center','left']}/>
             <Stack direction={['column','row']} minH={'24'} justifyContent={'space-evenly'}>
-                <DataBox title="Intern Newbies" qty={123} qtyPercentage={30} profit={true} />
+                <DataBox title="Intern Newbies" qty={14} qtyPercentage={24} profit={true} />
                 <DataBox title="Intern Achievers" qty={123} qtyPercentage={78} profit={true} />
-                <DataBox title="Intern Wannabes" qty={12} qtyPercentage={20} profit={false} />
+                <DataBox title="Intern Wannabes" qty={0} qtyPercentage={0} profit={false} />
             </Stack>
             <Box m={['0','16']} borderRadius={'lg'} p={['0','16']} mt={['4','16']} boxShadow={'-2px 0 10px rgba(107,70,193,0.5)'}>
                 <Heading textAlign={['center','left']} size={'md'} children="Views Graph" pt={['8','0']} ml={['0','16']}/>
                 {/* Line Graph here */}
-                <LineChart />
+                <Linechart />
             </Box>
             <Grid templateColumns={['1fr','2fr 1fr']}>
                 <Box p={'4'}>
                 <Heading textAlign={['center','left']} size={'md'} children='Top 3 interns' my={'8'} ml={['0','16']} />
                 <Box>
-                    <Bar profit={true} title="Intern Newbies" value={30} />
-                    <Bar profit={true} title="Intern Achievers" value={78} />
-                    <Bar profit={false} title="Intern Wannabes" value={20} />
+                    <Bar profit={true} title="Arjun" value={87} />
+                    <Bar profit={true} title="Kavya" value={78} />
+                    <Bar profit={true} title="Saleem" value={76} />
                 </Box>
                 </Box>
                 <Box p={['0','16']} boxSizing='border-box' py='4'>

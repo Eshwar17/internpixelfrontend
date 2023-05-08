@@ -1,6 +1,6 @@
 import React from 'react'
 import './Features.css';
-import supervisor from './img/icon-supervisor.png';
+import supervisor from './img/team-lunch1.jpg';
 import karma from './img/icon-karma.png';
 import calculator from './img/icon-calculator.png';
 import teamBuilder from './img/icon-team-builder.png';
@@ -21,9 +21,9 @@ const Features = () => {
     <div class="page2">
       <div>
         <div class="box b1">
-          <h2>Multiple Technologies</h2>
-          <p>Internpixel's multiple technologies feature offers students and recent graduates the opportunity to explore a wide range of technologies and gain hands-on experience in cutting-edge tools and software. Join us today to broaden your technical skills and enhance your employability!</p>
-          <img class="img" src={supervisor} alt="Supervisor" />
+          <h2>Intern Chowdown</h2>
+          <p>At Internpixel, we believe in creating a community of top-performing interns who are passionate about learning and growing. Rewarding our top 10 interns with team lunches to foster a positive team dynamic and celebrate their hard work and dedication. Join us at InternPixel and strive for excellence!</p>
+          <img class="img" src={supervisor} width="120" alt="Supervisor" />
         </div>
       </div>
 

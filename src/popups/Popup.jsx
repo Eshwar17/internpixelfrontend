@@ -5,12 +5,13 @@ import gift from "./gift.png";
 const Popup = (props) => {
   const [isOpen, setIsOpen] = useState(false);
   const [offerEndDate, setOfferEndDate] = useState(null);
+  const startDateTime = new Date('2023-05-09T00:00:00Z'); // Today's date
 
   useEffect(() => {
     setTimeout(() => {
       setIsOpen(true);
     }, 4000);
-    setOfferEndDate(new Date(Date.now() + 7 * 24 * 60 * 60 * 1000));
+    setOfferEndDate(new Date(startDateTime.getTime() + 7 * 24 * 60 * 60 * 1000));
   }, []);
 
   useEffect(() => {
@@ -66,7 +67,7 @@ const Popup = (props) => {
               >
                 purchase
               </a>
-              . To claim your referral bonus, email us at support@gmail.com. Don't
+              . To claim your referral bonus, email us at internpixel@gmail.com. Don't
               miss out on this exciting opportunity to kickstart your career!
             </p>
             <div className="timer-container">

@@ -198,7 +198,7 @@ Bangalore
 Karnataka
 India
 Phone: 8497977530
-eshwarnagaraj17@gmail.com
+supportinternpixel@gmail.com
 
 `;
 
