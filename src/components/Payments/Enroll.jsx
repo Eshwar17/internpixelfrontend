@@ -34,8 +34,13 @@ const Enroll = () => {
             <VStack textAlign={"center"} px={"8"} mt={"4"} spacing={"8"}>
               <Text
                 color={"black.500"}
-                children={`Join Pro Pack and Get Access to all content.`}
+                children={`Please Use PhonePe Number: 8497977530 and Join Pro Pack and Get Access to all content.`}
               />
+              <Text
+                color={"black.500"}
+                children={`Once Done with the payment pleae enter the Transaction Details in the below page`}
+              />
+              <a href="https://www.internpixel.fun/request">Link</a>
 
               {/* <Heading size={'sm'} children="₹2999 Only"/> */}
             </VStack>
