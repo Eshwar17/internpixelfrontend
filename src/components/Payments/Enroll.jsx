@@ -41,7 +41,7 @@ const Enroll = () => {
             </VStack>
             {/* <Img src={payment} size="md" w={'200'} /> */}
             {/* <Center><img src={payment} width="300" height="auto" alt="payment qr code" /></Center> */}
-            <Center>Make Your Payments through our PhonePe Number : 8497977530</Center>
+            <Center><img src={payment} width="300" height="auto" alt="payment qr code" /></Center>
             {/* <Button my={'8'} w={"full"} colorScheme='blue'>Buy Now</Button> */}
           </Box>
         </VStack>
