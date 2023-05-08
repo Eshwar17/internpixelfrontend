@@ -186,7 +186,7 @@ const Request = () => {
 
           <Box my="4">
             See available Courses!{" "}
-            <Link to="/courses">
+            <Link to="/internships">
               <Button colorScheme={"blue"} variant="link">
                 Click
               </Button>{" "}
