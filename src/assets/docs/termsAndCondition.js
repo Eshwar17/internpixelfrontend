@@ -198,7 +198,7 @@ Bangalore
 Karnataka
 India
 Phone: 8497977530
-supportinternpixel@gmail.com
+internpixelsupport@finmail.com
 
 `;
 

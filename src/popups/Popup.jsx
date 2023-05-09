@@ -67,7 +67,7 @@ const Popup = (props) => {
               >
                 purchase
               </a>
-              . To claim your referral bonus, email us at internpixel@gmail.com. Don't
+              . To claim your referral bonus, email us at internpixelsupport@finmail.com. Don't
               miss out on this exciting opportunity to kickstart your career!
             </p>
             <div className="timer-container">
