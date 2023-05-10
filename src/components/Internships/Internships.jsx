@@ -172,10 +172,10 @@ const Internships = () => {
           description={
             "Looking to deepen your backend development skills? Our Node.js internship will teach you how to build scalable and efficient web applications using the powerful JavaScript runtime. Learn how to work with popular Node.js frameworks like Express. Gain real-world experience by building and deploying your own Node.js projects. Join our Node.js internship program and take your backend development skills to the next level!"
           }
-          views={"Registrations Closed"}
+          views={"4"}
           imageSrc={"https://img.freepik.com/free-vector/back-end-development-concept-software-development-process-website-interface-design-improvement-programming-coding-it-profession-isolated-flat-vector-illustration_613284-1064.jpg?size=626&ext=jpg&ga=GA1.1.136392163.1683044531&semt=ais"}
           id={"Eshwar"}
-          creator={"3 Months"}
+          creator={"2 Months"}
           lectureCount={"18"}
           addToPlaylistHandler={addToPlaylistHandler}
         />
@@ -287,7 +287,7 @@ const Internships = () => {
             "https://img.freepik.com/free-vector/programmers-using-javascript-programming-language-computer-tiny-people-javascript-language-javascript-engine-js-web-development-concept-bright-vibrant-violet-isolated-illustration_335657-986.jpg?size=626&ext=jpg&ga=GA1.1.136392163.1683044531&semt=sph"
           }
           id={"Eshwar"}
-          creator={"4 Months"}
+          creator={"3 Months"}
           lectureCount={"24"}
           addToPlaylistHandler={addToPlaylistHandler}
         />
