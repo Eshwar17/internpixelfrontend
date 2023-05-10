@@ -102,14 +102,14 @@ const Internships = () => {
     "Ruby Development",
     "DevOps",
   ];
-  const [views, setViews] = useState(9);
+  const [views, setViews] = useState(4);
 
   useEffect(() => {
     incrementViews();
   }, []);
 
   function incrementViews() {
-    const startDate = new Date("2023-05-08T00:00:00");
+    const startDate = new Date("2023-05-09T00:00:00");
     const currentDate = new Date();
     const timeDiff = currentDate.getTime() - startDate.getTime();
     const hourDiff = Math.floor(timeDiff / (1000 * 60 * 60));
@@ -119,6 +119,8 @@ const Internships = () => {
       incrementViews();
     }, 7200000);
   }
+  //auto scroll
+  
 
   return (
     <Container minH={"95vh"} maxW={"container.lg"} paddingY={"8"}>
@@ -171,24 +173,24 @@ const Internships = () => {
             "Looking to deepen your backend development skills? Our Node.js internship will teach you how to build scalable and efficient web applications using the powerful JavaScript runtime. Learn how to work with popular Node.js frameworks like Express. Gain real-world experience by building and deploying your own Node.js projects. Join our Node.js internship program and take your backend development skills to the next level!"
           }
           views={"Registrations Closed"}
-          imageSrc={"https://wallpapercave.com/dwp1x/wp10318694.png"}
+          imageSrc={"https://img.freepik.com/free-vector/back-end-development-concept-software-development-process-website-interface-design-improvement-programming-coding-it-profession-isolated-flat-vector-illustration_613284-1064.jpg?size=626&ext=jpg&ga=GA1.1.136392163.1683044531&semt=ais"}
           id={"Eshwar"}
           creator={"3 Months"}
           lectureCount={"18"}
           addToPlaylistHandler={addToPlaylistHandler}
         />
         <Internship
-          title={"Full Stack Development"}
+          title={"Bug Hunter Internship"}
           description={
-            "Our full-stack development internship program using HTML, CSS, and JavaScript provides hands-on experience in building modern and responsive web applications. Interns will learn full-stack web development fundamentals, including server-side programming with Node.js, database management with MongoDB. By the end of the internship, they will have practical skills that can be applied to real-world full-stack development projects."
+            "Looking for a challenging and rewarding internship that will boost your software testing skills? Look no further than our internship! You'll gain hands-on experience with test planning, execution, and automation while working on real-world projects. With expert mentorship, valuable certifications, and a collaborative team environment, this internship will give you the tools you need to succeed in your future career as a software tester."
           }
-          views={"Coming Soon"}
+          views={"2"}
           imageSrc={
-            "https://e1.pxfuel.com/desktop-wallpaper/574/84/desktop-wallpaper-net-full-stack-developer-full-stack.jpg"
+            "https://media.istockphoto.com/id/687203692/photo/software-testing-concept-on-black-chalkboard-3d-rendering.jpg?b=1&s=170667a&w=0&k=20&c=6GMTNQekCeIVCbhxhIEF6GL6yEqDQydShro4diLso6w="
           }
           id={"Eshwar"}
-          creator={"3 Months"}
-          lectureCount={"16"}
+          creator={"2 Months"}
+          lectureCount={"28"}
           addToPlaylistHandler={addToPlaylistHandler}
         />
         <Internship
@@ -280,7 +282,7 @@ const Internships = () => {
           description={
             "Join our JavaScript Ninja Internship program and take your web development skills to the next level. Learn from experienced mentors and work on real-world projects to gain hands-on experience. Develop your skills in JavaScript, jQuery, and other web technologies. Get certified at the end of the program and start your career as a web developer with confidence."
           }
-          views={views}
+          views={"9"}
           imageSrc={
             "https://img.freepik.com/free-vector/programmers-using-javascript-programming-language-computer-tiny-people-javascript-language-javascript-engine-js-web-development-concept-bright-vibrant-violet-isolated-illustration_335657-986.jpg?size=626&ext=jpg&ga=GA1.1.136392163.1683044531&semt=sph"
           }
@@ -294,7 +296,7 @@ const Internships = () => {
           description={
             "Our ReactJS Internship provides hands-on experience in building responsive and dynamic user interfaces using the latest front-end web development technologies. Join us to gain practical knowledge on ReactJS, Redux, and other related tools, and to work on real-world projects to enhance your skills and marketability. Join us to become a ReactJS pro!"
           }
-          views={views}
+          views={"12"}
           imageSrc={
             "https://images.hdqwalls.com/download/react-js-logo-no-1360x768.jpg"
           }

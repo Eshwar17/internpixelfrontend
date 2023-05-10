@@ -1,5 +1,5 @@
 /* eslint-disable jsx-a11y/alt-text */
-import React from "react";
+import { useState, useEffect, useRef } from "react";
 import {
   Button,
   Heading,
@@ -18,6 +18,7 @@ import vg1 from "../../assets/images/standing.png";
 import introVideo from "../../assets/videos/Introduction.mp4";
 import Features from "../Features/Features";
 import Faq from "../Faq/Faq";
+import Typed from "typed.js";
 
 
 
@@ -41,7 +42,7 @@ function Home() {
             spacing="8"
           >
             <Heading
-              children="Learn From The Experts"
+              children="Empower Your Career: Unlock Your Potential with InternPixel's Dynamic Internships"
               size={"3xl"}
               fontWeight={"bold"}
               color={"blue.500"}
