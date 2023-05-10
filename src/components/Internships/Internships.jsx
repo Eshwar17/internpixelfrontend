@@ -70,7 +70,7 @@ const Internship = ({
           colorScheme="green"
           variant={"ghost"}
           onClick={() => {
-            if (title === "Front End Development" || title === "Back End Development" || title === "Full Stack Development" || title === "Javapalooza: A Comprehensive Core Java Internship" || title === "C++ Wizardry: Unleashing the Magic of Programming" || title === "Python Programming Internship: Building Core Skills" || title === "Data Detective Internship(Data Analyst)" || title === "Reactivate Your Coding Skills: Join Our ReactJS Internship Program!" || title === "JavaScript Ninja Internship: Mastering the Art of Web Development") {
+            if (title === "Front End Development" ||title === "Bug Hunter Internship" || title === "Back End Development" || title === "Full Stack Development" || title === "Javapalooza: A Comprehensive Core Java Internship" || title === "C++ Wizardry: Unleashing the Magic of Programming" || title === "Python Programming Internship: Building Core Skills" || title === "Data Detective Internship(Data Analyst)" || title === "Reactivate Your Coding Skills: Join Our ReactJS Internship Program!" || title === "JavaScript Ninja Internship: Mastering the Art of Web Development") {
               window.location.href = "https://www.internpixel.fun/enroll";
             } else {
               addToPlaylistHandler(id);
