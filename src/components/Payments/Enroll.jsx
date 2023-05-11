@@ -53,7 +53,7 @@ const Enroll = () => {
         
       </Container>
       <VStack p='8' mt='4'>
-        <Text color={"red.300"} children="We are currently experiencing technical difficulties with our Razorpay payment gateway. Our team is working hard to resolve the issue as soon as possible. Meanwhile, you can use our phone QR code to make your payment and send us the screenshot of the payment via our 'Request Internship' link. We apologize for the inconvenience and appreciate your patience while we work to fix this issue." />
+        <Text color={"red.300"} children="We are currently experiencing technical difficulties with our Razorpay payment gateway. Our team is working hard to resolve the issue as soon as possible. Meanwhile, you can use our PhonePe QR code to make your payment and send us the transaction id of the payment via our 'Request Internship' link. We apologize for the inconvenience and appreciate your patience while we work to fix this issue." />
       </VStack>
     </>
   );

@@ -42,7 +42,7 @@ function Home() {
             spacing="8"
           >
             <Heading
-              children="Empower Your Career: Unlock Your Potential with InternPixel's Dynamic Internships"
+              children="Pixelate Your Career"
               size={"3xl"}
               fontWeight={"bold"}
               color={"blue.500"}
