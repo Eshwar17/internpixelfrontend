@@ -27,7 +27,7 @@ const Enroll = () => {
           spacing={"0"}
         >
           <Box bg={"blue.400"} p={"4"} css={{ borderRadius: "8px 8px 0 0" }}>
-            <Text color={"black"} >Pro Pack - ₹<strike>7999.00</strike> 1599.00/-</Text>
+            <Text color={"black"} >Pro Pack - ₹<strike>9999.00</strike> 1799.00/-</Text>
           </Box>
 
           <Box p={"4"}>
