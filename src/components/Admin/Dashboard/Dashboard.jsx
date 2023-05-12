@@ -4,7 +4,7 @@ import cursor from '../../../assets/images/cursor.png'
 import Sidebar from '../Sidebar'
 import { RiArrowDownLine, RiArrowUpLine } from 'react-icons/ri'
 import { DoughnutChart} from './Chart';
-import logo from "../../../assets/images/Intern.png";
+import logo from "../../../assets/images/InternPixelLogo.png";
 import Linechart from './Linechart'
 
 const DataBox = ({title,qty,qtyPercentage,profit})=>(
@@ -19,7 +19,7 @@ const DataBox = ({title,qty,qtyPercentage,profit})=>(
             )}
         </HStack>
         </HStack>
-        <Text opacity={0.6} children="Since Last Month"/>
+        <Text opacity={0.6} children="Since Last 3 Months"/>
     </Box>
 )
 
@@ -42,18 +42,18 @@ const Dashboard = () => {
             <Text textAlign={'center'} opacity={'0.5'} children={`Last changed was on ${String(new Date()).split('G')[0]}`}/>
             <Heading children="Leaderboard" ml={['0','16']} mb={'16'} textAlign={['center','left']}/>
             <Stack direction={['column','row']} minH={'24'} justifyContent={'space-evenly'}>
-                <DataBox title="Intern Newbies" qty={14} qtyPercentage={24} profit={true} />
-                <DataBox title="Intern Achievers" qty={123} qtyPercentage={78} profit={true} />
+                <DataBox title="Intern Newbies" qty={49} qtyPercentage={68} profit={true} />
+                <DataBox title="Intern Achievers" qty={123} qtyPercentage={96} profit={true} />
                 <DataBox title="Intern Wannabes" qty={0} qtyPercentage={0} profit={false} />
             </Stack>
             <Box m={['0','16']} borderRadius={'lg'} p={['0','16']} mt={['4','16']} boxShadow={'-2px 0 10px rgba(107,70,193,0.5)'}>
-                <Heading textAlign={['center','left']} size={'md'} children="Views Graph" pt={['8','0']} ml={['0','16']}/>
+                <Heading textAlign={['center','left']} size={'md'} children="The Fab Five Interns" pt={['8','0']} ml={['0','16']}/>
                 {/* Line Graph here */}
                 <Linechart />
             </Box>
             <Grid templateColumns={['1fr','2fr 1fr']}>
                 <Box p={'4'}>
-                <Heading textAlign={['center','left']} size={'md'} children='Top 3 interns' my={'8'} ml={['0','16']} />
+                <Heading textAlign={['center','left']} size={'md'} children='Top 3 Intern Avengers' my={'8'} ml={['0','16']} />
                 <Box>
                     <Bar profit={true} title="Arjun" value={87} />
                     <Bar profit={true} title="Kavya" value={78} />
@@ -61,7 +61,7 @@ const Dashboard = () => {
                 </Box>
                 </Box>
                 <Box p={['0','16']} boxSizing='border-box' py='4'>
-                    <Heading textAlign={'center'} size="md" mb={'4'} children="Users"/>
+                    <Heading textAlign={'center'} size="md" mb={'4'} children="The Intern Brigade"/>
                     {/* Doughnut graph */}
                     <DoughnutChart />
                 </Box>

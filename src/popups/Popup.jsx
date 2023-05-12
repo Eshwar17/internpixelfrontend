@@ -5,7 +5,7 @@ import gift from "./gift.png";
 const Popup = (props) => {
   const [isOpen, setIsOpen] = useState(false);
   const [offerEndDate, setOfferEndDate] = useState(null);
-  const startDateTime = new Date('2023-05-09T00:00:00Z'); // Today's date
+  const startDateTime = new Date('2023-05-08T00:00:00Z'); // Today's date
 
   useEffect(() => {
     setTimeout(() => {
@@ -60,7 +60,7 @@ const Popup = (props) => {
               Get a chance to work on a client project for free when you buy an
               internship from InternPixel and refer two of your friends using
               your unique referral ID (email + mobile number). And now, for a
-              limited time, enjoy an incredible 80% discount on your{" "}
+              limited time, enjoy an incredible 83% discount on your{" "}
               <a
                 href="https://www.internpixel.fun/enroll"
                 style={{ color: "#007bff", textDecoration: "underline" }}

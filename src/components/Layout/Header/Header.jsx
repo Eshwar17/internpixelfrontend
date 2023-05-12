@@ -12,8 +12,8 @@ import {
   useDisclosure,
   Img
 } from '@chakra-ui/react';
-import { RiMenu5Fill,RiLogoutBoxLine,RiDashboardFill } from 'react-icons/ri';
-import logo from "../../../assets/images/Intern.png";
+import { RiMenu5Fill,RiDashboardFill } from 'react-icons/ri';
+import logo from "../../../assets/images/InternPixelLogo.png";
 import { Link } from 'react-router-dom';
 
 const LinkButton = ({ url = '/', title = 'Home', onClose }) => (
