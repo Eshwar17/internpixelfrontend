@@ -105,7 +105,7 @@ const Request = () => {
               value={whatsapp}
               type="tel"
               onChange={handleChange}
-              placeholder="Enter your whatsapp number...."
+              placeholder="Enter your whatsapp number"
               focusBorderColor="blue.500"
             />
           </Box>
@@ -132,7 +132,7 @@ const Request = () => {
               value={transactionId}
               type="text"
               onChange={handleChange}
-              placeholder="Enter the payment transaction id"
+              placeholder="Enter your payment transaction id"
               focusBorderColor="blue.500"
             />
           </Box>
@@ -146,7 +146,7 @@ const Request = () => {
               value={referralId}
               type="text"
               onChange={handleChange}
-              placeholder="Enter the referral Id"
+              placeholder="Enter your referral Id"
               focusBorderColor="blue.500"
             />
           </Box>
