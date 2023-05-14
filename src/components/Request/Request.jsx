@@ -124,7 +124,7 @@ const Request = () => {
           <Box my={"4"}>
             <FormLabel
               htmlFor="transactionId"
-              children="Payment Transaction ID"
+              children="Payment Transaction ID*"
             />
             <Input
               required
