@@ -187,7 +187,7 @@ const Request = () => {
                   <p>
                     Thank you for submitting your application for the
                     internship. Our team will review your application and get
-                    back to you soon. You can even attach payment screenshots and mail us at internpixeladmin@finmail.com.
+                    back to you soon. You can even attach payment screenshots and mail us at internpixel@zohomail.in.
                   </p>
                   <button className="close-button" onClick={togglePopup}>
                     Close
