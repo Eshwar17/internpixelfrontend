@@ -72,7 +72,7 @@ const Request = () => {
 
         <form onSubmit={handleSubmit} style={{ width: "100%" }}>
           <Box my={"4"}>
-            <FormLabel htmlFor="name" children="Name" />
+            <FormLabel htmlFor="name" children="Name*" />
             <Input
               required
               name="name"
@@ -85,7 +85,7 @@ const Request = () => {
           </Box>
 
           <Box my={"4"}>
-            <FormLabel htmlFor="email" children="Email Address" />
+            <FormLabel htmlFor="email" children="Email Address*" />
             <Input
               required
               name="email"
@@ -98,7 +98,7 @@ const Request = () => {
           </Box>
 
           <Box my={"4"}>
-            <FormLabel htmlFor="whatsapp" children="Whatsapp Mobile Number" />
+            <FormLabel htmlFor="whatsapp" children="Whatsapp Mobile Number*" />
             <Input
               required
               name="whatsapp"
@@ -110,7 +110,7 @@ const Request = () => {
             />
           </Box>
           <Box my={"4"}>
-            <FormLabel htmlFor="domain" children="Internship Domain Name" />
+            <FormLabel htmlFor="domain" children="Internship Domain Name*" />
             <Input
               required
               name="domain"
@@ -151,7 +151,7 @@ const Request = () => {
             />
           </Box>
           <Box my={"4"}>
-            <FormLabel htmlFor="date" children="Date" />
+            <FormLabel htmlFor="date" children="Date*" />
             <Input
               required
               name="date"
