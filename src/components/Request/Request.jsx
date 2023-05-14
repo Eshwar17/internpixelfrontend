@@ -66,9 +66,9 @@ const Request = () => {
   };
 
   return (
-    <Container h="100vh" mb={"16"}>
+    <Container className="requestHeading" h="100vh" mb={"16"}>
       <VStack h="full" justifyContent={"center"} spacing="8">
-        <Heading children="Request New Course" />
+        <Heading className="requesttitle" children="Request An Internship" />
 
         <form onSubmit={handleSubmit} style={{ width: "100%" }}>
           <Box my={"4"}>

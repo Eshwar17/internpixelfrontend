@@ -18,7 +18,9 @@ import vg1 from "../../assets/images/standing.png";
 import introVideo from "../../assets/videos/Introduction.mp4";
 import Features from "../Features/Features";
 import Faq from "../Faq/Faq";
-import Typed from "typed.js";
+import FeaturesSection from "../Features/FeaturesSection";
+import Alumni from "../alumni/Alumni";
+
 
 
 
@@ -41,12 +43,14 @@ function Home() {
             alignItems={["center", "flex-end"]}
             spacing="8"
           >
-            <Heading
+            {/* <Heading
+              className="headingele"
               children="Pixelate Your Career"
               size={"3xl"}
               fontWeight={"bold"}
               color={"blue.500"}
-            />
+            /> */}
+            <h1 className="mainHeading">Pixelate Your Career</h1>
             <Text
               textAlign={["center", "left"]}
               fontSize={'1.2rem'}
@@ -67,12 +71,13 @@ function Home() {
           />
         </Stack>
       </div>
-      <Heading
+      {/* <Heading
         children="InternPixel"
         size="2xl"
         m="4"
         textAlign={"center"}
-      />
+      /> */}
+      <h1 className="mainHeading1">InternPixel</h1>
       <Text
         textAlign={"center"}
         fontSize={"2rem"}
@@ -106,11 +111,12 @@ function Home() {
             spacing="8"
             
           >
-            <Heading
+            {/* <Heading
               children="Internpixel"
               size={"2xl"}
               pr='6'
-            />
+            /> */}
+            <h1 className="mainHeading1">InternPixel</h1>
             <Text
               textAlign={["center", "left"]}
               fontSize={"1.8rem"}
@@ -131,35 +137,21 @@ function Home() {
           </VStack>
         </Stack>
       </div>
-<Text children=""/>
-      <Box padding={"8"} bg="blackAlpha.800">
-        <Heading
-          textAlign={"center"}
-          fontFamily="body"
-          color={"blue.400"}
-          children="Our Students Work At"
-        />
-        <HStack
-          className="brandsBanner"
-          justifyContent={"space-evenly"}
-          marginTop="4px"
-        >
-          {/* <SiUdemy /> */}
-          <h2 className="company">Cognizant</h2>
-          <h2 className="company">Wipro</h2>
-          <h2 className="company">Zoho</h2>
-          <h2 className="company">IBM</h2>
-          <h2 className="company">Focus Edumatics</h2>
-          <h2 className="company">Accenture</h2>
-          <h2 className="company">Sutherland</h2>
-          <h2 className="company">Acuvate</h2>
-          {/* <CgGoogle /> */}
-          {/* <CgYoutube />
-          <SiCoursera />
-          <DiAws /> */}
-        </HStack>
-      </Box>
+      {/* Features2 */}
+      <FeaturesSection />
 
+      
+<Text children=""/>
+      <Box padding={"8"}>
+        {/* <Heading
+        className="alumniHeading"
+          textAlign={"center"}
+          color={"black.400"}
+          children="Our Students Work At"
+        /> */}
+        <h1 className="alumniHeading">Our Students Work At</h1>
+      </Box>
+<Alumni />
       {/* video */}
       <div className="container2">
         <video

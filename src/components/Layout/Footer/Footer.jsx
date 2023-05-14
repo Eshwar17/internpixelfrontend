@@ -5,12 +5,14 @@ import {
   TiSocialTwitter,
 } from 'react-icons/ti';
 import { FaTelegram } from 'react-icons/fa';
+import './Footer.css';
 const Footer = () => {
   return (
     <Box padding={'4'} bg="blackAlpha.800" minH={'10vh'}>
       <Stack direction={['column', 'row']}>
         <VStack alignItems={['center', 'flex-start']} width="full">
-          <Heading children="All Rights Reserved" color={'white'} />
+          <Heading className='mainHeading1' children="All Rights Reserved" color={'white'} />
+          {/* <h1 className="mainHeading1">InternPixel</h1> */}
           <Heading
             size="sm"
             textAlign={"center"}
