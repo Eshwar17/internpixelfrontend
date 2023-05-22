@@ -42,9 +42,9 @@ const Dashboard = () => {
             <Text textAlign={'center'} opacity={'0.5'} children={`Last changed was on ${String(new Date()).split('G')[0]}`}/>
             <Heading children="Leaderboard" ml={['0','16']} mb={'16'} textAlign={['center','left']}/>
             <Stack direction={['column','row']} minH={'24'} justifyContent={'space-evenly'}>
-                <DataBox title="Intern Newbies" qty={107} qtyPercentage={79} profit={true} />
-                <DataBox title="Intern Achievers" qty={123} qtyPercentage={96} profit={true} />
-                <DataBox title="Intern Wannabes" qty={21} qtyPercentage={34} profit={false} />
+                <DataBox title="Intern Newbies" qty={153} qtyPercentage={80} profit={true} />
+                <DataBox title="Intern Achievers" qty={130} qtyPercentage={84} profit={true} />
+                <DataBox title="Intern Wannabes" qty={23} qtyPercentage={16} profit={false} />
             </Stack>
             <Box m={['0','16']} borderRadius={'lg'} p={['0','16']} mt={['4','16']} boxShadow={'-2px 0 10px rgba(107,70,193,0.5)'}>
                 <Heading textAlign={['center','left']} size={'md'} children="The Fab Five Interns" pt={['8','0']} ml={['0','16']}/>
@@ -55,9 +55,9 @@ const Dashboard = () => {
                 <Box p={'4'}>
                 <Heading textAlign={['center','left']} size={'md'} children='Top 3 Intern Avengers' my={'8'} ml={['0','16']} />
                 <Box>
-                    <Bar profit={true} title="Vidhya(B9)" value={87} />
-                    <Bar profit={true} title="Raj(B5)" value={78} />
-                    <Bar profit={true} title="Nandini(B9)" value={76} />
+                    <Bar profit={true} title="Vyshnavi(B9)" value={92} />
+                    <Bar profit={true} title="Hanisha(B9)" value={92} />
+                    <Bar profit={true} title="Vidhya(B9)" value={76} />
                 </Box>
                 </Box>
                 <Box p={['0','16']} boxSizing='border-box' py='4'>

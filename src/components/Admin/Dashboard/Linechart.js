@@ -1,8 +1,8 @@
 import React from "react";
 import { Line } from "react-chartjs-2";
 
-const students = ["Sameena(B3)", "Aman(B7)", "Vidhya(B9)", "Nandini(B9)", "Archana(B3)"];
-const points = [100, 200, 300, 250, 150];
+const students = ["Hanisha(B9)", "Aman(B7)", "Vyshnavi(B9)", "Kavya(B9)", "Vidhya(B9)"];
+const points = [500, 300, 500, 350, 350];
 
 const Linechart = () => {
   const data = {
