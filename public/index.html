@@ -13,9 +13,25 @@
     <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
     <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
     <script src="https://kit.fontawesome.com/4e7e01c849.js" crossorigin="anonymous"></script>
-    <title>InternPixel</title>
+    <title id="dynamicTitle">InternPixel</title>
+    <script>
+      // Function to change the title dynamically
+      function changeTitle() {
+        var titles = ["InternPixel: Pixelate Your Career", "InternPixel: Ignite Careers", "InternPixel: Navigate Success"]; // Array of titles
+        var index = 0; // Initial index
+        
+        // Function to update the title
+        function updateTitle() {
+          document.getElementById("dynamicTitle").textContent = titles[index];
+          index = (index + 1) % titles.length; // Increment the index and loop back to the start
+        }
+        
+        // Update the title every 2 seconds (2000 milliseconds)
+        setInterval(updateTitle, 4000);
+      }
+    </script>
   </head>
-  <body>
+  <body onload="changeTitle()">
     <noscript>You need to enable JavaScript to run this app.</noscript>
     <div>
     </div>

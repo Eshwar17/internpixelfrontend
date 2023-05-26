@@ -43,7 +43,7 @@ const Founder = () => {
         <Text children="Managing Director" opacity={0.7} />
       </VStack>
       <VStack justifyContent={"center"} alignItems={["center", "flex-start"]}>
-        <Heading children="Charishma Nagaraj" size={["md", "xl"]} />
+        <Heading children="Charishma" size={["md", "xl"]} />
         <Text
           textAlign={["center", "left"]}
           children={`Hello, I am the Managing Director at InternPixel. With over 5 years of experience in the field, I am dedicated to providing top-notch internship experiences to our clients. My goal is to help individuals and businesses achieve their full potential by providing them with the best resources and opportunities available. I look forward to working with our interns and clients to create valuable experiences that will help shape their careers and contribute to the growth of our company.`}
