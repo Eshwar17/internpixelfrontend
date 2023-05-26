@@ -70,14 +70,14 @@ const Internship = ({
           colorScheme="green"
           variant={"ghost"}
           onClick={() => {
-            if (title === "Front End Development" ||title === "Bug Hunter Internship" || title === "Back End Development" || title === "Full Stack Development" || title === "Javapalooza: A Comprehensive Core Java Internship" || title === "C++ Wizardry: Unleashing the Magic of Programming" || title === "Python Programming Internship: Building Core Skills" || title === "Data Detective Internship(Data Analyst)" || title === "Reactivate Your Coding Skills: Join Our ReactJS Internship Program!" || title === "JavaScript Ninja Internship: Mastering the Art of Web Development") {
+            if (title === "Front End Development" ||title === "Bug Hunter Internship" || title === "Back End Development" || title === "Full Stack Development" || title === "Javapalooza: A Comprehensive Core Java Internship" || title === "C++ Wizardry: Unleashing the Magic of Programming" || title === "Python Programming Internship: Building Core Skills" || title === "Data Detective Internship(Data Analyst)" || title === "Reactivate Your Coding Skills: Join Our ReactJS Internship Program!" || title === "JavaScript Ninja Internship: Mastering the Art of Web Development" || title === "Data Alchemist: Embark on a Journey of Innovation with our Data Science Internship") {
               window.location.href = "https://www.internpixel.fun/enroll";
             } else {
               addToPlaylistHandler(id);
             }
           }}
         >
-          Checkout Our Plan
+          Buy Now
         </Button>
       </Stack>
     </VStack>
@@ -109,7 +109,7 @@ const Internships = () => {
   }, []);
 
   function incrementViews() {
-    const startDate = new Date("2023-05-09T00:00:00");
+    const startDate = new Date("2023-05-25T00:00:00");
     const currentDate = new Date();
     const timeDiff = currentDate.getTime() - startDate.getTime();
     const hourDiff = Math.floor(timeDiff / (1000 * 60 * 60));
@@ -117,7 +117,7 @@ const Internships = () => {
     setViews(9 + viewsIncrement);
     setTimeout(() => {
       incrementViews();
-    }, 7200000);
+    }, 10800000);
   }
   //auto scroll
   
@@ -173,7 +173,7 @@ const Internships = () => {
             "Looking to deepen your backend development skills? Our Node.js internship will teach you how to build scalable and efficient web applications using the powerful JavaScript runtime. Learn how to work with popular Node.js frameworks like Express. Gain real-world experience by building and deploying your own Node.js projects. Join our Node.js internship program and take your backend development skills to the next level!"
           }
           views={"4"}
-          imageSrc={"https://img.freepik.com/free-vector/back-end-development-concept-software-development-process-website-interface-design-improvement-programming-coding-it-profession-isolated-flat-vector-illustration_613284-1064.jpg?size=626&ext=jpg&ga=GA1.1.136392163.1683044531&semt=ais"}
+          imageSrc={"https://cdn.dribbble.com/users/2131993/screenshots/9708020/media/839ef4840886e3c7e9af9fa9b4801617.png?compress=1&resize=400x300"}
           id={"Eshwar"}
           creator={"2 Months"}
           lectureCount={"18"}
@@ -194,41 +194,41 @@ const Internships = () => {
           addToPlaylistHandler={addToPlaylistHandler}
         />
         <Internship
-          title={"Client Project"}
+          title={"Data Alchemist (Data Science Internship)"}
           description={
-            "The US-based client, an Apple retailer store, requires a website to showcase their products and services to potential customers. The website needs to have a clean and modern design that reflects the brand's aesthetics and values. It should be user-friendly and easy to navigate. The website should have a responsive design that works seamlessly across desktop and mobile devices. The client wants to have an online store feature where customers can make purchases directly."
+            "Unleash the power of data with our Data Alchemist internship, where you'll embark on a transformative journey of innovation. Dive deep into the world of data science and discover the secrets hidden within vast datasets. Harness cutting-edge techniques, advanced analytics, and machine learning algorithms to extract valuable insights."
           }
-          views={views}
+          views={0}
           imageSrc={
-            "https://media.istockphoto.com/id/840610244/photo/business-people-negotiating-a-contract.jpg?b=1&s=170667a&w=0&k=20&c=trkY10lxjNdz1jENh-0puoF91D4TNK1QZln_2yBMdSw="
+            "https://img.freepik.com/free-vector/people-analyzing-growth-charts_23-2148866843.jpg?size=626&ext=jpg&ga=GA1.1.136392163.1683044531&semt=sph"
           }
           id={"Eshwar"}
-          creator={"2 Months"}
-          lectureCount={"16"}
+          creator={"3 Months"}
+          lectureCount={"45"}
           addToPlaylistHandler={addToPlaylistHandler}
         />
         <Internship
-          title={"Client Project"}
+          title={"Full Stack Fusion (MERN Stack)"}
           description={
-            "A car reselling dealer is looking for a website to host their inventory of pre-owned vehicles for sale. The website should allow visitors to search for specific cars based on make, model, year, price, and other relevant criteria. The dealer wants to showcase high-quality images and detailed descriptions for each car, along with vehicle history reports and Carfax reports. The website should have a clean and modern design that is easy to navigate and mobile-friendly."
+            "Immerse yourself in the world of Full Stack Fusion with our MERN Stack internship. Unleash your potential as you delve into the dynamic combination of MongoDB, Express.js, React.js, and Node.js. Gain hands-on experience building robust web applications and master the art of seamless integration across the entire stack. Join us and become a data scientist."
           }
-          views={"0"}
+          views={"7"}
           imageSrc={
-            "https://media.istockphoto.com/id/1057946590/photo/professional-salesperson-during-work-with-customer-at-car-dealership.jpg?b=1&s=170667a&w=0&k=20&c=bJkXlImr6kQgBhdvLuA9Zj5F2ZVB7SsNwliVsY43r7A="
+            "https://d1h9h5g2pln59q.cloudfront.net/MERN_Stack_Hero_bc2119602a.png"
           }
           id={"Eshwar"}
-          creator={"1 Month"}
-          lectureCount={"11"}
+          creator={"3 Month"}
+          lectureCount={"23"}
           addToPlaylistHandler={addToPlaylistHandler}
         />
         <Internship
-          title={"Client Project"}
+          title={"Interview Mastery Blueprint"}
           description={
-            "The client is a travelling agency dealer who requires a website to showcase their range of travel packages and services. The website should allow users to search for destinations, view travel itineraries, and make bookings online. The design of the website should be modern and visually appealing, with an emphasis on user experience. The client also requires integration with popular payment gateways to enable secure transactions. The website should also be mobile responsive."
+            "Unlock the secrets to interview success with our Interview Mastery Blueprint internship. Gain invaluable guidance and insights from industry experts as they provide personalized coaching and mentorship. Master the art of crafting compelling resumes, acing challenging interview questions, and showcasing your unique skills. Elevate your interview skills to new heights."
           }
-          views={"0"}
+          views={3}
           imageSrc={
-            "https://cdn.pixabay.com/photo/2020/02/04/13/35/connection-4818168__340.jpg"
+            "https://img.freepik.com/free-vector/legal-advisers-concept-illustration_114360-16439.jpg?size=626&ext=jpg&ga=GA1.1.136392163.1683044531&semt=ais"
           }
           id={"Eshwar"}
           creator={"1 Month"}

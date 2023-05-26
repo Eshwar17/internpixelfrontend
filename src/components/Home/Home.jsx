@@ -9,6 +9,8 @@ import {
   Image,
   Box,
   HStack,
+  Divider,
+  Flex
 
 } from "@chakra-ui/react";
 import "./home.css";
@@ -20,6 +22,7 @@ import Features from "../Features/Features";
 import Faq from "../Faq/Faq";
 import FeaturesSection from "../Features/FeaturesSection";
 import Alumni from "../alumni/Alumni";
+import CardSlider from "../CardSliders/CardSlider";
 
 
 
@@ -50,7 +53,7 @@ function Home() {
               fontWeight={"bold"}
               color={"blue.500"}
             /> */}
-            <h1 className="mainHeading">Pixelate Your Career</h1>
+            <h1 id="mainHeading">Pixelate Your Career</h1>
             <Text
               textAlign={["center", "left"]}
               fontSize={'1.2rem'}
@@ -90,6 +93,7 @@ function Home() {
       />
       {/* features */}
       <Features />
+      
       {/* second hero */}
       <div className="container1">
         <Stack
@@ -116,7 +120,7 @@ function Home() {
               size={"2xl"}
               pr='6'
             /> */}
-            <h1 className="mainHeading1">InternPixel</h1>
+            <h1 className="mainHeading1">Pixel Brew</h1>
             <Text
               textAlign={["center", "left"]}
               fontSize={"1.8rem"}
@@ -138,8 +142,19 @@ function Home() {
         </Stack>
       </div>
       {/* Features2 */}
+      <h1 className="mainHeading1">InternPixel Xperience</h1>
+      <Text
+        textAlign={"center"}
+        fontSize={"2rem"}
+        children="Revolutionizing the Internship Experience with Unparalleled Features for Your Success"
+      />
+      <Text
+        textAlign={"center"}
+        fontSize={"1rem"}
+        children="Immerse yourself in an unparalleled learning journey with InternPixel's unique features. Engage in live classes, work on real client projects, receive guidance from dedicated mentors, earn valuable certificates, explore multiple domains, and savor the camaraderie of team lunches. Prepare to level up your skills and create unforgettable memories as you embark on a transformative internship experience."
+      />
       <FeaturesSection />
-
+   
       
 <Text children=""/>
       <Box padding={"8"}>
@@ -153,6 +168,7 @@ function Home() {
       </Box>
 <Alumni />
       {/* video */}
+      
       <div className="container2">
         <video
           src={introVideo}
@@ -164,7 +180,18 @@ function Home() {
         ></video>
       </div>
       {/* features */}
-
+      <h1 className="mainHeading1">InternPixel's Trailblazing Path</h1>
+      <Text
+        textAlign={"center"}
+        fontSize={"2rem"}
+        children="Trending and Upcoming Internships for Tomorrow's Innovators"
+      />
+      <Text
+        textAlign={"center"}
+        fontSize={"1rem"}
+        children="Unleash your potential with InternPixel's curated collection of trending and upcoming internships. Elevate your skills, embrace cutting-edge industries, and embark on a transformative career journey that paves the way for future innovation."
+      />
+      <CardSlider />
       <Faq />
     </section>
   );

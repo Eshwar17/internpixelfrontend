@@ -5,7 +5,7 @@ import gift from "./gift.png";
 const Popup = (props) => {
   const [isOpen, setIsOpen] = useState(false);
   const [offerEndDate, setOfferEndDate] = useState(null);
-  const startDateTime = new Date('2023-05-22T00:00:00Z'); // Today's date
+  const startDateTime = new Date('2023-05-25T00:00:00Z'); // Today's date
 
   useEffect(() => {
     setTimeout(() => {
@@ -57,18 +57,7 @@ const Popup = (props) => {
             <img className="gift-icon" src={gift} alt="Gift Icon" />
             <h2>InternFest Sale</h2>
             <p>
-              Get a chance to work on a client project for free when you buy an
-              internship from InternPixel and refer two of your friends using
-              your unique referral ID (email + mobile number). And now, for a
-              limited time, enjoy an incredible 75% discount on your{" "}
-              <a
-                href="https://www.internpixel.fun/enroll"
-                style={{ color: "#007bff", textDecoration: "underline" }}
-              >
-                purchase
-              </a>
-              . To claim your referral bonus, email us at internpixel@zohomail.in. Don't
-              miss out on this exciting opportunity to kickstart your career!
+            Unlock a limited-time offer: Enjoy a staggering 84% off on our exclusive internship program. Don't miss out on this incredible opportunity to enhance your skills and accelerate your career. Enroll now and seize the chance to learn from industry experts at an unbeatable discounted rate. Take a step towards success with InternPixel's discounted internship today!
             </p>
             <div className="timer-container">
               <p>Offer ends in:</p>
