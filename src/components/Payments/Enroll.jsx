@@ -51,7 +51,7 @@ const Enroll = () => {
 
   const calculateDiscount = () => {
     const originalPrice = 12999;
-    const discountPrice = Math.floor(Math.random() * 501) + 2700; // Random discounted price between 3500 and 4000
+    const discountPrice = Math.floor(Math.random() * 501) + 3700; // Random discounted price between 3500 and 4000
     const referralCode = generateReferralCode();
     referral = referralCode;
 
