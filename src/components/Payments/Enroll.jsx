@@ -51,7 +51,7 @@ const Enroll = () => {
 
   const calculateDiscount = () => {
     const originalPrice = 12999;
-    const discountPrice = Math.floor(Math.random() * 501) + 3700; // Random discounted price between 3500 and 4000
+    const discountPrice = Math.floor(Math.random() * 501) + 4100; // Random discounted price between 3500 and 4000
     const referralCode = generateReferralCode();
     referral = referralCode;
 
@@ -79,7 +79,7 @@ const Enroll = () => {
       <VStack spacing={4} alignItems="stretch">
         <Box bg="blue.400" p={4} borderRadius="md" color="white">
           <Text color={"black"}>
-            Pro Pack - ₹<strike>12999.00</strike> 4999.00/-
+            Pro Pack - ₹<strike>12999.00</strike> 5999.00/-
           </Text>
         </Box>
 
