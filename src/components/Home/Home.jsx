@@ -24,11 +24,6 @@ import FeaturesSection from "../Features/FeaturesSection";
 import Alumni from "../alumni/Alumni";
 import CardSlider from "../CardSliders/CardSlider";
 
-
-
-
-
-
 function Home() {
   return (
     <section className="home">

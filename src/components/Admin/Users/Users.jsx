@@ -6,14 +6,96 @@ import { RiDeleteBin7Fill } from 'react-icons/ri'
 
 const Users = () => {
   const users = [{
-    _id:"",
-    name:"",
-    role:'',
+    _id:"1",
+    name:"Aarav Patel",
+    role:'Student',
     enrollment:{
       status:'active'
     },
-    email:""
-  }]
+    email:"Eligible for Team Lunch"
+  },
+  {
+    _id:"2",
+    name:"Bharath",
+    role:'Student',
+    enrollment:{
+      status:'active'
+    },
+    email:"Eligible for Team Lunch"
+  },
+  {
+    _id:"3",
+    name:"Riya Sharma",
+    role:'Working Professional',
+    enrollment:{
+      status:'active'
+    },
+    email:"Eligible for Team Lunch"
+  },
+  {
+    _id:"4",
+    name:"Arjun Gupta",
+    role:'Student',
+    enrollment:{
+      status:'active'
+    },
+    email:"Eligible for Team Lunch"
+  },
+  {
+    _id:"5",
+    name:"Siddharth Reddy",
+    role:'Student',
+    enrollment:{
+      status:'active'
+    },
+    email:"Eligible for Team Lunch"
+  },
+  {
+    _id:"6",
+    name:"Nisha Verma",
+    role:'Student',
+    enrollment:{
+      status:'active'
+    },
+    email:"Eligible for Goodies"
+  },
+  {
+    _id:"7",
+    name:"Rohan Desai",
+    role:'Student',
+    enrollment:{
+      status:'active'
+    },
+    email:"Eligible for Goodies"
+  },
+  {
+    _id:"8",
+    name:"Ananya Choudhary",
+    role:'Student',
+    enrollment:{
+      status:'active'
+    },
+    email:"Eligible for Goodies"
+  },
+  {
+    _id:"9",
+    name:"Aditya Mehta",
+    role:'Student',
+    enrollment:{
+      status:'active'
+    },
+    email:"Eligible for Goodies"
+  },
+  {
+    _id:"10",
+    name:"Pooja Singh",
+    role:'Working Professional',
+    enrollment:{
+      status:'active'
+    },
+    email:"Eligible for Goodies"
+  }
+]
 
 
 const updateHandler=(userId)=>{
