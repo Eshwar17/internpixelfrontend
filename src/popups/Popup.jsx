@@ -5,13 +5,13 @@ import gift from "./gift.png";
 const Popup = (props) => {
   const [isOpen, setIsOpen] = useState(false);
   const [offerEndDate, setOfferEndDate] = useState(null);
-  const startDateTime = new Date('2023-07-08T00:00:00Z'); // Today's date
+  const startDateTime = new Date('2023-08-12T00:00:00Z'); // Today's date
 
   useEffect(() => {
     setTimeout(() => {
       setIsOpen(true);
     }, 4000);
-    setOfferEndDate(new Date(startDateTime.getTime() + 7 * 24 * 60 * 60 * 1000));
+    setOfferEndDate(new Date(startDateTime.getTime() + 10 * 24 * 60 * 60 * 1000));
   }, []);
 
   useEffect(() => {
