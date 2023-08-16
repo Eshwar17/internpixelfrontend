@@ -121,7 +121,7 @@ console.log(userId);
                 <Tr>
                   <Th>Id</Th>
                   <Th>Name</Th>
-                  <Th>Email</Th>
+                  <Th>Incentives</Th>
                   <Th>Role</Th>
                 </Tr>
               </Thead>

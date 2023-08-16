@@ -79,7 +79,7 @@ const Enroll = () => {
       <VStack spacing={4} alignItems="stretch">
         <Box bg="blue.400" p={4} borderRadius="md" color="white">
           <Text color={"black"}>
-            Pro Pack - ₹<strike>12999.00</strike> 5999.00/-
+            Trainings Fee - ₹<strike>12999.00</strike> 5999.00/-
           </Text>
         </Box>
 

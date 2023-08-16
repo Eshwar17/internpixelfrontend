@@ -57,7 +57,7 @@ const Popup = (props) => {
             <img className="gift-icon" src={gift} alt="Gift Icon" />
             <h2>InternFest Sale</h2>
             <p>
-            Unlock a limited-time offer: Enjoy a staggering 75%+ off on our exclusive internship program. Don't miss out on this incredible opportunity to enhance your skills and accelerate your career. Enroll now and seize the chance to learn from industry experts at an unbeatable discounted rate. Take a step towards success with InternPixel's discounted internship today!
+            Unlock a limited-time offer: Enjoy a staggering 75%+ off on our exclusive training program. Don't miss out on this incredible opportunity to enhance your skills and accelerate your career. Enroll now and seize the chance to learn from industry experts at an unbeatable discounted rate. Take a step towards success with InternPixel's discounted trainings today!
             </p>
             <div className="timer-container">
               <p>Offer ends in:</p>
