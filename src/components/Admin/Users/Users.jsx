@@ -2,7 +2,8 @@ import { Box, Button, Grid, HStack, Heading, Table, TableCaption, TableContainer
 import React from 'react'
 import Sidebar from '../Sidebar'
 import cursor from '../../../assets/images/cursor.png'
-import { RiDeleteBin7Fill } from 'react-icons/ri'
+import logo from "../../../assets/images/InternPixelLogo.png";
+import { Center, Img } from '@chakra-ui/react';
 
 const Users = () => {
   const users = [{
@@ -108,11 +109,13 @@ console.log(userId);
   return (
     <Grid css={{cursor:`url(${cursor}), default`}} minH={'100vh'} templateColumns={['1fr', '5fr 1fr']}>
         <Box p={['0','16']} overflowX={'auto'} >
+        {/* <Center><Img h="14" p="2" src={logo}/></Center> */}
         <Heading
-            textTransform={'uppercase'}
+            // textTransform={'uppercase'}
             children="Top Ten Interns"
+            fontFamily={"Poppins"}
             my="16"
-            textAlign={['center', 'left']}
+            textAlign={['center']}
           />
           <TableContainer w={['100vw','full']}>
             <Table variant={'simple'} size='lg'>

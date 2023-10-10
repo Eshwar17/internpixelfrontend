@@ -44,7 +44,7 @@ const InternshipPage = () => {
         <Heading m={'4'}>{`#${lectureNumber + 1} ${
           lectures[lectureNumber].title
         }`}</Heading>
-        <Heading m={'4'}>Description</Heading>
+        <Heading m={'4'} fontFamily={"Roboto"}>Description</Heading>
         <Text children={lectures[lectureNumber].description} />
       </Box>
       <VStack>

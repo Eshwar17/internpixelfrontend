@@ -5,7 +5,7 @@ import gift from "./gift.png";
 const Popup = (props) => {
   const [isOpen, setIsOpen] = useState(false);
   const [offerEndDate, setOfferEndDate] = useState(null);
-  const startDateTime = new Date('2023-10-04T00:00:00Z'); // Today's date
+  const startDateTime = new Date('2023-10-10T00:00:00Z'); // Today's date
 
   useEffect(() => {
     setTimeout(() => {
@@ -50,20 +50,19 @@ const Popup = (props) => {
   };
 
   return (
-    <div className="popup-container">
+    <div className={`popup-container ${isOpen ? 'open' : ''}`}>
       {isOpen && (
         <div className="popup">
           <div className="popup-inner">
             <img className="gift-icon" src={gift} alt="Gift Icon" />
             <h2>InternFest Sale</h2>
             <p>
-            Unlock a limited-time offer: Enjoy a staggering 75%+ off on our exclusive training program. Don't miss out on this incredible opportunity to enhance your skills and accelerate your career. Enroll now and seize the chance to learn from industry experts at an unbeatable discounted rate. Take a step towards success with InternPixel's discounted trainings today!
+              Unlock a limited-time offer: Enjoy a staggering 80%+ off on our exclusive training program. Don't miss out on this incredible opportunity to enhance your skills and accelerate your career. Take a step towards success with InternPixel's discounted training today!
             </p>
             <div className="timer-container">
               <p>Offer ends in:</p>
               <div className="timer">
                 <div className="days">00</div>
-                
                 <div className="hours">00</div>
                 <div className="minutes">00</div>
                 <div className="seconds">00</div>

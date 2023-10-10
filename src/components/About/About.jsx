@@ -7,8 +7,9 @@ import {
   Heading,
   Stack,
   Text,
-  VStack,
+  VStack, Flex, Center, Image, Icon
 } from "@chakra-ui/react";
+import { FaGraduationCap, FaUsers, FaLightbulb } from 'react-icons/fa';
 import React from "react";
 import { Link } from "react-router-dom";
 import introVideo from "../../assets/videos/Introduction1.mp4";
@@ -91,14 +92,16 @@ const TandC = ({ termsAndCondition }) => {
     <Box>
       <Heading
         size={"md"}
+        fontFamily={"Poppins"}
         children="Terms And Conditions"
-        textAlign={["center", "left"]}
+        textAlign={["center"]}
         my="4"
       />
       <Box h="sm" p="4" overflowY={"scroll"}>
         <Text
           letterSpacing={"widest"}
-          fontFamily={"heading"}
+          fontFamily={"Poppins"}
+          letterSpacing={"1"}
           textAlign={["center", "left"]}
         >
           {termsAndCondition}
@@ -109,15 +112,154 @@ const TandC = ({ termsAndCondition }) => {
 };
 const About = () => {
   return (
-    <Container maxW={"container.lg"} padding={"16"} boxShadow={"lg"}>
-      <Heading children="About Us" textAlign={["center", "left"]} />
-      <Founder />
+    <Container maxW={"container.lg"} padding={"2"} boxShadow={"lg"}>
+      <Heading children="About Us" fontFamily={"Poppins"} textAlign={["center"]} />
+      {/* <Founder /> */}
+      <Box p={6}>
+      <Heading as="h1" textAlign="center" fontFamily={"Poppins"} fontSize="3xl" color={"blue.800"} mt={0} mb={8}>
+        Welcome to InternPixel
+      </Heading>
+      <Box flex="1" mb={6} order={[1, 1, 2]}>
+          <Center>
+            <Image
+              src="https://i.pinimg.com/originals/b5/71/7f/b5717f76996829bc2bc02d6cb91c2594.gif" // Add your image source here
+              alt="InternPixel Team"
+              borderRadius="lg"
+              boxShadow="lg"
+              maxW="60%"
+              objectFit="cover"
+              borderWidth={4}
+              borderColor="blue.500"
+            />
+          </Center>
+        </Box>
+      <Flex flexWrap="wrap" justifyContent="space-between" alignItems="center">
+        <Box flex="1" mb={6} pr={[0, 0, 4]} order={[2, 2, 1]}>
+          <Heading as="h2" fontSize="2xl" fontFamily={"Poppins"} textAlign={["center"]} mb={4}>
+            Our Story
+          </Heading>
+          <Text>
+            At InternPixel, we're passionate about connecting students and
+            companies. Our journey began with a simple idea: to bridge the gap
+            between aspiring students seeking internships and companies
+            searching for bright talent.
+          </Text>
+          <Text mt={4}>
+            Founded in 2022, we've since grown into a trusted platform that has
+            helped thousands of students kickstart their careers and hundreds of
+            companies find their next star intern.
+          </Text>
+          <Text mt={4}>
+            Join us in our mission to make the internship search process easier,
+            more efficient, and more rewarding for students and employers alike.
+          </Text>
+        </Box>
+        {/* <Box flex="1" mb={6} order={[1, 1, 2]}>
+          <Center>
+            <Image
+              src="https://i.pinimg.com/originals/b5/71/7f/b5717f76996829bc2bc02d6cb91c2594.gif" // Add your image source here
+              alt="InternPixel Team"
+              borderRadius="lg"
+              boxShadow="lg"
+              maxW="90%"
+              objectFit="cover"
+              borderWidth={4}
+              borderColor="blue.500"
+            />
+          </Center>
+        </Box> */}
+      </Flex>
+      <Box mt={10}>
+  <Heading as="h2" fontSize="2xl" fontFamily={"Poppins"} textAlign={["center"]} mb={4}>
+    Our Values
+  </Heading>
+  <Flex justifyContent="space-between" flexWrap="wrap">
+    {/* Education First */}
+    <Box flexBasis={['100%', '49%', '30%']} textAlign="center" mb={4}>
+      <Icon as={FaGraduationCap} boxSize={12} color="blue.500" />
+      <Heading as="h3" fontSize="xl" fontFamily={"Poppins"} mt={2}>
+        Education First
+      </Heading>
+      <Text>
+        We believe in the power of education and strive to create opportunities
+        for learning and growth.
+      </Text>
+    </Box>
+    {/* Community Driven */}
+    <Box flexBasis={['100%', '49%', '30%']} textAlign="center" mb={4}>
+      <Icon as={FaUsers} boxSize={12} color="blue.500" />
+      <Heading as="h3" fontSize="xl" fontFamily={"Poppins"} mt={2}>
+        Community Driven
+      </Heading>
+      <Text>
+        Our community is our strength. We foster collaboration and inclusivity.
+      </Text>
+    </Box>
+    {/* Innovation Hub */}
+    <Box flexBasis={['100%', '49%', '30%']} textAlign="center" mb={4}>
+      <Icon as={FaLightbulb} boxSize={12} color="blue.500" />
+      <Heading as="h3" fontSize="xl" fontFamily={"Poppins"} mt={2}>
+        Innovation Hub
+      </Heading>
+      <Text>
+        We embrace innovation and creativity to continuously improve our
+        platform.
+      </Text>
+    </Box>
+    {/* Customer-Centric */}
+    <Box flexBasis={['100%', '49%', '30%']} textAlign="center" mb={4}>
+      <Icon as={FaUsers} boxSize={12} color="blue.500" />
+      <Heading as="h3" fontFamily={"Poppins"} fontSize="xl" mt={2}>
+        Customer-Centric
+      </Heading>
+      <Text>
+        Our customers' success is our success. We go the extra mile to meet
+        their needs.
+      </Text>
+    </Box>
+    {/* Ownership and Responsibility */}
+    <Box flexBasis={['100%', '49%', '30%']} textAlign="center" mb={4}>
+      <Icon as={FaLightbulb} boxSize={12} color="blue.500" />
+      <Heading as="h3" fontFamily={"Poppins"} fontSize="xl" mt={2}>
+        Ownership and Responsibility
+      </Heading>
+      <Text>
+        We take ownership of our work and hold ourselves accountable for
+        delivering results.
+      </Text>
+    </Box>
+    {/* Diversity and Inclusion */}
+    <Box flexBasis={['100%', '49%', '30%']} textAlign="center" mb={4}>
+      <Icon as={FaUsers} boxSize={12} color="blue.500" />
+      <Heading as="h3" fontFamily={"Poppins"} fontSize="xl" mt={2}>
+        Diversity and Inclusion
+      </Heading>
+      <Text>
+        We celebrate diversity and promote an inclusive environment where
+        everyone's voice is heard.
+      </Text>
+    </Box>
+  </Flex>
+</Box>
+      <Box mt={12} textAlign="center">
+      <Link to={"/request"}>
+      <Button
+          colorScheme="blue"
+          size="lg"
+          borderRadius="full"
+          _hover={{ bg: 'blue.600' }}
+        >
+          Join Us Today
+        </Button>
+        </Link>
+      </Box>
+    </Box>
       <Stack m={"8"} direction={["column", "row"]} alignItems={"center"}>
         <Text m="8" textAlign={["center", "left"]}>
           We are a live streaming platform with some premium internships
           available only for premium users.
         </Text>
-        <Link to={"/enroll"}>
+        <Link to={"/request"}>
           <Button variant={"ghost"} colorScheme="blue">
             Checkout Our Plan
           </Button>
@@ -127,7 +269,7 @@ const About = () => {
       <TandC termsAndCondition={termsAndCondition} />
       <HStack my={"4"} padding={"4"}>
         <RiSecurePaymentFill />
-        <Heading size={"xs"} children="Payment is secured by RAZORPAY" />
+        <Heading size={"xs"} fontFamily={"Poppins"} children="Payment is secured by RAZORPAY" />
       </HStack>
     </Container>
   );

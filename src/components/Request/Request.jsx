@@ -68,7 +68,7 @@ const Request = () => {
   return (
     <Container className="requestHeading" h="100vh" mb={"16"}>
       <VStack h="full" justifyContent={"center"} spacing="8">
-        <Heading className="requesttitle" children="Request An Internship" />
+        <Heading className="requesttitle" fontFamily={"Poppins"} children="Request An Internship" />
 
         <form onSubmit={handleSubmit} style={{ width: "100%" }}>
           <Box my={"4"}>
@@ -78,7 +78,7 @@ const Request = () => {
               name="name"
               value={name}
               onChange={handleChange}
-              placeholder="Abc"
+              placeholder="Enter your full name"
               type={"text"}
               focusBorderColor="blue.500"
             />
@@ -91,14 +91,14 @@ const Request = () => {
               name="email"
               value={email}
               onChange={handleChange}
-              placeholder="abc@gmail.com"
+              placeholder="Enter your email address"
               type={"email"}
               focusBorderColor="blue.500"
             />
           </Box>
 
           <Box my={"4"}>
-            <FormLabel htmlFor="whatsapp" children="Whatsapp Mobile Number*" />
+            <FormLabel htmlFor="whatsapp" children="WhatsApp Mobile Number*" />
             <Input
               required
               name="whatsapp"
@@ -124,7 +124,7 @@ const Request = () => {
           <Box my={"4"}>
             <FormLabel
               htmlFor="transactionId"
-              children="Payment Transaction ID*"
+              children="College Name*"
             />
             <Input
               required
@@ -132,7 +132,7 @@ const Request = () => {
               value={transactionId}
               type="text"
               onChange={handleChange}
-              placeholder="Enter your payment transaction id"
+              placeholder="Enter your college name"
               focusBorderColor="blue.500"
             />
           </Box>

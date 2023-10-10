@@ -1,17 +1,11 @@
 /* eslint-disable jsx-a11y/alt-text */
-import { useState, useEffect, useRef } from "react";
 import {
   Button,
-  Heading,
   Stack,
   Text,
   VStack,
   Image,
   Box,
-  HStack,
-  Divider,
-  Flex
-
 } from "@chakra-ui/react";
 import "./home.css";
 import { Link } from "react-router-dom";
@@ -19,10 +13,11 @@ import vg from "../../assets/images/studying.png";
 import vg1 from "../../assets/images/standing.png";
 import introVideo from "../../assets/videos/Introduction.mp4";
 import Features from "../Features/Features";
-import Faq from "../Faq/Faq";
 import FeaturesSection from "../Features/FeaturesSection";
 import Alumni from "../alumni/Alumni";
 import CardSlider from "../CardSliders/CardSlider";
+import FaqPage from "../Faq/FaqPage";
+
 
 function Home() {
   return (
@@ -129,7 +124,7 @@ function Home() {
               children="At Internpixel, we know that coffee runs are an essential part of any internship experience. And while you're sipping on that latte, why not also gain some valuable skills and experience in your chosen industry? We promise we won't judge you if you spill your coffee during a video call with your boss, but we will encourage you to keep learning and growing in your internship. Join us today and let's make your coffee-fueled internship dreams a reality!"
             />
             <Link to="/internships">
-              <Button size={"md"} colorScheme="blue" opacity={0.57}>
+              <Button size={"m"} colorScheme="blue" pt={3} pb={3} pr={"0.5"} opacity={0.57}>
               Apply Now for a Latte-tude of Opportunities!
               </Button>
             </Link>
@@ -178,7 +173,7 @@ function Home() {
       <h1 className="mainHeading1">InternPixel's Trailblazing Path</h1>
       <Text
         textAlign={"center"}
-        fontSize={"2rem"}
+        fontSize={"1.7rem"}
         children="Trending and Upcoming Internships for Tomorrow's Innovators"
       />
       <Text
@@ -187,7 +182,8 @@ function Home() {
         children="Unleash your potential with InternPixel's curated collection of trending and upcoming internships. Elevate your skills, embrace cutting-edge industries, and embark on a transformative career journey that paves the way for future innovation."
       />
       <CardSlider />
-      <Faq />
+      {/* <Faq /> */}
+      <FaqPage />
     </section>
   );
 }

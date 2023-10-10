@@ -41,7 +41,7 @@ const Contact = () => {
     <Container h="92vh">
       <VStack h={"full"} justifyContent={"center"} spacing={'16'}>
       
-        <Heading children="Contact Us" />
+        <Heading children="Contact Us" fontFamily={"Poppins"}/>
         <form onSubmit={handleSubmit} style={{ width: '100%' }}>
         <Box my={'4'}>
             <FormLabel htmlFor="name" children="Name" />

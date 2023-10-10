@@ -432,6 +432,7 @@ input.tgg-title {
   font-family: 'Poppins', sans-serif;
 }
 .alumniHeading {
+  text-align: center;
   font-size: 3em;
   font-weight: 600;
   font-family: 'Poppins', sans-serif;
@@ -439,16 +440,19 @@ input.tgg-title {
 .mainHeading {
   font-size: 3rem;
   font-weight: 800;
+  text-align: center;
   font-family: 'Poppins', sans-serif;
 }
 .mainHeading1 {
   font-size: 4rem;
   font-weight: 800;
+  text-align: center;
   font-family: 'Poppins', sans-serif;
 }
 #mainHeading {
   font-size: 6rem; /* Default font size for desktop */
   font-weight: 800;
+  text-align: center;
   font-family: 'Poppins', sans-serif;
   animation: headingAnimation 10s ease-in-out infinite alternate;
 }

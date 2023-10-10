@@ -4,6 +4,7 @@ import supervisor from './img/team-lunch1.jpg';
 import karma from './img/icon-karma.png';
 import calculator from './img/icon-calculator.png';
 import teamBuilder from './img/icon-team-builder.png';
+import { Box } from '@chakra-ui/react';
 
 const Features = () => {
   return (
@@ -58,3 +59,4 @@ const Features = () => {
 }
 
 export default Features
+
