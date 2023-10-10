@@ -13,6 +13,7 @@ import {
 import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 
+
 const Internship = ({
   views,
   title,
@@ -23,6 +24,7 @@ const Internship = ({
   description,
   lectureCount,
 }) => {
+  
   return (
     <VStack className="internship" alignItems={["center", "flex-start"]}>
       <Image src={imageSrc} boxSize={"60"} objectFit={"contain"} />
@@ -97,11 +99,21 @@ const Internships = () => {
     "Web Development",
     "Java Development",
     "Python Development",
-    "DSA",
+    "Data Structures And Algorithms",
     "Front End Development",
     "Back End Development",
     "Ruby Development",
     "DevOps",
+    "C Programming",
+    "NodeJS Development",
+    "JavaScript Development",
+    "C++ Development",
+    "Full Stack Development",
+    "Data Science",
+    "Data Analyst",
+    "Data Engineering",
+    "QA Engineer",
+    "Software Testing"
   ];
   const [views, setViews] = useState(4);
 
@@ -141,12 +153,12 @@ const Internships = () => {
             display: "none",
           },
         }}
-      >
+      ><marquee loop="">
         {categories.map((item, index) => (
-          <Button key={index} onClick={() => setCategory(item)} minW={"60"}>
+          <Button key={index} onClick={() => setCategory(item)} mr={4} minW={"60"}>
             <Text children={item} />
           </Button>
-        ))}
+        ))} </marquee>
       </HStack>
       <Stack
         direction={["column", "row"]}

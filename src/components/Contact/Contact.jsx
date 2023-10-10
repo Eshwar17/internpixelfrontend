@@ -94,6 +94,7 @@ const Contact = () => {
           </Box>
         </form>
       </VStack>
+      
     </Container>
   );
 };

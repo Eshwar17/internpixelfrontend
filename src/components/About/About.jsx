@@ -271,6 +271,7 @@ const About = () => {
         <RiSecurePaymentFill />
         <Heading size={"xs"} fontFamily={"Poppins"} children="Payment is secured by RAZORPAY" />
       </HStack>
+      
     </Container>
   );
 };
