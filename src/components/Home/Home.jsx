@@ -1,4 +1,5 @@
 /* eslint-disable jsx-a11y/alt-text */
+import { useEffect } from "react";
 import { Button, Stack, Text, VStack, Image, Box } from "@chakra-ui/react";
 import "./home.css";
 import { Link } from "react-router-dom";
@@ -12,10 +13,47 @@ import CardSlider from "../CardSliders/CardSlider";
 import FaqPage from "../Faq/FaqPage";
 
 function Home() {
-  window.onload = function () {
+  useEffect(() => {
     const chatElement = document.getElementById("whats-chat");
     const chatTopRightElement = document.getElementById("chat-top-right");
     const sendBtnElement = document.getElementById("send-btn");
+
+    function showchatbox() {
+      const chatBoxElement = document.getElementById("chat-box");
+      if (chatBoxElement) {
+        chatBoxElement.style.right = "8%";
+      }
+    }
+
+    function closechatbox() {
+      const chatBoxElement = document.getElementById("chat-box");
+      if (chatBoxElement) {
+        chatBoxElement.style.right = "-500px";
+      }
+    }
+
+    function showchatboxtime() {
+      setTimeout(launchbox, 5000);
+    }
+
+    function launchbox() {
+      const chatBoxElement = document.getElementById("chat-box");
+      if (chatBoxElement) {
+        chatBoxElement.style.right = "8%";
+      }
+    }
+
+    function sendmsg() {
+      const msgElement = document.getElementById("whats-in");
+      if (msgElement) {
+        var msg = msgElement.value;
+        var relmsg = msg.replace(/ /g, "%20");
+        window.open(
+          "https://api.whatsapp.com/send?phone=8688561178&text=" + relmsg,
+          "_blank"
+        );
+      }
+    }
 
     if (chatElement) {
       chatElement.addEventListener("mouseover", showchatbox);
@@ -31,44 +69,8 @@ function Home() {
 
     // You can use window.onload here to ensure the elements are present in the DOM
     window.onload = showchatboxtime;
-  };
+  }, []);
 
-  function showchatbox() {
-    const chatBoxElement = document.getElementById("chat-box");
-    if (chatBoxElement) {
-      chatBoxElement.style.right = "8%";
-    }
-  }
-
-  function closechatbox() {
-    const chatBoxElement = document.getElementById("chat-box");
-    if (chatBoxElement) {
-      chatBoxElement.style.right = "-500px";
-    }
-  }
-
-  function showchatboxtime() {
-    setTimeout(launchbox, 5000);
-  }
-
-  function launchbox() {
-    const chatBoxElement = document.getElementById("chat-box");
-    if (chatBoxElement) {
-      chatBoxElement.style.right = "8%";
-    }
-  }
-
-  function sendmsg() {
-    const msgElement = document.getElementById("whats-in");
-    if (msgElement) {
-      var msg = msgElement.value;
-      var relmsg = msg.replace(/ /g, "%20");
-      window.open(
-        "https://api.whatsapp.com/send?phone=8688561178&text=" + relmsg,
-        "_blank"
-      );
-    }
-  }
   return (
     <section className="home">
       <div className="container">

@@ -13,7 +13,6 @@ import {
 import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 
-
 const Internship = ({
   views,
   title,
@@ -24,7 +23,63 @@ const Internship = ({
   description,
   lectureCount,
 }) => {
-  
+  useEffect(() => {
+    const chatElement = document.getElementById("whats-chat");
+    const chatTopRightElement = document.getElementById("chat-top-right");
+    const sendBtnElement = document.getElementById("send-btn");
+
+    function showchatbox() {
+      const chatBoxElement = document.getElementById("chat-box");
+      if (chatBoxElement) {
+        chatBoxElement.style.right = "8%";
+      }
+    }
+
+    function closechatbox() {
+      const chatBoxElement = document.getElementById("chat-box");
+      if (chatBoxElement) {
+        chatBoxElement.style.right = "-500px";
+      }
+    }
+
+    function showchatboxtime() {
+      setTimeout(launchbox, 5000);
+    }
+
+    function launchbox() {
+      const chatBoxElement = document.getElementById("chat-box");
+      if (chatBoxElement) {
+        chatBoxElement.style.right = "8%";
+      }
+    }
+
+    function sendmsg() {
+      const msgElement = document.getElementById("whats-in");
+      if (msgElement) {
+        var msg = msgElement.value;
+        var relmsg = msg.replace(/ /g, "%20");
+        window.open(
+          "https://api.whatsapp.com/send?phone=8688561178&text=" + relmsg,
+          "_blank"
+        );
+      }
+    }
+
+    if (chatElement) {
+      chatElement.addEventListener("mouseover", showchatbox);
+    }
+
+    if (chatTopRightElement) {
+      chatTopRightElement.addEventListener("click", closechatbox);
+    }
+
+    if (sendBtnElement) {
+      sendBtnElement.addEventListener("click", sendmsg);
+    }
+
+    // You can use window.onload here to ensure the elements are present in the DOM
+    window.onload = showchatboxtime;
+  }, []);
   return (
     <VStack className="internship" alignItems={["center", "flex-start"]}>
       <Image src={imageSrc} boxSize={"60"} objectFit={"contain"} />
@@ -73,7 +128,22 @@ const Internship = ({
           colorScheme="green"
           variant={"ghost"}
           onClick={() => {
-            if (title === "Front End Development" ||title === "Bug Hunter Internship" || title === "Back End Development" || title === "Full Stack Development" || title === "Javapalooza: A Comprehensive Core Java Internship" || title === "C++ Wizardry: Unleashing the Magic of Programming" || title === "Python Programming Internship: Building Core Skills" || title === "Data Detective Internship(Data Analyst)" || title === "Reactivate Your Coding Skills: Join Our ReactJS Internship Program!" || title === "JavaScript Ninja Internship: Mastering the Art of Web Development" || title === "Data Alchemist: Embark on a Journey of Innovation with our Data Science Internship") {
+            if (
+              title === "Front End Development" ||
+              title === "Bug Hunter Internship" ||
+              title === "Back End Development" ||
+              title === "Full Stack Development" ||
+              title === "Javapalooza: A Comprehensive Core Java Internship" ||
+              title === "C++ Wizardry: Unleashing the Magic of Programming" ||
+              title === "Python Programming Internship: Building Core Skills" ||
+              title === "Data Detective Internship(Data Analyst)" ||
+              title ===
+                "Reactivate Your Coding Skills: Join Our ReactJS Internship Program!" ||
+              title ===
+                "JavaScript Ninja Internship: Mastering the Art of Web Development" ||
+              title ===
+                "Data Alchemist: Embark on a Journey of Innovation with our Data Science Internship"
+            ) {
               window.location.href = "https://www.internpixel.fun/request";
             } else {
               addToPlaylistHandler(id);
@@ -113,7 +183,7 @@ const Internships = () => {
     "Data Analyst",
     "Data Engineering",
     "QA Engineer",
-    "Software Testing"
+    "Software Testing",
   ];
   const [views, setViews] = useState(4);
 
@@ -133,11 +203,15 @@ const Internships = () => {
     }, 10800000);
   }
   //auto scroll
-  
 
   return (
     <Container minH={"95vh"} maxW={"container.lg"} paddingY={"8"}>
-      <Heading fontFamily={"Poppins"} children="All Internships" m={"8"} textAlign={"center"} />
+      <Heading
+        fontFamily={"Poppins"}
+        children="All Internships"
+        m={"8"}
+        textAlign={"center"}
+      />
       {/* <Input
         value={keyword}
         onChange={e => setKeyword(e.target.value)}
@@ -153,12 +227,19 @@ const Internships = () => {
             display: "none",
           },
         }}
-      ><marquee loop="">
-        {categories.map((item, index) => (
-          <Button key={index} onClick={() => setCategory(item)} mr={4} minW={"60"}>
-            <Text children={item} />
-          </Button>
-        ))} </marquee>
+      >
+        <marquee loop="">
+          {categories.map((item, index) => (
+            <Button
+              key={index}
+              onClick={() => setCategory(item)}
+              mr={4}
+              minW={"60"}
+            >
+              <Text children={item} />
+            </Button>
+          ))}{" "}
+        </marquee>
       </HStack>
       <Stack
         direction={["column", "row"]}
@@ -186,8 +267,10 @@ const Internships = () => {
           description={
             "Looking to deepen your backend development skills? Our Node.js internship will teach you how to build scalable and efficient web applications using the powerful JavaScript runtime. Learn how to work with popular Node.js frameworks like Express. Gain real-world experience by building and deploying your own Node.js projects. Join our Node.js internship program and take your backend development skills to the next level!"
           }
-          views={views-1590}
-          imageSrc={"https://cdn.dribbble.com/users/2131993/screenshots/9708020/media/839ef4840886e3c7e9af9fa9b4801617.png?compress=1&resize=400x300"}
+          views={views - 1590}
+          imageSrc={
+            "https://cdn.dribbble.com/users/2131993/screenshots/9708020/media/839ef4840886e3c7e9af9fa9b4801617.png?compress=1&resize=400x300"
+          }
           id={"Eshwar"}
           creator={"2 Months"}
           lectureCount={"18"}
@@ -292,7 +375,9 @@ const Internships = () => {
           addToPlaylistHandler={addToPlaylistHandler}
         />
         <Internship
-          title={"JavaScript Ninja Internship: Mastering the Art of Web Development"}
+          title={
+            "JavaScript Ninja Internship: Mastering the Art of Web Development"
+          }
           description={
             "Join our JavaScript Ninja Internship program and take your web development skills to the next level. Learn from experienced mentors and work on real-world projects to gain hands-on experience. Develop your skills in JavaScript, jQuery, and other web technologies. Get certified at the end of the program and start your career as a web developer with confidence."
           }
@@ -306,7 +391,9 @@ const Internships = () => {
           addToPlaylistHandler={addToPlaylistHandler}
         />
         <Internship
-          title={"Reactivate Your Coding Skills: Join Our ReactJS Internship Program!"}
+          title={
+            "Reactivate Your Coding Skills: Join Our ReactJS Internship Program!"
+          }
           description={
             "Our ReactJS Internship provides hands-on experience in building responsive and dynamic user interfaces using the latest front-end web development technologies. Join us to gain practical knowledge on ReactJS, Redux, and other related tools, and to work on real-world projects to enhance your skills and marketability. Join us to become a ReactJS pro!"
           }
@@ -376,6 +463,76 @@ const Internships = () => {
           addToPlaylistHandler={addToPlaylistHandler}
         />
       </Stack>
+      <>
+        <div id="chat-box">
+          <div id="chat-top">
+            PixelPal: Your Internship Guide{" "}
+            <span id="chat-top-right">
+              <svg
+                id="close-box"
+                xmlns="http://www.w3.org/2000/svg"
+                width={20}
+                height={20}
+                viewBox="0 0 48 48"
+              >
+                <path
+                  d="M38 12.83L35.17 10 24 21.17 12.83 10 10 12.83 21.17 24 10 35.17 12.83 38 24 26.83 35.17 38 38 35.17 26.83 24z"
+                  fill="#fff"
+                />
+              </svg>
+            </span>
+            <div className="clear" />
+          </div>
+          <div id="chat-msg">
+            <p>
+              Welcome to InternPixel, your gateway to exciting internship
+              opportunities!
+            </p>
+            <div id="chat-form">
+              <div className="chat-in">
+                <input
+                  type="text"
+                  id="whats-in"
+                  placeholder="Send Your Message..."
+                />
+              </div>
+              <div id="send-btn">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width={38}
+                  height={38}
+                  viewBox="0 0 48 48"
+                >
+                  <path
+                    d="M4.02 42L46 24 4.02 6 4 20l30 4-30 4z"
+                    fill="rgb(18, 140, 126)"
+                  />
+                </svg>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div id="whats-chat">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            version={1}
+            width={35}
+            height={35}
+            viewBox="0 0 90 90"
+          >
+            <path
+              d="M90 44a44 44 0 0 1-66 38L0 90l8-24A44 44 0 0 1 46 0c24 0 44 20 44 44zM46 7C25 7 9 24 9 44c0 8 2 15 7 21l-5 14 14-4a37 37 0 0 0 58-31C83 24 66 7 46 7zm22 47l-2-1-7-4-3 1-3 4h-3c-1 0-4-1-8-5-3-3-6-6-6-8v-2l2-2 1-1v-2l-4-8c0-2-1-2-2-2h-2l-3 1c-1 1-4 4-4 9s4 11 5 11c0 1 7 12 18 16 11 5 11 3 13 3s7-2 7-5l1-5z"
+              fill="#FFF"
+            />
+          </svg>
+        </div>
+        <style
+          dangerouslySetInnerHTML={{
+            __html:
+              "\n  body{width:100%}\n*{margin:0px;padding:0px;box-sizing:border-box;}\n#whats-chat{position:fixed;right:3%;bottom:10%;height:auto;width:auto;background:#0963ac;padding:12.5px;border-radius:50px;}\n#whats-chat:hover{cursor:pointer;box-shadow:2px 2px 15px #ccc;bottom:11%;}\n/*===============================*/\n#chat-box{position:fixed;right:-500px;bottom:18%;width:250px;height:200px;transition:all .5s;}\n#chat-top{width:100%;line-height:2;background:rgb(18, 140, 126);color:white;text-align:center;border-radius:5px 5px 0 0;padding:0 10px;}\n#chat-msg{background:#ece5dd;padding:10px;border-radius:0 0 5px 5px;box-shadow:0 0 25px -10px #999;}\n#chat-msg p{font-size:14px;padding:5px;border-radius:0 50px 50px 50px;margin-bottom:10px;}\n#chat-form{display:flex;}\n.chat-in{width:80%;}\n#chat-form input{border-radius:5px 0 5px 5px;border:none;outline:none;font-size:14px;padding:5px;line-height:2;}\n#send-btn{width:20%;padding: 0 5px;}\n#chat-top-right{float:right;padding:5px 0;}\n#chat-box:after{content:'';\n    position: absolute;\n    top:58%;\n    left: 90%;\n    width: 0;\n    height: 0;\n    border-top: 25px solid transparent;\n  border-bottom: 25px solid transparent; \n  \n  border-right:25px solid #ece5dd;}\n.right{float:right}\n.clear{clear:both}\n",
+          }}
+        />
+      </>
     </Container>
   );
 };
