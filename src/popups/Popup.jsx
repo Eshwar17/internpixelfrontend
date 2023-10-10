@@ -10,7 +10,13 @@ const Popup = (props) => {
   useEffect(() => {
     setTimeout(() => {
       setIsOpen(true);
+      
+      // Close the popup after 2 seconds
+      setTimeout(() => {
+        setIsOpen(false);
+      }, 3000);
     }, 4000);
+
     setOfferEndDate(new Date(startDateTime.getTime() + 10 * 24 * 60 * 60 * 1000));
   }, []);
 
@@ -68,9 +74,9 @@ const Popup = (props) => {
                 <div className="seconds">00</div>
               </div>
             </div>
-            <button className="close-button" onClick={togglePopup}>
+            {/* <button className="close-button" onClick={togglePopup}>
               Close
-            </button>
+            </button> */}
           </div>
         </div>
       )}
