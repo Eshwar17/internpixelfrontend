@@ -29,9 +29,9 @@ import CampusAmbassador from './components/CampusAmbassador/CampusAmbassador';
 
 
 function App() {
-  // window.addEventListener("contextmenu", (e)=>{
-  //   e.preventDefault();
-  // })
+  window.addEventListener("contextmenu", (e)=>{
+    e.preventDefault();
+  })
   
   
   return (
