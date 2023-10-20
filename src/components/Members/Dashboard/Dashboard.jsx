@@ -37,7 +37,7 @@ const Bar = ({title, value,profit}) => {
 const Dashboard = () => {
   return (
     <><Center><Img h="14" p="2" src={logo}/></Center>
-    <Heading fontFamily={"Poppins"} children="Revenue Dashboard" mb={'1'} textAlign={['center']}/>
+    <Heading fontFamily={"Poppins"} children="Revenue Dashboard" size={"2xl"} mb={'1'} textAlign={['center']}/>
     <Grid css={{cursor:`url(${cursor}), default`}} minH={'100vh'} templateColumns={['1fr']}>
         <Box boxSizing='border-box' py={'4'} px={['4','0']}>
             <Text textAlign={'center'} opacity={'0.8'} children={`Last updated was on ${String(new Date()).split('G')[0]}`}/>
@@ -111,14 +111,14 @@ const Dashboard = () => {
                 <DataBox title="Enrollments" qty={0} qtyPercentage={0} profit={true} />
                 <DataBox title="Total Revenue Generated" qty={0} qtyPercentage={0} profit={false} />
             </Stack>
-                <Heading fontFamily={"Poppins"} textAlign={['center','center']} size={'2xl'} mt={4} children="Revolutionary Revenue Streams: The Top 5 Players" pt={['8','0']} ml={['0','16']}/>
+                <Heading fontFamily={"Poppins"} textAlign={['center','center']} size={'xl'} mt={4} children="Revolutionary Revenue Streams: The Top 5 Players" pt={['8','0']} ml={['0','16']}/>
             <Box m={['0','16']} borderRadius={'lg'} p={['0','16']} mt={['4','16']} boxShadow={'-2px 0 10px rgba(107,70,193,0.5)'}>
                 {/* Line Graph here */}
                 <Linechart />
             </Box>
             <Grid templateColumns={['1fr','2fr 1fr']}>
                 <Box p={'2'}>
-                <Heading fontFamily={"Poppins"} textAlign={['center','left']} size={'xl'} children="2023's Unstoppable Revenue Stars: The Top 3 Performers of the Year" my={'8'} ml={['0','16']} />
+                <Heading fontFamily={"Poppins"} textAlign={['center','left']} size={'lg'} children="2023's Unstoppable Revenue Stars: The Top 3 Performers of the Year" my={'8'} ml={['0','16']} />
                 <Box textAlign={"center"}>
                     <Text>% - Contribution to InternPixel</Text>
                     <Text color={"blue.500"} fontWeight={"bold"} fontSize={"3xl"}>Rs.346670/-</Text>

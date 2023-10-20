@@ -11,6 +11,7 @@ import FeaturesSection from "../Features/FeaturesSection";
 import Alumni from "../alumni/Alumni";
 import CardSlider from "../CardSliders/CardSlider";
 import FaqPage from "../Faq/FaqPage";
+import SomethingBigIsComingSection from "../Surprise/SomethingBigIsComingSection";
 
 function Home() {
   useEffect(() => {
@@ -189,6 +190,7 @@ function Home() {
         </Stack>
       </div>
       {/* Features2 */}
+      
       <h1 className="mainHeading1">InternPixel Xperience</h1>
       <Text
         textAlign={"center"}
@@ -201,7 +203,6 @@ function Home() {
         children="Immerse yourself in an unparalleled learning journey with InternPixel's unique features. Engage in live classes, work on real client projects, receive guidance from dedicated mentors, earn valuable certificates, explore multiple domains, and savor the camaraderie of team lunches. Prepare to level up your skills and create unforgettable memories as you embark on a transformative internship experience."
       />
       <FeaturesSection />
-
       <Text children="" />
       <Box padding={"8"}>
         {/* <Heading
@@ -214,7 +215,7 @@ function Home() {
       </Box>
       <Alumni />
       {/* video */}
-
+      <SomethingBigIsComingSection />
       <div className="container2">
         <video
           src={introVideo}
@@ -225,6 +226,7 @@ function Home() {
           disableRemotePlayback
         ></video>
       </div>
+      
       {/* features */}
       <h1 className="mainHeading1">InternPixel's Trailblazing Path</h1>
       <Text

@@ -96,7 +96,7 @@ const CampusAmbassador = () => {
   return (
     <Container>
       <VStack h={"full"} justifyContent={"center"} spacing={'6'}>
-        <Heading children="Campus Ambassador Application Form" textAlign={"center"} fontFamily={"Poppins"}/>
+        <Heading children="Campus Ambassador Application Form" pt={4} textAlign={"center"} fontFamily={"Poppins"}/>
         <Box>
           <Center>
             <Image
