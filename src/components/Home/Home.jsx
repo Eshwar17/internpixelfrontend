@@ -1,6 +1,6 @@
 /* eslint-disable jsx-a11y/alt-text */
 import { useEffect } from "react";
-import { Button, Stack, Text, VStack, Image, Box } from "@chakra-ui/react";
+import { Button, Stack, Text, VStack, Image, Box, Center } from "@chakra-ui/react";
 import "./home.css";
 import { Link } from "react-router-dom";
 import vg from "../../assets/images/studying.png";
@@ -39,7 +39,7 @@ function Home() {
     function launchbox() {
       const chatBoxElement = document.getElementById("chat-box");
       if (chatBoxElement) {
-        chatBoxElement.style.right = "8%";
+        chatBoxElement.style.right = "6%";
       }
     }
 
@@ -151,7 +151,7 @@ function Home() {
           />
           <VStack
             width={"full"}
-            alignItems={["center", "flex-end"]}
+            alignItems={["center", "center"]}
             spacing="8"
           >
             {/* <Heading
@@ -164,26 +164,27 @@ function Home() {
               textAlign={["center", "left"]}
               fontSize={"1.8rem"}
               children="Where Coffee Runs and Learning Happens!"
-              pr="6"
+              pr="0"
             />
             <Text
               textAlign={["center", "left"]}
               fontSize={"1rem"}
-              pr="6"
+              pr="0"
               children="At Internpixel, we know that coffee runs are an essential part of any internship experience. And while you're sipping on that latte, why not also gain some valuable skills and experience in your chosen industry? We promise we won't judge you if you spill your coffee during a video call with your boss, but we will encourage you to keep learning and growing in your internship. Join us today and let's make your coffee-fueled internship dreams a reality!"
             />
+            
             <Link to="/internships">
               <Button
                 size={"m"}
                 colorScheme="blue"
-                pt={3}
-                pb={3}
-                pr={"0.5"}
                 opacity={0.57}
+                p={[2,4]}
+                m={0}
               >
-                Apply Now for a Latte-tude of Opportunities!
+                Apply for a Latte-tude of Opportunities!
               </Button>
             </Link>
+            
           </VStack>
         </Stack>
       </div>

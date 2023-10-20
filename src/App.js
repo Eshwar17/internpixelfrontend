@@ -23,6 +23,8 @@ import Dashboard from './components/Admin/Dashboard/Dashboard';
 import CreateInternship from './components/Admin/CreateInternship/CreateInternship';
 import AdminInternships from './components/Admin/AdminInternships/AdminInternships';
 import Users from './components/Admin/Users/Users';
+import Members from './components/Members/Members';
+import CampusAmbassador from './components/CampusAmbassador/CampusAmbassador';
 
 
 
@@ -53,6 +55,8 @@ function App() {
         <Route path="*" element={<NotFound />} />
         <Route path="/paymentsuccess" element={<PaymentSuccess />} />
         <Route path="/paymentfail" element={<PaymentFail />} />
+        <Route path="/98S1u2d3h4a5k6a7rReddyN54" element={<Members />} />
+        <Route path="/ambassadorapply" element={<CampusAmbassador />} />
 
         {/* Admin Routes */}
         <Route path="/admin/dashboard" element={<Dashboard />} />

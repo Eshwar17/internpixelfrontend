@@ -1,9 +1,9 @@
-import { Container, Heading, VStack, Button, Box, FormLabel, Input, Textarea, Center } from '@chakra-ui/react';
+import { Container, Heading, VStack, Button, Box, FormLabel, Input, Textarea, Center, Image, Flex, Text } from '@chakra-ui/react';
 import React, {useState, useEffect} from 'react';
 import { Link } from 'react-router-dom';
 
 
-const Contact = () => {
+const CampusAmbassador = () => {
 
   useEffect(() => {
     const chatElement = document.getElementById("whats-chat");
@@ -94,19 +94,58 @@ const Contact = () => {
   };
 
   return (
-    <Container h="92vh">
-      <VStack h={"full"} justifyContent={"center"} spacing={'16'}>
-      
-        <Heading children="Contact Us" fontFamily={"Poppins"}/>
+    <Container>
+      <VStack h={"full"} justifyContent={"center"} spacing={'6'}>
+        <Heading children="Campus Ambassador Application Form" textAlign={"center"} fontFamily={"Poppins"}/>
+        <Box>
+          <Center>
+            <Image
+              src="https://www.mind-spark.org/ms21/campusAmbassador/images/participation.gif" // Add your image source here
+              alt="InternPixel Team"
+              borderRadius="lg"
+              maxW="60%"
+              objectFit="cover"
+              borderWidth={4}
+              borderColor="blue.500"
+            />
+          </Center>
+        </Box>
+        <Flex flexWrap="wrap" justifyContent="space-between" alignItems="center">
+        <Box flex="1" mb={6} pr={[0, 0, 4]} order={[2, 2, 1]}>
+          <Heading as="h2" fontSize="2xl" fontFamily={"Poppins"} textAlign={["center"]} mb={4}>
+          Why Join as a Campus Ambassador at InternPixel?
+          </Heading>
+          <Text>
+          Are you a student who thrives on taking the lead, has a passion for networking, and dreams of creating a positive impact on your campus community? Look no further - becoming a Campus Ambassador at InternPixel might just be the perfect opportunity for you. InternPixel is a dynamic platform committed to empowering students in their professional journeys, and we're on the lookout for enthusiastic and dedicated individuals like you to represent us on your campus.
+          </Text>
+          <Text mt={4}>
+          So, are you ready to take your college experience to the next level? Join us as a Campus Ambassador and embark on a rewarding journey of growth, learning, and making a meaningful impact on your campus community. Together, we'll empower students to reach their full potential and create a brighter future. Join the InternPixel family today and be the change you want to see in your campus community!
+          </Text>
+        </Box>
+        {/* <Box flex="1" mb={6} order={[1, 1, 2]}>
+          <Center>
+            <Image
+              src="https://i.pinimg.com/originals/b5/71/7f/b5717f76996829bc2bc02d6cb91c2594.gif" // Add your image source here
+              alt="InternPixel Team"
+              borderRadius="lg"
+              boxShadow="lg"
+              maxW="90%"
+              objectFit="cover"
+              borderWidth={4}
+              borderColor="blue.500"
+            />
+          </Center>
+        </Box> */}
+      </Flex>
         <form onSubmit={handleSubmit} style={{ width: '100%' }}>
-        <Box my={'4'}>
-            <FormLabel htmlFor="name" children="Name" />
+        <Box my={'2'}>
+            <FormLabel htmlFor="name" children="Full Name" />
             <Input
               required
               name="name"
               value={name}
               onChange={handleChange}
-              placeholder="Enter your name"
+              placeholder="Enter your full name"
               type="text"
               focusBorderColor="blue.500"
             />
@@ -124,7 +163,7 @@ const Contact = () => {
             />
           </Box>
           <Box my={'4'}>
-            <FormLabel htmlFor="message" children="Message" />
+            <FormLabel htmlFor="message" children="Why do you want to be a Campus Ambassador for InternPixel?" />
             <Textarea
               required
               name="message"
@@ -136,7 +175,7 @@ const Contact = () => {
           </Box>
           <Center>
           <Button my="4" colorScheme="blue" type="submit">
-            Send Mail
+            Apply Now
           </Button></Center>
 
           <Box my={'4'}>
@@ -224,4 +263,4 @@ const Contact = () => {
   );
 };
 
-export default Contact;
+export default CampusAmbassador;

@@ -12,7 +12,7 @@ import {
 const FaqPage = () => {
   return (
     <Container maxW="container.lg" py={8}>
-      <Heading as="h1" mb={6} fontFamily={"Poppins"} textAlign="center" fontWeight={"bold"} fontSize="4xl">
+      <Heading as="h1" mb={6} fontFamily={"Poppins"} textAlign="center" fontWeight={"bold"} fontSize="4xl" textShadow={"2px 3px 1.5px #0963ac;"}>
         Frequently Asked Questions
       </Heading>
       <Accordion allowToggle>

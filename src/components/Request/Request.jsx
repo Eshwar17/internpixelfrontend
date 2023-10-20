@@ -166,7 +166,8 @@ const Request = () => {
         <Heading
           className="requesttitle"
           fontFamily={"Poppins"}
-          children="Request An Internship"
+          children="Apply For An Internship"
+          textAlign={"center"}
         />
 
         <form onSubmit={handleSubmit} style={{ width: "100%" }}>
@@ -284,7 +285,7 @@ const Request = () => {
               Send
             </button></Center>
             <Center><Box my="2">
-            See available Courses!{" "}
+            See available internships!{" "}
             <Link to="/internships">
               <Button colorScheme={"blue"} variant="link">
                 Click

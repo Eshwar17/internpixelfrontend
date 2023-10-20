@@ -62,11 +62,12 @@ function Header() {
             <VStack spacing={'6'} alignItems={'flex-start'}>
               <LinkButton onClose={onClose} url="/" title="Home" />
               <LinkButton onClose={onClose} url="/internships" title="Browse All Internships" />
-              <LinkButton onClose={onClose} url="/request" title="Request An Internship" />
+              <LinkButton onClose={onClose} url="/request" title="Apply Now" />
+              <LinkButton onClose={onClose} url="/ambassadorapply" title="Join Our Ambassador Program" />
               <LinkButton onClose={onClose} url="/contact" title="Contact Us" />
               <LinkButton onClose={onClose} url="/about" title="About Us" />
 
-              <HStack
+              {/* <HStack
                 justifyContent={'space-evenly'}
                 position={'absolute'}
                 bottom={'2rem'}
@@ -95,7 +96,7 @@ function Header() {
                     <Button colorScheme={'blue'}>Sign Up</Button>
                   </Link>
                 </>)}
-              </HStack>
+              </HStack> */}
             </VStack>
           </DrawerBody>
         </DrawerContent>

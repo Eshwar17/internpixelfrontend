@@ -100,7 +100,6 @@ const TandC = ({ termsAndCondition }) => {
       />
       <Box h="sm" p="4" overflowY={"scroll"}>
         <Text
-          letterSpacing={"widest"}
           fontFamily={"Poppins"}
           letterSpacing={"1"}
           textAlign={["center", "left"]}
@@ -183,7 +182,6 @@ const About = () => {
               src="https://stemettes.org/zine/wp-content/uploads/sites/3/2021/12/custom-erp-software-development.gif" // Add your image source here
               alt="InternPixel Team"
               borderRadius="lg"
-              boxShadow="lg"
               maxW="60%"
               objectFit="cover"
               borderWidth={4}

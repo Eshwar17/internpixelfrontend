@@ -1,12 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Fira+Sans&family=Nunito&family=Open+Sans:wght@400;700&family=Oswald&family=Poppins&family=Roboto&family=Source+Sans+Pro:wght@200;600&display=swap');
 * {
   font-family: 'Poppins', sans-serif;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
 
 .container {
     height: 100vh;
     padding: 5rem;
-    box-sizing: border-box;
+ 
 }
 .vector-graphics {
     filter: drop-shadow(0 40px 10px rgba(0,0,0,0.3));
@@ -23,6 +26,7 @@
   font-weight: bold;
   font-family:monospace;
   padding: 2rem;
+  
 }
 .brandsBanner {
   display: flex;
@@ -34,6 +38,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    
 }
 .container2 video {
     box-shadow: 0 0 10px rgba(0,0,0,0.175);
@@ -372,6 +377,7 @@ input.tgg-title {
 
 .faq-accordion-title h2{
   font-size: 12px /*var(--font-size)*/;
+  
   font-weight: 400;
   color: var(--neutral-dark-color);
 }
@@ -430,23 +436,27 @@ input.tgg-title {
 }
 .headingele {
   font-family: 'Poppins', sans-serif;
+  
 }
 .alumniHeading {
   text-align: center;
   font-size: 3em;
   font-weight: 600;
+  text-shadow:2px 3px 1.5px #0963ac;
   font-family: 'Poppins', sans-serif;
 }
 .mainHeading {
   font-size: 3rem;
   font-weight: 800;
   text-align: center;
+  text-shadow:2px 3px 1.5px #0963ac;
   font-family: 'Poppins', sans-serif;
 }
 .mainHeading1 {
   font-size: 4rem;
   font-weight: 800;
   text-align: center;
+  text-shadow:2px 3px 1.5px #0963ac;
   font-family: 'Poppins', sans-serif;
 }
 #mainHeading {
@@ -454,6 +464,7 @@ input.tgg-title {
   font-weight: 800;
   text-align: center;
   font-family: 'Poppins', sans-serif;
+  text-shadow:2px 3px 2px #0963ac;
   animation: headingAnimation 10s ease-in-out infinite alternate;
 }
 
