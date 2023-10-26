@@ -227,7 +227,7 @@ function Home() {
           disableRemotePlayback
         ></video>
       </div>
-      {/* <TestimonialSlider /> */}
+    
       {/* features */}
       <h1 className="mainHeading1">InternPixel's Trailblazing Path</h1>
       <Text
@@ -241,6 +241,7 @@ function Home() {
         children="Unleash your potential with InternPixel's curated collection of trending and upcoming internships. Elevate your skills, embrace cutting-edge industries, and embark on a transformative career journey that paves the way for future innovation."
       />
       <CardSlider />
+      <TestimonialSlider />
       {/* <Faq /> */}
       <FaqPage />
       <>

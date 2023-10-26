@@ -30,9 +30,9 @@ import Services from './components/Testimonials/Services';
 
 
 function App() {
-  // window.addEventListener("contextmenu", (e)=>{
-  //   e.preventDefault();
-  // })
+  window.addEventListener("contextmenu", (e)=>{
+    e.preventDefault();
+  })
   
   
   return (

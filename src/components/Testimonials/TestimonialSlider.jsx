@@ -1,87 +1,52 @@
-import React, { useState, useEffect, useRef } from 'react';
-import {
-  Box,
-  Flex,
-  Heading,
-  Text,
-  Stack,
-  Container,
-  Avatar,
-  useColorModeValue,
-} from '@chakra-ui/react'
+// CardSlider.js
 
-const testimonialData = [
-  
-  {
-    heading: 'Efficient Collaborating',
-    text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Auctor neque sed imperdiet nibh lectus feugiat nunc sem.',
-    avatar: {
-      src: 'https://images.unsplash.com/photo-1586297135537-94bc9ba060aa?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=100&q=80',
-      name: 'Jane Cooper',
-      title: 'CEO at ABC Corporation',
-    },
-  },
-  {
-    heading: 'Efficient Collaborating',
-    text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Auctor neque sed imperdiet nibh lectus feugiat nunc sem.',
-    avatar: {
-      src: 'https://images.unsplash.com/photo-1586297135537-94bc9ba060aa?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=100&q=80',
-      name: 'Jane Cooper',
-      title: 'CEO at ABC Corporation',
-    },
-  },
-  {
-    heading: 'Efficient Collaborating',
-    text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Auctor neque sed imperdiet nibh lectus feugiat nunc sem.',
-    avatar: {
-      src: 'https://images.unsplash.com/photo-1586297135537-94bc9ba060aa?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=100&q=80',
-      name: 'Jane Cooper',
-      title: 'CEO at ABC Corporation',
-    },
-  },
-  {
-    heading: 'Efficient Collaborating',
-    text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Auctor neque sed imperdiet nibh lectus feugiat nunc sem.',
-    avatar: {
-      src: 'https://images.unsplash.com/photo-1586297135537-94bc9ba060aa?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=100&q=80',
-      name: 'Jane Cooper',
-      title: 'CEO at ABC Corporation',
-    },
-  },
-  {
-    heading: 'Efficient Collaborating',
-    text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Auctor neque sed imperdiet nibh lectus feugiat nunc sem.',
-    avatar: {
-      src: 'https://images.unsplash.com/photo-1586297135537-94bc9ba060aa?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=100&q=80',
-      name: 'Jane Cooper',
-      title: 'CEO at ABC Corporation',
-    },
-  },
-  {
-    heading: 'Efficient Collaborating',
-    text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Auctor neque sed imperdiet nibh lectus feugiat nunc sem.',
-    avatar: {
-      src: 'https://images.unsplash.com/photo-1586297135537-94bc9ba060aa?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=100&q=80',
-      name: 'Jane Cooper',
-      title: 'CEO at ABC Corporation',
-    },
-  },
-  // Add more testimonial data as needed
-];
-const Testimonial = (props) => {
-  const { children } = props
+import React, { useState, useEffect } from 'react';
+import {Text, Center, Avatar, Stack, useColorModeValue, Box,Container} from '@chakra-ui/react';
+import { testimonials } from './data'; // Import your data
+import './Services.css';
 
-  return <Box>{children}</Box>
-}
+const TestimonialSlider = () => {
+  const [currentIndex, setCurrentIndex] = useState(0);
 
-const TestimonialContent = (props) => {
-  const { children } = props
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setCurrentIndex((prevIndex) => (prevIndex === testimonials.length - 1 ? 0 : prevIndex + 1));
+    }, 7000); // Change testimonials every 5 seconds
 
-  return (
+    return () => clearInterval(interval);
+  }, []);
+
+  return (<div className="area">
+  <ul className="circles">
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+            </ul>
+    <Box bg={'transparent'}>
+    
+      <Container w={'full'} py={4} as={Stack} spacing={4}>
+        <Stack spacing={0} align={'center'}>
+        <h1 className="mainHeading1">Voices of Success</h1>
+          <Text textAlign={"center"}>Discover the stories of our thriving community and how InternPixel transformed their careers.</Text>
+        </Stack>
+        <Stack
+          direction={{ base: 'column', md: 'row' }}
+          spacing={{ base: 10, md: 4, lg: 10 }}></Stack>
+    <Center>
+    
     <Stack
-      bg={useColorModeValue('white', 'gray.800')}
-      boxShadow={'lg'}
-      p={8}
+      bg={useColorModeValue('white.200', 'gray.800')}
+      boxShadow={'xl'}
+      w={["90vw","60vw"]}
+      p={2}
+      mb={4}
       rounded={'xl'}
       align={'center'}
       pos={'relative'}
@@ -100,95 +65,25 @@ const TestimonialContent = (props) => {
         bottom: '-16px',
         left: '50%',
         transform: 'translateX(-50%)',
-      }}>
-      {children}
-    </Stack>
-  )
-}
-
-const TestimonialHeading = (props) => {
-  const { children } = props
-
-  return (
-    <Heading as={'h3'} fontSize={'xl'}>
-      {children}
-    </Heading>
-  )
-}
-
-const TestimonialText = (props) => {
-  const { children } = props
-
-  return (
-    <Text
-      textAlign={'center'}
-      color={useColorModeValue('gray.600', 'gray.400')}
-      fontSize={'sm'}>
-      {children}
-    </Text>
-  )
-}
-
-const TestimonialAvatar = ({
-  src,
-  name,
-  title,
-}) => {
-  return (
-    <Flex align={'center'} mt={8} direction={'column'}>
-      <Avatar src={src} mb={2} />
-      <Stack spacing={-1} align={'center'}>
-        <Text fontWeight={600}>{name}</Text>
-        <Text fontSize={'sm'} color={useColorModeValue('gray.600', 'gray.400')}>
-          {title}
-        </Text>
-      </Stack>
-    </Flex>
-  )
-}
-
-export default function WithSpeechBubbles() {
-  const [currentTestimonial, setCurrentTestimonial] = useState(0);
-  const nextTestimonial = () => {
-    setCurrentTestimonial((currentTestimonial + 1) % testimonialData.length);
-  };
-
-  const testimonialTimer = useRef(null);
-
-  useEffect(() => {
-    testimonialTimer.current = setInterval(nextTestimonial, 5000); // Switch every 5 seconds
-
-    return () => {
-      clearInterval(testimonialTimer.current);
-    };
-  }, []);
-  return (
-    <Box bg={useColorModeValue('gray.100', 'gray.700')}>
-      <Container maxW={'7xl'} py={16} as={Stack} spacing={12}>
-        <Stack spacing={0} align={'center'}>
-          <Heading>Our Clients Speak</Heading>
-          <Text>We have been working with clients around the world</Text>
-        </Stack>
-        <Stack
-  direction={{ base: 'column', md: 'row' }}
-  spacing={{ base: 10, md: 4, lg: 10 }}
->
-  {testimonialData.map((testimonial) => (
-    <Testimonial key={testimonial.heading}>
-      <TestimonialContent>
-        <TestimonialHeading>{testimonial.heading}</TestimonialHeading>
-        <TestimonialText>{testimonial.text}</TestimonialText>
-      </TestimonialContent>
-      <TestimonialAvatar
-        src={testimonial.avatar.src}
-        name={testimonial.avatar.name}
-        title={testimonial.avatar.title}
-      />
-    </Testimonial>
-  ))}
-</Stack>
-
+      }}><Center>
+<Avatar name={testimonials[currentIndex].name} /></Center>
+  <Text fontSize="xl" fontWeight="bold" color={"#0963ac"} textAlign={"center"}>
+  
+    {testimonials[currentIndex].name}
+  </Text>
+  <Text fontSize="md" mt="2" color={"gray.600"} textAlign={"center"}>
+    {testimonials[currentIndex].review}
+  </Text>
+  <Center mt="2">
+ <Text color={"#0963ac"}> Rating: {Array(+testimonials[currentIndex].rating).fill("⭐").join("")}</Text>
+</Center>
+  <Text fontSize="sm" mt="4" color="gray.600" textAlign={"center"}>
+    Location: {testimonials[currentIndex].place}
+  </Text>
+</Stack></Center>
       </Container>
-    </Box>
-  )
-}
+    </Box></div>
+  );
+};
+
+export default TestimonialSlider;
