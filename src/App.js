@@ -25,13 +25,14 @@ import AdminInternships from './components/Admin/AdminInternships/AdminInternshi
 import Users from './components/Admin/Users/Users';
 import Members from './components/Members/Members';
 import CampusAmbassador from './components/CampusAmbassador/CampusAmbassador';
+import Services from './components/Testimonials/Services';
 
 
 
 function App() {
-  window.addEventListener("contextmenu", (e)=>{
-    e.preventDefault();
-  })
+  // window.addEventListener("contextmenu", (e)=>{
+  //   e.preventDefault();
+  // })
   
   
   return (
@@ -57,6 +58,7 @@ function App() {
         <Route path="/paymentfail" element={<PaymentFail />} />
         <Route path="/98S1u2d3h4a5k6a7rReddyN54" element={<Members />} />
         <Route path="/ambassadorapply" element={<CampusAmbassador />} />
+        <Route path="/workshops" element={<Services />} />
 
         {/* Admin Routes */}
         <Route path="/admin/dashboard" element={<Dashboard />} />

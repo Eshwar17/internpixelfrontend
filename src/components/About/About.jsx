@@ -9,7 +9,9 @@ import {
   Text,
   VStack, Flex, Center, Image, Icon
 } from "@chakra-ui/react";
-import { FaGraduationCap, FaUsers, FaLightbulb } from 'react-icons/fa';
+import { FaGraduationCap, FaUsers, FaLightbulb, FaCrown } from 'react-icons/fa';
+import {RiCustomerService2Line} from 'react-icons/ri';
+import {MdChat, MdVideoCall, MdVoiceChat, MdVoicemail} from 'react-icons/md';
 import React from "react";
 import { useEffect } from "react";
 import { Link } from "react-router-dom";
@@ -169,7 +171,7 @@ const About = () => {
     window.onload = showchatboxtime;
   }, []);
   return (
-    <Container maxW={"container.lg"} padding={"2"} boxShadow={"lg"}>
+    <Container maxW={"container.lg"} padding={"2"}>
       <Heading children="About Us" fontFamily={"Poppins"} textAlign={["center"]} />
       {/* <Founder /> */}
       <Box p={6}>
@@ -264,7 +266,7 @@ const About = () => {
     </Box>
     {/* Customer-Centric */}
     <Box flexBasis={['100%', '49%', '30%']} textAlign="center" mb={4}>
-      <Icon as={FaUsers} boxSize={12} color="blue.500" />
+      <Icon as={RiCustomerService2Line} boxSize={12} color="blue.500" />
       <Heading as="h3" fontFamily={"Poppins"} fontSize="xl" mt={2}>
         Customer-Centric
       </Heading>
@@ -275,7 +277,7 @@ const About = () => {
     </Box>
     {/* Ownership and Responsibility */}
     <Box flexBasis={['100%', '49%', '30%']} textAlign="center" mb={4}>
-      <Icon as={FaLightbulb} boxSize={12} color="blue.500" />
+      <Icon as={FaCrown} boxSize={12} color="blue.500" />
       <Heading as="h3" fontFamily={"Poppins"} fontSize="xl" mt={2}>
         Ownership and Responsibility
       </Heading>
@@ -286,7 +288,7 @@ const About = () => {
     </Box>
     {/* Diversity and Inclusion */}
     <Box flexBasis={['100%', '49%', '30%']} textAlign="center" mb={4}>
-      <Icon as={FaUsers} boxSize={12} color="blue.500" />
+      <Icon as={MdVoiceChat} boxSize={12} color="blue.500" />
       <Heading as="h3" fontFamily={"Poppins"} fontSize="xl" mt={2}>
         Diversity and Inclusion
       </Heading>

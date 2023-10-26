@@ -1,6 +1,6 @@
 /* eslint-disable jsx-a11y/alt-text */
 import { useEffect } from "react";
-import { Button, Stack, Text, VStack, Image, Box, Center } from "@chakra-ui/react";
+import { Button, Stack, Text, VStack, Image, Box } from "@chakra-ui/react";
 import "./home.css";
 import { Link } from "react-router-dom";
 import vg from "../../assets/images/studying.png";
@@ -12,6 +12,8 @@ import Alumni from "../alumni/Alumni";
 import CardSlider from "../CardSliders/CardSlider";
 import FaqPage from "../Faq/FaqPage";
 import SomethingBigIsComingSection from "../Surprise/SomethingBigIsComingSection";
+import TestimonialSlider from "../Testimonials/TestimonialSlider";
+
 
 function Home() {
   useEffect(() => {
@@ -134,7 +136,6 @@ function Home() {
       />
       {/* features */}
       <Features />
-
       {/* second hero */}
       <div className="container1">
         <Stack
@@ -226,7 +227,7 @@ function Home() {
           disableRemotePlayback
         ></video>
       </div>
-      
+      {/* <TestimonialSlider /> */}
       {/* features */}
       <h1 className="mainHeading1">InternPixel's Trailblazing Path</h1>
       <Text
