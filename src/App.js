@@ -56,7 +56,7 @@ function App() {
         <Route path="*" element={<NotFound />} />
         <Route path="/paymentsuccess" element={<PaymentSuccess />} />
         <Route path="/paymentfail" element={<PaymentFail />} />
-        <Route path="/98S1u2d3h4a5k6a7rReddyN54" element={<Members />} />
+        <Route path="/98S1u2d3h4a5k6a7rRN54" element={<Members />} />
         <Route path="/ambassadorapply" element={<CampusAmbassador />} />
         <Route path="/workshops" element={<Services />} />
 

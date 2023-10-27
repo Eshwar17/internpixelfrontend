@@ -16,19 +16,7 @@ const TestimonialSlider = () => {
     return () => clearInterval(interval);
   }, []);
 
-  return (<div className="area">
-  <ul className="circles">
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-            </ul>
+  return (
     <Box bg={'transparent'}>
     
       <Container w={'full'} py={4} as={Stack} spacing={4}>
@@ -82,7 +70,7 @@ const TestimonialSlider = () => {
   </Text>
 </Stack></Center>
       </Container>
-    </Box></div>
+    </Box>
   );
 };
 

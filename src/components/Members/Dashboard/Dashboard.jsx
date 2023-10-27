@@ -53,7 +53,7 @@ const Dashboard = () => {
         <Avatar
           size={'xl'}
           src={
-            'https://media.licdn.com/dms/image/C5603AQHtTUARcAPStg/profile-displayphoto-shrink_200_200/0/1517616591733?e=1703116800&v=beta&t=RREh9H7Ww-vvDCf3p41gASsVSgTknSadHk6y3i-CXzk'
+            ''
           }
           mb={4}
           pos={'relative'}
@@ -70,17 +70,17 @@ const Dashboard = () => {
           }}
         />
         <Heading fontSize={'2xl'} fontFamily={'Poppins'}>
-          N. Sudhakar Reddy
+          Full Name
         </Heading>
         <Text fontWeight={600} color={'gray.500'} mb={4}>
-          @nsreddycse
+          @linkedinprofile
         </Text>
         <Text
           textAlign={'center'}
           color={useColorModeValue('gray.700', 'gray.400')}
           px={3}>
-          Principal at SV College of Engineering
-          <Text color={'blue.400'}>#PrincipalPinnacle</Text> Nagari, Andhra Pradesh, India
+          Resignation
+          <Text color={'blue.400'}>#tags</Text> Location
         </Text>
 
         <Stack align={'center'} justify={'center'} direction={'row'} mt={6}>

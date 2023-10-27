@@ -8,6 +8,7 @@ import { FaTelegram } from 'react-icons/fa';
 import './Footer.css';
 const Footer = () => {
   return (
+    
     <Box padding={'4'} bg="blackAlpha.800" minH={'10vh'}>
       <Stack direction={['column', 'row']}>
         <VStack alignItems={['center', 'flex-start']} width="full">
