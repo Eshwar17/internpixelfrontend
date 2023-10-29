@@ -26,13 +26,16 @@ import Users from './components/Admin/Users/Users';
 import Members from './components/Members/Members';
 import CampusAmbassador from './components/CampusAmbassador/CampusAmbassador';
 import Services from './components/Testimonials/Services';
+import ResumeTemplate from './components/ResumeMaker/ResumeEditor';
+import ResumeEditor from './components/ResumeMaker/ResumeEditor';
+import ResumePage from './components/ResumeMaker/ResumePage';
 
 
 
 function App() {
-  window.addEventListener("contextmenu", (e)=>{
-    e.preventDefault();
-  })
+  // window.addEventListener("contextmenu", (e)=>{
+  //   e.preventDefault();
+  // })
   
   
   return (
@@ -59,6 +62,8 @@ function App() {
         <Route path="/98S1u2d3h4a5k6a7rRN54" element={<Members />} />
         <Route path="/ambassadorapply" element={<CampusAmbassador />} />
         <Route path="/workshops" element={<Services />} />
+        <Route path="/resumetemplate1" element={<ResumeEditor />} />
+        <Route path="/resumemaker" element={<ResumePage />} />
 
         {/* Admin Routes */}
         <Route path="/admin/dashboard" element={<Dashboard />} />

@@ -6,7 +6,7 @@ import {
   Text,
   Flex, Center, Image, Icon
 } from "@chakra-ui/react";
-import { FaGraduationCap, FaUsers, FaLightbulb } from 'react-icons/fa';
+import { FaGraduationCap } from 'react-icons/fa';
 import {GiAbacus} from 'react-icons/gi'
 import {FcCollaboration} from 'react-icons/fc'
 import {SiBoost} from 'react-icons/si'

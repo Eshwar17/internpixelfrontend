@@ -65,6 +65,7 @@ function Header() {
               <LinkButton onClose={onClose} url="/request" title="Apply For An Internship" />
               <LinkButton onClose={onClose} url="/ambassadorapply" title="Join Our Ambassador Program" />
               <LinkButton onClose={onClose} url="/workshops" title="Workshops & Hackathons" />
+              <LinkButton onClose={onClose} url="/resumemaker" title="InternPixel's Resume Maker" />
               <Button variant={"ghost"} isDisabled="true" color={"black"}>Careers <sup style={{"color":"blue","fontSize":"11px"}}>&nbsp;&nbsp;No Open Positions</sup></Button>
               <LinkButton onClose={onClose} url="/contact" title="Contact Us" />
               <LinkButton onClose={onClose} url="/about" title="About Us" />

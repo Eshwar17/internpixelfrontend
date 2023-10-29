@@ -16,21 +16,22 @@ const TestimonialSlider = () => {
     return () => clearInterval(interval);
   }, []);
 
-  return (
-    <Box bg={'transparent'}>
-    
-      <Container w={'full'} py={4} as={Stack} spacing={4}>
-        <Stack spacing={0} align={'center'}>
+  return (<>
+    <Stack mt={12} mb={6} spacing={4} align={'center'}>
         <h1 className="mainHeading1">Voices of Success</h1>
           <Text textAlign={"center"}>Discover the stories of our thriving community and how InternPixel transformed their careers.</Text>
         </Stack>
+    <Box bg={'transparent'} id='testimonial-bg'>
+    
+      <Container w={'full'} py={4} as={Stack} spacing={4}>
+        
         <Stack
           direction={{ base: 'column', md: 'row' }}
           spacing={{ base: 10, md: 4, lg: 10 }}></Stack>
     <Center>
     
     <Stack
-      bg={useColorModeValue('white.200', 'gray.800')}
+      bg={useColorModeValue('white', 'gray.800')}
       boxShadow={'xl'}
       w={["90vw","60vw"]}
       p={2}
@@ -70,7 +71,7 @@ const TestimonialSlider = () => {
   </Text>
 </Stack></Center>
       </Container>
-    </Box>
+    </Box></>
   );
 };
 
