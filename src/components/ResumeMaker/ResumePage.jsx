@@ -95,6 +95,9 @@ function ResumePage() {
                   <p style={{"text-align":"center"}}>
                     <strong>Professional Elegance</strong>
                   </p>
+                  <p style={{"text-align":"center","color":"blue", "opacity":"50%"}}>
+                    <strong>Exclusive to InternPixels</strong>
+                  </p>
                   <Center>
                   {/* <Link to={"https://www.internpixel.fun/resumetemplate1"}> */}
       {/* <Button
@@ -106,10 +109,12 @@ function ResumePage() {
           {/* Edit Template */}
         {/* </Button> */}
         {/* </Link> */}
-        <a href="https://www.internpixel.fun/resumetemplate1"><Button colorScheme="blue"
+        {/* <a href="https://www.internpixel.fun/resumetemplate1"> */}
+        <Button colorScheme="blue"
           size="lg"
           borderRadius="full"
-          _hover={{ bg: 'blue.600' }}>Edit Template</Button></a>
+          _hover={{ bg: 'blue.600' }}>Edit Template</Button>
+          {/* </a> */}
                   </Center>
                   <hr />
                   {/* <p style={{"text-align":"center"}}>
