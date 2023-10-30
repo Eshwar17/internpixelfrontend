@@ -4,7 +4,7 @@ import {
   Container,
   Heading,
   Text,
-  Flex, Center, Image, Icon, Button, Link
+  Flex, Center, Image, Icon, Button
 } from "@chakra-ui/react";
 import {FcTemplate, FcPrint} from 'react-icons/fc'
 import {FiEdit} from "react-icons/fi"
@@ -85,7 +85,7 @@ function ResumePage() {
             <div className="card1">
               <div className="card1_image">
               <span className="note1">Template 1</span>
-                <img src="https://img.freepik.com/free-vector/online-resume-concept-illustration_114360-5166.jpg?size=626&ext=jpg&ga=GA1.1.377232785.1697539441&semt=ais" />
+                <img src="https://img.freepik.com/free-vector/online-resume-concept-illustration_114360-5166.jpg?size=626&ext=jpg&ga=GA1.1.377232785.1697539441&semt=ais" alt='img'/>
               </div>
               <div className="card1_content">
                 <h2 className="card1_title">
@@ -96,16 +96,20 @@ function ResumePage() {
                     <strong>Professional Elegance</strong>
                   </p>
                   <Center>
-                  <Link to={"/resumetemplate1"}>
-      <Button
+                  {/* <Link to={"https://www.internpixel.fun/resumetemplate1"}> */}
+      {/* <Button
           colorScheme="blue"
           size="lg"
           borderRadius="full"
           _hover={{ bg: 'blue.600' }}
-        >
-          Edit Template
-        </Button>
-        </Link>
+        > */}
+          {/* Edit Template */}
+        {/* </Button> */}
+        {/* </Link> */}
+        <a href="https://www.internpixel.fun/resumetemplate1"><Button colorScheme="blue"
+          size="lg"
+          borderRadius="full"
+          _hover={{ bg: 'blue.600' }}>Edit Template</Button></a>
                   </Center>
                   <hr />
                   {/* <p style={{"text-align":"center"}}>

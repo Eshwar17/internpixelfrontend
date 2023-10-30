@@ -11,14 +11,13 @@ import {
 } from "@chakra-ui/react";
 import { FaGraduationCap, FaUsers, FaLightbulb, FaCrown } from 'react-icons/fa';
 import {RiCustomerService2Line} from 'react-icons/ri';
-import {MdChat, MdVideoCall, MdVoiceChat, MdVoicemail} from 'react-icons/md';
+import {MdVoiceChat} from 'react-icons/md';
 import React from "react";
 import { useEffect } from "react";
 import { Link } from "react-router-dom";
 import introVideo from "../../assets/videos/Introduction1.mp4";
 import { RiSecurePaymentFill } from "react-icons/ri";
 import termsAndCondition from "../../assets/docs/termsAndCondition";
-import nithish from './nithishvarma.jpg';
 
 const Founder = () => {
   return (<>
@@ -56,10 +55,10 @@ const Founder = () => {
     </Stack>
     <Stack direction={["column", "row"]} spacing={["4", "16"]} padding={"8"}>
       <VStack>
-        <Avatar
+        {/* <Avatar
           src={nithish}
           boxSize={["40", "48"]}
-        />
+        /> */}
         <Text children="Operations Manager" opacity={0.7} />
       </VStack>
       <VStack justifyContent={"center"} alignItems={["center", "flex-start"]}>
