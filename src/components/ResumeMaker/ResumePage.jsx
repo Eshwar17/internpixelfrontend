@@ -99,16 +99,6 @@ function ResumePage() {
                     <strong>Exclusive to InternPixels</strong>
                   </p>
                   <Center>
-                  {/* <Link to={"https://www.internpixel.fun/resumetemplate1"}> */}
-      {/* <Button
-          colorScheme="blue"
-          size="lg"
-          borderRadius="full"
-          _hover={{ bg: 'blue.600' }}
-        > */}
-          {/* Edit Template */}
-        {/* </Button> */}
-        {/* </Link> */}
         {/* <a href="https://www.internpixel.fun/resumetemplate1"> */}
         <Button colorScheme="blue"
           size="lg"
@@ -117,9 +107,72 @@ function ResumePage() {
           {/* </a> */}
                   </Center>
                   <hr />
-                  {/* <p style={{"text-align":"center"}}>
-                  Are you struggling to create a resume that stands out in a competitive job market? In our "Crafting the Perfect Resume" workshop, you'll learn the art of resume writing. We'll cover everything from structuring your resume effectively, choosing the right keywords, and tailoring your document for specific job applications. You'll also receive personalized feedback on your current resume to help you make it shine.
-                  </p> */}
+                  <p style={{"text-align":"center"}}>
+                  Crafted for those aiming to make a refined first impression, this template seamlessly blends sophistication with a modern touch. The "Professional Elegance" template offers a clean, structured layout, perfect for professionals across various industries. Its well-defined sections and elegant design ensure your resume stands out while maintaining a professional aesthetic, making it an ideal choice for those seeking a classic yet contemporary appeal.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li className="cards1_item">
+            <div className="card1">
+              <div className="card1_image">
+              <span className="note1">Template 2</span>
+                <img src="https://img.freepik.com/free-vector/online-resume-concept-illustration_114360-5166.jpg?size=626&ext=jpg&ga=GA1.1.377232785.1697539441&semt=ais" alt='img'/>
+              </div>
+              <div className="card1_content">
+                <h2 className="card1_title">
+                Crafting the Perfect Resume
+                </h2>
+                <div className="card1_text">
+                  <p style={{"text-align":"center"}}>
+                    <strong>Professional Elegance</strong>
+                  </p>
+                  <p style={{"text-align":"center","color":"blue", "opacity":"50%"}}>
+                    <strong>Exclusive to InternPixels</strong>
+                  </p>
+                  <Center>
+        {/* <a href="https://www.internpixel.fun/resumetemplate1"> */}
+        <Button colorScheme="blue"
+          size="lg"
+          borderRadius="full"
+          _hover={{ bg: 'blue.600' }}>Edit Template</Button>
+          {/* </a> */}
+                  </Center>
+                  <hr />
+                  <p style={{"text-align":"center"}}>
+                  Crafted for those aiming to make a refined first impression, this template seamlessly blends sophistication with a modern touch. The "Professional Elegance" template offers a clean, structured layout, perfect for professionals across various industries. Its well-defined sections and elegant design ensure your resume stands out while maintaining a professional aesthetic, making it an ideal choice for those seeking a classic yet contemporary appeal.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li className="cards1_item">
+            <div className="card1">
+              <div className="card1_image">
+              <span className="note1">Template 3</span>
+                <img src="https://img.freepik.com/free-vector/online-resume-concept-illustration_114360-5166.jpg?size=626&ext=jpg&ga=GA1.1.377232785.1697539441&semt=ais" alt='img'/>
+              </div>
+              <div className="card1_content">
+                <h2 className="card1_title">
+                Crafting the Perfect Resume
+                </h2>
+                <div className="card1_text">
+                  <p style={{"text-align":"center"}}>
+                    <strong>Professional Elegance</strong>
+                  </p>
+                  <p style={{"text-align":"center","color":"blue", "opacity":"50%"}}>
+                    <strong>Exclusive to InternPixels</strong>
+                  </p>
+                  <Center>
+        {/* <a href="https://www.internpixel.fun/resumetemplate1"> */}
+        <Button colorScheme="blue"
+          size="lg"
+          borderRadius="full"
+          _hover={{ bg: 'blue.600' }}>Edit Template</Button>
+          {/* </a> */}
+                  </Center>
+                  <hr />
                   <p style={{"text-align":"center"}}>
                   Crafted for those aiming to make a refined first impression, this template seamlessly blends sophistication with a modern touch. The "Professional Elegance" template offers a clean, structured layout, perfect for professionals across various industries. Its well-defined sections and elegant design ensure your resume stands out while maintaining a professional aesthetic, making it an ideal choice for those seeking a classic yet contemporary appeal.
                   </p>
