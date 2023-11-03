@@ -29,6 +29,7 @@ import Services from './components/Testimonials/Services';
 import ResumeTemplate from './components/ResumeMaker/ResumeEditor';
 import ResumeEditor from './components/ResumeMaker/ResumeEditor';
 import ResumePage from './components/ResumeMaker/ResumePage';
+// import MyQuiz from './components/Quiz/MyQuiz';
 
 
 
@@ -89,6 +90,7 @@ function App() {
         <Route path="/workshops" element={<Services />} />
         <Route path="/resumetemplate1" element={<ResumeEditor />} />
         <Route path="/resumemaker" element={<ResumePage />} />
+        {/* <Route path="/quiz" element={<MyQuiz />} /> */}
 
         {/* Admin Routes */}
         <Route path="/admin/dashboard" element={<Dashboard />} />
