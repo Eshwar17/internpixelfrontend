@@ -1,9 +1,26 @@
-import { Container, Heading, VStack, Button, Box, FormLabel, Input, Textarea, Center, Image, Flex, Text } from '@chakra-ui/react';
-import React, {useState, useEffect} from 'react';
-import { Link } from 'react-router-dom';
-
+import {
+  Container,
+  Heading,
+  VStack,
+  Button,
+  Box,
+  FormLabel,
+  Input,
+  Textarea,
+  Center,
+  Image,
+  Flex,
+  Text,
+} from "@chakra-ui/react";
+import React, { useState, useEffect } from "react";
+import { Link } from "react-router-dom";
+import LuckyWheel from "../LuckyWheels/LuckyWheel";
+import LuckyWheelCA from "../LuckyWheels/LuckyWheelCA";
+import spinner11 from '../../assets/images/spinner11.png'
+import spinner22 from '../../assets/images/spinner22.png'
 
 const CampusAmbassador = () => {
+  const [isDesktop, setIsDesktop] = useState(false);
 
   useEffect(() => {
     const chatElement = document.getElementById("whats-chat");
@@ -65,9 +82,9 @@ const CampusAmbassador = () => {
   const [data, setData] = useState({
     name: "",
     email: "",
-    message:"",
+    message: "",
   });
-  const { name, email, message} = data;
+  const { name, email, message } = data;
   const handleChange = (e) =>
     setData({ ...data, [e.target.name]: e.target.value });
 
@@ -81,22 +98,38 @@ const CampusAmbassador = () => {
           headers: {
             "Content-Type": "application/json",
           },
-          body: JSON.stringify([
-            [name, email, message],
-          ]),
+          body: JSON.stringify([[name, email, message]]),
         }
       );
       await response.json();
-      setData({...data,name:"",email:"",message:""});
+      setData({ ...data, name: "", email: "", message: "" });
     } catch (err) {
       console.log(err);
     }
   };
+  useEffect(() => {
+    const checkIfDesktop = () => {
+      const screenWidth = window.innerWidth;
+      setIsDesktop(screenWidth > 1024); // Set the width threshold for laptops/desktops
+    };
+
+    checkIfDesktop(); // Check initially
+    window.addEventListener("resize", checkIfDesktop); // Check on window resize
+
+    return () => {
+      window.removeEventListener("resize", checkIfDesktop); // Remove event listener on component unmount
+    };
+  }, []);
 
   return (
-    <Container>
-      <VStack h={"full"} justifyContent={"center"} spacing={'6'}>
-        <Heading children="Campus Ambassador Application Form" pt={4} textAlign={"center"} fontFamily={"Poppins"}/>
+    <Container w={"full"}>
+      <VStack h={"full"} justifyContent={"center"} spacing={"6"}>
+        <Heading
+          children="Campus Ambassador Application Form"
+          pt={16}
+          textAlign={"center"}
+          fontFamily={"Poppins"}
+        />
         <Box>
           <Center>
             <Image
@@ -110,35 +143,92 @@ const CampusAmbassador = () => {
             />
           </Center>
         </Box>
-        <Flex flexWrap="wrap" justifyContent="space-between" alignItems="center">
-        <Box flex="1" mb={6} pr={[0, 0, 4]} order={[2, 2, 1]}>
-          <Heading as="h2" fontSize="2xl" fontFamily={"Poppins"} textAlign={["center"]} mb={4}>
-          Why Join as a Campus Ambassador at InternPixel?
-          </Heading>
-          <Text>
-          Are you a student who thrives on taking the lead, has a passion for networking, and dreams of creating a positive impact on your campus community? Look no further - becoming a Campus Ambassador at InternPixel might just be the perfect opportunity for you. InternPixel is a dynamic platform committed to empowering students in their professional journeys, and we're on the lookout for enthusiastic and dedicated individuals like you to represent us on your campus.
-          </Text>
-          <Text mt={4}>
-          So, are you ready to take your college experience to the next level? Join us as a Campus Ambassador and embark on a rewarding journey of growth, learning, and making a meaningful impact on your campus community. Together, we'll empower students to reach their full potential and create a brighter future. Join the InternPixel family today and be the change you want to see in your campus community!
-          </Text>
-        </Box>
-        {/* <Box flex="1" mb={6} order={[1, 1, 2]}>
-          <Center>
-            <Image
-              src="https://i.pinimg.com/originals/b5/71/7f/b5717f76996829bc2bc02d6cb91c2594.gif" // Add your image source here
-              alt="InternPixel Team"
-              borderRadius="lg"
-              boxShadow="lg"
-              maxW="90%"
-              objectFit="cover"
-              borderWidth={4}
-              borderColor="blue.500"
-            />
-          </Center>
-        </Box> */}
-      </Flex>
-        <form onSubmit={handleSubmit} style={{ width: '100%' }}>
-        <Box my={'2'}>
+        <Flex
+          flexWrap="wrap"
+          justifyContent="space-between"
+          alignItems="center"
+        >
+          <Box flex="1" mb={6} pr={[0, 0, 4]} order={[2, 2, 1]}>
+            <Heading
+              as="h2"
+              fontSize="2xl"
+              fontFamily={"Poppins"}
+              textAlign={["center"]}
+              mb={4}
+            >
+              Why Join as a Campus Ambassador at InternPixel?
+            </Heading>
+            <Text>
+              Are you a student who thrives on taking the lead, has a passion
+              for networking, and dreams of creating a positive impact on your
+              campus community? Look no further - becoming a Campus Ambassador
+              at InternPixel might just be the perfect opportunity for you.
+              InternPixel is a dynamic platform committed to empowering students
+              in their professional journeys, and we're on the lookout for
+              enthusiastic and dedicated individuals like you to represent us on
+              your campus.
+            </Text>
+            <Text mt={4}>
+              So, are you ready to take your college experience to the next
+              level? Join us as a Campus Ambassador and embark on a rewarding
+              journey of growth, learning, and making a meaningful impact on
+              your campus community. Together, we'll empower students to reach
+              their full potential and create a brighter future. Join the
+              InternPixel family today and be the change you want to see in your
+              campus community!
+            </Text>
+            <Heading
+              as="h2"
+              fontSize="2xl"
+              fontFamily={"Poppins"}
+              textAlign={["center"]}
+              mb={4}
+            >
+              Exclusive Rewards for Campus Ambassadors!
+            </Heading>
+            <Text mt={4}>
+              Welcome to our Campus Ambassador Program! Get ready for an
+              exhilarating opportunity to win fantastic rewards every Friday.
+              Our program offers two thrilling spinners, one dedicated to Campus
+              Ambassadors (CA) in Group 1, featuring a collection of amazing
+              gifts, and the other, exclusively for CA Group 2, where a brand
+              new laptop is up for grabs! As a token of our appreciation for
+              your dedication and hard work, we've curated an array of exciting
+              gifts for CA Group 1 and a guaranteed chance to win a laptop for
+              CA Group 2. The anticipation builds each week as we spin the
+              wheels every Friday, granting our dedicated Campus Ambassadors
+              with delightful surprises. Join us in this rewarding journey as we
+              celebrate your commitment and contributions. Elevate your
+              experience with us and stand a chance to be one of our lucky
+              winners every week!
+            </Text>
+          </Box>
+        </Flex>
+
+        <div
+          style={{
+            display: "flex",
+            justifyContent: "space-between",
+            padding: "5%",
+          }}
+        >
+          {isDesktop ? (
+            <>
+              <LuckyWheel />
+              <LuckyWheelCA />
+            </>
+          ) : (
+            <div>
+            <img src={spinner11} alt="Lucky Wheel"/>
+            <img src={spinner22} alt="Lucky Wheel"/>
+            <p>
+              Sorry, these wheels aren't built for thumb-twirling on tiny
+              screens. Laptop up for some wheelie fun!
+            </p></div>
+          )}
+        </div>
+        <form onSubmit={handleSubmit} style={{ width: "100%" }}>
+          <Box my={"2"}>
             <FormLabel htmlFor="name" children="Full Name" />
             <Input
               required
@@ -150,7 +240,7 @@ const CampusAmbassador = () => {
               focusBorderColor="blue.500"
             />
           </Box>
-          <Box my={'4'}>
+          <Box my={"4"}>
             <FormLabel htmlFor="email" children="Email Address" />
             <Input
               required
@@ -162,8 +252,11 @@ const CampusAmbassador = () => {
               focusBorderColor="blue.500"
             />
           </Box>
-          <Box my={'4'}>
-            <FormLabel htmlFor="message" children="Why do you want to be a Campus Ambassador for InternPixel?" />
+          <Box my={"4"}>
+            <FormLabel
+              htmlFor="message"
+              children="Why do you want to be a Campus Ambassador for InternPixel?"
+            />
             <Textarea
               required
               name="message"
@@ -174,16 +267,17 @@ const CampusAmbassador = () => {
             />
           </Box>
           <Center>
-          <Button my="4" colorScheme="blue" type="submit">
-            Apply Now
-          </Button></Center>
+            <Button my="4" colorScheme="blue" type="submit">
+              Apply Now
+            </Button>
+          </Center>
 
-          <Box my={'4'}>
-            Register for an internship?{' '}
+          <Box my={"4"}>
+            Register for an internship?{" "}
             <Link to="/request">
-              <Button colorScheme="blue" variant={'link'}>
+              <Button colorScheme="blue" variant={"link"}>
                 Click
-              </Button>{' '}
+              </Button>{" "}
               here
             </Link>
           </Box>

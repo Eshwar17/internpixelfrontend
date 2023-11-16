@@ -161,13 +161,14 @@ const Request = () => {
   };
 
   return (
-    <Container className="requestHeading" h="100vh" mb={"16"}>
+    <Container className="requestHeading" h="100vh" mb={"14"}>
       <VStack h="full" justifyContent={"center"} spacing="8">
         <Heading
           className="requesttitle"
           fontFamily={"Poppins"}
           children="Apply For An Internship"
           textAlign={"center"}
+          mt={0}
         />
 
         <form onSubmit={handleSubmit} style={{ width: "100%" }}>

@@ -1,4 +1,4 @@
-import { Box, Flex, Text, Image, VStack, Blur } from "@chakra-ui/react";
+import { Box, Flex, Text, Image, VStack } from "@chakra-ui/react";
 import { useEffect, useState } from "react";
 
 const SomethingBigIsComingSection = () => {
@@ -12,7 +12,7 @@ const SomethingBigIsComingSection = () => {
   useEffect(() => {
     // Calculate the time left
     const today = new Date();
-    const targetDate = new Date("2023-11-20"); // Replace with your target date
+    const targetDate = new Date("2023-12-21"); // Replace with your target date
     const timeDifference = targetDate - today;
     const secondsLeft = Math.floor(timeDifference / 1000);
 
