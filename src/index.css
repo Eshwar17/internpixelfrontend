@@ -3,3 +3,14 @@ body,
 html {
     font-family: 'Roboto', sans-serif;
 }
+
+      @font-face {
+    font-family: 'ZohoPuviFontRegular';
+    src: url('../public/Zoho\ Puvi\ Regular.ttf') format('truetype');
+    /* You can include additional font file formats and sources here if needed */
+}
+
+* {
+    font-family: 'ZohoPuviFontRegular', sans-serif;
+}
+

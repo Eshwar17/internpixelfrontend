@@ -286,7 +286,7 @@ const CampusAmbassador = () => {
       <>
         <div id="chat-box">
           <div id="chat-top">
-            PixelPal: Your Internship Guide{" "}
+            PixelPal: Your Guide{" "}
             <span id="chat-top-right">
               <svg
                 id="close-box"

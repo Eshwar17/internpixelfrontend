@@ -23,7 +23,7 @@ function LuckyWheel() {
         <span className={styled.span4}><b>MOTOROLA g14</b></span>
       </div>
       <div className={styled.box2}>
-        <span className={styled.span1}><b>Boult Audio Z40</b></span>
+        <span className={styled.span1}><b>MI Smart TV</b></span>
         <span className={styled.span2}><b>MOTOROLA tab g20</b></span>
         <span className={styled.span3}><b>Noise Buds VS102</b></span>
         <span className={styled.span4}><b>boAt Airdopes 161</b></span>

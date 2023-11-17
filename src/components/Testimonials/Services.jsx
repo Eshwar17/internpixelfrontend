@@ -45,20 +45,6 @@ function Services() {
           In the fast-paced world of technology and innovation, staying ahead of the curve is essential. At InternPixel, we understand the importance of fostering creativity and enhancing skill sets among our participants. That's why we believe workshops and hackathons play a pivotal role in shaping the future of tomorrow's professionals. Here's why these events are more than just a fun activity—they're crucial for personal and professional growth.
           </Text>
         </Box>
-        {/* <Box flex="1" mb={6} order={[1, 1, 2]}>
-          <Center>
-            <Image
-              src="https://i.pinimg.com/originals/b5/71/7f/b5717f76996829bc2bc02d6cb91c2594.gif" // Add your image source here
-              alt="InternPixel Team"
-              borderRadius="lg"
-              boxShadow="lg"
-              maxW="90%"
-              objectFit="cover"
-              borderWidth={4}
-              borderColor="blue.500"
-            />
-          </Center>
-        </Box> */}
       </Flex>
       <Box mt={2}>
   <Flex justifyContent="space-between" flexWrap="wrap">
@@ -138,7 +124,7 @@ function Services() {
             <div className="card1">
               <div className="card1_image">
               <span className="note1">Workshop</span>
-                <img src="https://img.freepik.com/free-vector/illustrated-choice-worker-concept_52683-44355.jpg?size=626&ext=jpg&ga=GA1.1.377232785.1697539441&semt=ais" />
+                <img src="https://img.freepik.com/free-vector/illustrated-choice-worker-concept_52683-44355.jpg?size=626&ext=jpg&ga=GA1.1.377232785.1697539441&semt=ais" alt='img'/>
               </div>
               <div className="card1_content">
                 <h2 className="card1_title">
@@ -146,7 +132,7 @@ function Services() {
                 </h2>
                 <div className="card1_text">
                   <p style={{"text-align":"center"}}>
-                    <strong>Workshop Date: 11/11/2023</strong>
+                    <strong>Workshop Date: 11/12/2023</strong>
                   </p>
                   <p style={{"text-align":"center"}}>
                   Interns at InternPixel are eligible to participate in this workshop
@@ -163,7 +149,7 @@ function Services() {
             <div className="card1">
               <div className="card1_image">
               <span className="note1">Workshop</span>
-                <img src="https://img.freepik.com/free-vector/business-leader-standing-arrow-holding-flag-flat-vector-illustration-cartoon-people-training-doing-business-plan-leadership-victory-challenge-concept_74855-9812.jpg?size=626&ext=jpg&ga=GA1.1.377232785.1697539441&semt=ais" />
+                <img src="https://img.freepik.com/free-vector/business-leader-standing-arrow-holding-flag-flat-vector-illustration-cartoon-people-training-doing-business-plan-leadership-victory-challenge-concept_74855-9812.jpg?size=626&ext=jpg&ga=GA1.1.377232785.1697539441&semt=ais" alt='img'/>
               </div>
               <div className="card1_content">
                 <h2 className="card1_title">
@@ -171,7 +157,7 @@ function Services() {
                 </h2>
                 <div className="card1_text">
                   <p style={{"text-align":"center"}}>
-                    <strong>Workshop Date: 18/11/2023</strong>
+                    <strong>Workshop Date: 18/12/2023</strong>
                   </p>
                   <p style={{"text-align":"center"}}>
                   Interns at InternPixel are eligible to participate in this workshop
@@ -188,7 +174,7 @@ function Services() {
             <div className="card1">
               <div className="card1_image">
                 <span className="note1">Hackathon</span>
-                <img src="https://img.freepik.com/free-vector/coding-concept-illustration_114360-4348.jpg?size=626&ext=jpg&ga=GA1.1.377232785.1697539441&semt=ais" />
+                <img src="https://img.freepik.com/free-vector/coding-concept-illustration_114360-4348.jpg?size=626&ext=jpg&ga=GA1.1.377232785.1697539441&semt=ais" alt='img'/>
               </div>
               <div className="card1_content">
                 <h2 className="card1_title">
@@ -210,109 +196,6 @@ function Services() {
             </div>
           </li>
           {/* <li className="cards1_item">
-            <div className="card1">
-              <div className="card1_image">
-              <span className="note1">Hackathon</span>
-                <img src="https://img.freepik.com/free-vector/hand-drawn-flat-design-devops-illustration_23-2149387396.jpg?size=626&ext=jpg&ga=GA1.1.136392163.1683044531&semt=ais" />
-              </div>
-              <div className="card1_content">
-                <h2 className="card1_title">
-                  DevOps Dynamo: Unleash Your Potential with a Core DevOps
-                  Internship
-                </h2>
-                <div className="card1_text">
-                  <p>
-                    <strong>Launch Date: Coming Soon</strong>
-                  </p>
-                  <p>
-                    Introducing the Most Awaited DevOps Internship: Empower Your
-                    Journey of Continuous Integration and Delivery!
-                  </p>
-                  <hr />
-                  <p>
-                    Are you ready to revolutionize software development
-                    practices and enhance collaboration between development and
-                    operations teams? Get ready, because the moment you've been
-                    waiting for is almost here! We are thrilled to announce the
-                    upcoming launch of the most awaited internship on DevOps.
-                    This is your golden opportunity to immerse yourself in the
-                    world of DevOps, master cutting-edge tools and
-                    methodologies, and pave the way for seamless and efficient
-                    software delivery.
-                  </p>
-                </div>
-              </div>
-            </div>
-          </li>
-          <li className="cards1_item">
-            <div className="card1">
-              <div className="card1_image">
-              <span className="note1">Hackathon</span>
-                <img src="https://img.freepik.com/free-vector/coding-round-composition_1284-40752.jpg?size=626&ext=jpg&ga=GA1.1.136392163.1683044531&semt=ais" />
-              </div>
-              <div className="card1_content">
-                <h2 className="card1_title">
-                  Testing Trailblazer: Embark on a Core Software Testing
-                  Internship Adventure
-                </h2>
-                <div className="card1_text">
-                  <p>
-                    <strong>Launch Date: Coming Soon</strong>
-                  </p>
-                  <p>
-                    Introducing the Most Awaited Software Testing Internship:
-                    Unleash Your Testing Prowess!
-                  </p>
-                  <hr />
-                  <p>
-                    Are you passionate about ensuring software quality and
-                    delivering flawless user experiences? Brace yourself,
-                    because the moment you've been eagerly anticipating is just
-                    around the corner! We are thrilled to announce the upcoming
-                    launch of the most awaited internship on software testing.
-                    This is your golden opportunity to immerse yourself in the
-                    world of testing, master industry-leading methodologies, and
-                    pave the way for a successful career in ensuring software
-                    reliability.
-                  </p>
-                </div>
-              </div>
-            </div>
-          </li>
-          <li className="cards1_item">
-            <div className="card1">
-              <div className="card1_image">
-              <span className="note1">Hackathon</span>
-                
-                <img src="https://img.freepik.com/free-vector/isometric-characters-illustration-human-resources-doing-interview_1284-24421.jpg?size=626&ext=jpg&ga=GA1.2.136392163.1683044531&semt=ais" />
-              </div>
-              <div className="card1_content">
-                <h2 className="card1_title">
-                  Interview Success Navigator: Empowering You with a
-                  Comprehensive Interview Preparation Guide Internship
-                </h2>
-                <div className="card1_text">
-                <p>
-                    <strong>Launch Date: Coming Soon</strong>
-                  </p>
-                  <p>
-                    Introducing the Most Awaited Interview Guidance Internship:
-                    Unlock Your Potential and Ace Your Next Interview!
-                  </p>
-                  <hr />
-                  <p>
-                    Are you ready to conquer your interview fears, impress
-                    recruiters, and land your dream job? Get ready, because the
-                    moment you've been waiting for is just around the corner! We
-                    are thrilled to announce the upcoming launch of the most
-                    awaited internship on interview guidance. This is your
-                    golden opportunity to immerse yourself in the world of
-                    interview preparation, master essential techniques, and gain
-                    the confidence to excel in any interview scenario.
-                  </p>
-                </div>
-              </div>
-            </div>
           </li> */}
         </ul>
       </div>

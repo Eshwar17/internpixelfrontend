@@ -1,5 +1,3 @@
-// CardSlider.js
-
 import React, { useState, useEffect } from 'react';
 import {Text, Center, Avatar, Stack, useColorModeValue, Box,Container} from '@chakra-ui/react';
 import { testimonials } from './data'; // Import your data
@@ -19,7 +17,7 @@ const TestimonialSlider = () => {
   return (<>
     <Stack mt={12} mb={6} spacing={4} align={'center'}>
         <h1 className="mainHeading1">Voices of Success</h1>
-          <Text textAlign={"center"}>Discover the stories of our thriving community and how InternPixel transformed their careers.</Text>
+          <Text textAlign={"center"}>At InternPixel, success stories are not just anecdotes; they're testaments to the transformative power of meaningful internships. Hear directly from students whose careers were launched through our platform. These success stories are just a glimpse of the countless students whose lives have been positively impacted by InternPixel. Join our community and be the next success story in your career journey!</Text>
         </Stack>
     <Box bg={'transparent'} id='testimonial-bg'>
     

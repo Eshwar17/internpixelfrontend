@@ -15,6 +15,7 @@ import SomethingBigIsComingSection from "../Surprise/SomethingBigIsComingSection
 import TestimonialSlider from "../Testimonials/TestimonialSlider";
 
 
+
 function Home() {
   useEffect(() => {
     const chatElement = document.getElementById("whats-chat");
@@ -89,26 +90,20 @@ function Home() {
             alignItems={["center", "flex-end"]}
             spacing="8"
           >
-            {/* <Heading
-              className="headingele"
-              children="Pixelate Your Career"
-              size={"3xl"}
-              fontWeight={"bold"}
-              color={"blue.500"}
-            /> */}
             <h1 id="mainHeading">Pixelate Your Career</h1>
             <Text
               textAlign={["center", "left"]}
               fontSize={"1.2rem"}
               children="Don't break the bank, break into your dream career with Internpixel's affordable internships!"
             />
+            
             <Link to="/internships">
               <Button size={"lg"} colorScheme="blue">
                 Explore Now
               </Button>
             </Link>
           </VStack>
-
+          
           <Image
             className="vector-graphics"
             boxSize={"md"}
@@ -123,6 +118,7 @@ function Home() {
         m="4"
         textAlign={"center"}
       /> */}
+      
       <h1 className="mainHeading1">InternPixel</h1>
       <Text
         textAlign={"center"}
@@ -212,7 +208,12 @@ function Home() {
           color={"black.400"}
           children="Our Students Work At"
         /> */}
-        <h1 className="alumniHeading">Our Students Work At</h1>
+        <h1 className="alumniHeading">Our Active Client Engagements</h1>
+        <Text
+        textAlign={"center"}
+        fontSize={"1rem"}
+        children="Welcome to our showcase of ongoing client projects! Explore our dynamic portfolio, where innovation meets dedication. Discover how we collaborate, create, and deliver tailored solutions that drive success. From concept to completion, witness the journey of our diverse range of projects across industries, exemplifying our commitment to excellence and client satisfaction. Dive into our world of ongoing endeavors, each representing our passion for innovation and quality service."
+      />
       </Box>
       <Alumni />
       {/* video */}
@@ -247,7 +248,7 @@ function Home() {
       <>
         <div id="chat-box">
           <div id="chat-top">
-            PixelPal: Your Internship Guide{" "}
+            PixelPal: Your Guide{" "}
             <span id="chat-top-right">
               <svg
                 id="close-box"

@@ -1,53 +1,62 @@
 import React from 'react'
 import './Alumni.css';
-import cognizant from './Cognizant-Logo.jpg';
-import hexaware from './hexaware.jpg';
-import ibm from './ibm.jpg';
-import sutherland from './sutherland.png';
-import focus from './focuslogo.svg';
-import infosys from './infosys.png';
+import PixelDrive from '../../assets/images/PixelDrive.png'
+import DigitalCarta from '../../assets/images/DigitalCarta.png'
+import gratisgateway from '../../assets/images/gratisgateway.png'
+import LinguiConnect from '../../assets/images/LinguiConnect.png'
+import multiverseDevco from '../../assets/images/multiverseDevco.png'
+import palateplethora from '../../assets/images/palateplethora.png'
+import PennyQuiz from '../../assets/images/PennyQuiz.png'
+import promptgenix from '../../assets/images/promptgenix.png'
+import zenithsync from '../../assets/images/zenithsync.png'
+import saltsphere from '../../assets/images/saltsphere.png'
 
 const Alumni = () => {
   return (
     <div className="bodys">
         <div className="slider">
 	<div className="slide-track">
-		<div className="slide">
-			<img src="https://www.freepnglogos.com/uploads/company-logo-png/hyundai-motor-company-logo-png-transparent-0.png" height="100" width="250" alt="" />
+	<div className="slide">
+			<img src={zenithsync} height="100" width="250" alt="companylogo" />
 		</div>
 		<div className="slide">
-			<img src={"https://www.freepnglogos.com/uploads/company-logo-png/hbc-company-logo-hudson-bay-company-11.png"} height="100" width="250" alt="" />
+			<img src={promptgenix} height="100" width="250" alt="companylogo" />
 		</div>
 		<div className="slide">
-			<img src="https://www.freepnglogos.com/uploads/company-logo-png/company-logo-transparent-png-19.png" height="100" width="250" alt='img'/>
+			<img src={PixelDrive} height="100" width="250" alt="companylogo" />
 		</div>
 		<div className="slide">
-			<img src={"https://www.freepnglogos.com/uploads/company-logo-png/company-logo-telestream-press-kit-12.png"} height="100" width="250" alt="" />
+			<img src={DigitalCarta} height="100" width="250" alt="companylogo" />
 		</div>
 		<div className="slide">
-			<img src={"https://www.freepnglogos.com/uploads/company-logo-png/logos-and-photos-envoy-air-company-brand-30.png"} height="100" width="250" alt="" />
+			<img src={gratisgateway} height="100" width="250" alt='img'/>
 		</div>
 		<div className="slide">
-			<img src={"https://www.freepnglogos.com/uploads/company-logo-png/raise-company-logo-digital-product-demo-9.png"} height="100" width="250" alt="" />
+			<img src={LinguiConnect} height="100" width="250" alt="companylogo" />
 		</div>
 		<div className="slide">
-			<img src="https://www.freepnglogos.com/uploads/company-logo-png/file-quechua-company-logo-wikimedia-commons-18.png" height="100" width="250" alt="" />
+			<img src={multiverseDevco} height="100" width="250" alt="companylogo" />
 		</div>
 		<div className="slide">
-			<img src="https://www.freepnglogos.com/uploads/company-logo-png/logo-bolt-company-17.png" height="100" width="250" alt="" />
+			<img src={palateplethora} height="100" width="250" alt="companylogo" />
 		</div>
 		<div className="slide">
-			<img src={"https://www.freepnglogos.com/uploads/company-logo-png/company-dole-food-company-16.png"} height="100" width="250" alt="" />
+			<img src={PennyQuiz} height="100" width="250" alt="companylogo" />
 		</div>
 		<div className="slide">
-			<img src="https://www.freepnglogos.com/uploads/company-logo-png/company-logo-next-brand-29.png" height="100" width="250" alt="" />
+			<img src={promptgenix} height="100" width="250" alt="companylogo" />
+		</div>
+		
+		<div className="slide">
+			<img src={saltsphere} height="100" width="250" alt="companylogo" />
 		</div>
 		<div className="slide">
-			<img src="https://www.freepnglogos.com/uploads/company-logo-png/company-logo-simmons-bedding-company-wikipedia-15.png" height="100" width="250" alt="" />
+			<img src={PixelDrive} height="100" width="250" alt="companylogo" />
 		</div>
-        <div className="slide">
-			<img src={"https://www.freepnglogos.com/uploads/company-logo-png/company-logo-weinstein-company-sale-collapses-closer-scrutiny-20.png"} height="100" width="250" alt="" />
+		<div className="slide">
+			<img src={zenithsync} height="100" width="250" alt="companylogo" />
 		</div>
+       
 	</div>
 </div>
 </div>
