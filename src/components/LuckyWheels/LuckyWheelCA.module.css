@@ -51,7 +51,7 @@ span{
 }
 .span4{
   clip-path: polygon(50% 100%, 92% 0, 8% 0);
-  background-color: #22ff00;
+  background-color: #fff200;
   top: 0;
   left: 120px;
 }

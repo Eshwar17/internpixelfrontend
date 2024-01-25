@@ -1,4 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Fira+Sans&family=Nunito&family=Open+Sans:wght@400;700&family=Oswald&family=Poppins&family=Roboto&family=Source+Sans+Pro:wght@200;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Titillium+Web:wght@200;300;400;600;700;900&display=swap');
+
 * {
   font-family: 'Poppins', sans-serif;
   padding: 0;
@@ -486,3 +488,148 @@ input.tgg-title {
   }
 }
 
+
+:root {
+  --first-clr: #0963ac;
+}
+
+
+.first-clrd {
+  color: var(--first-clr);
+}
+
+.headerdd {
+  color:var(--first-clr);
+  font-size: 7rem;
+  font-weight: bolder;
+}
+.headerddd {
+  color:var(--first-clr);
+  font-size: 4rem;
+  font-weight: bolder;
+  padding-left: 7px;
+}
+
+.landing-paged {
+  font-family: 'Titillium Web', sans-serif;
+}
+
+.landing-paged {
+  padding: 80px 0;
+  user-select: none;
+}
+.landing-paged .containerd {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.landing-paged .contentd {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.landing-paged .contentd .text-contd {
+  width: 60%;
+}
+.landing-paged .contentd .text-contd .headerd {
+  font-size: 60px;
+  font-weight: 900;
+  line-height: 1.1;
+}
+.landing-paged .contentd .text-contd .descriptiond {
+  font-size: 16px;
+  margin: 30px 0;
+  color: #777;
+  font-weight: 400;
+  width: 80%;
+}
+.landing-paged .contentd .text-contd .btnd {
+  font-size: 16px;
+  font-weight: 600;
+  font-family: 'Titillium Web', sans-serif;
+  padding: .6rem 1rem;
+  text-align: center;
+  border: 1px solid transparent;
+  cursor: pointer;
+  box-shadow: 0 0px 5px rgba(0, 0, 0, .1);
+  transition: all .2s linear;
+}
+.landing-paged .contentd .text-contd .btn-discoverd {
+  min-width: 160px;
+  margin-right: 5px;
+  color: #FFF;
+  background-color: var(--first-clr);
+}
+.landing-paged .contentd .text-contd .btn-discoverd:hover {
+  border-color: var(--first-clr);
+  background-color: transparent;
+  color: var(--first-clr);
+}
+.landing-paged .contentd .text-contd .btn-playd {
+  color: var(--first-clr);
+}
+.landing-paged .contentd .text-contd .btn-playd:hover {
+  border-color: var(--first-clr);
+  background-color: var(--first-clr);
+  color: #FFF;
+}
+
+.landing-paged .contentd .img-contd {
+  width: 35%;
+  position: relative;
+  
+}
+.landing-paged .contentd .img-contd::before,
+.landing-paged .contentd .img-contd::after {
+  content: '';
+  position: absolute;
+  z-index: -1;
+  background-color: var(--first-clr);
+}
+.landing-paged .contentd .img-contd::before {
+  top: -5%;
+  left: -7%;
+  width: 100%;
+  height: 60px;
+}
+.landing-paged .contentd .img-contd::after {
+  height: 25vh;
+  width: 25vh;
+  max-width: 180px;
+  max-height: 180px;
+  bottom: -5%;
+  left: -5%;
+  border-radius: 0 0 0 15px;
+}
+.landing-paged .contentd .img-contd .imgd {
+  width: 100%;
+  display: block;
+  border-radius: 15px;
+  box-shadow: 0 0 15px #fffa65;
+}
+
+@media screen and (max-width: 650px) {
+  .headerdd {
+    color:var(--first-clr);
+    font-size: 5rem;
+    font-weight: bolder;
+  }
+  .landing-paged .contentd {
+    flex-direction: column;
+  }
+  .landing-paged .contentd .text-contd,
+  .landing-paged .contentd .text-contd .descriptiond {
+    width: 100%;
+  }
+  .landing-paged .contentd .text-contd {
+    text-align: center;
+  }
+  .landing-paged .contentd .img-contd {
+    width: 80%;
+    margin-top: 80px;
+  }
+}

@@ -18,7 +18,7 @@ const Footer = () => {
             size="sm"
             textAlign={"center"}
             fontWeight={"200"}
-            children="Copyright © 2023 | InternPixel"
+            children="Copyright © 2024 | InternPixel"
             color={"white"}
           />
         </VStack>
