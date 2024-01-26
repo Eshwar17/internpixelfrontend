@@ -108,7 +108,9 @@
   color: #fff;
   font-size: 14.1px;
 }
-
+.headerdc {
+  color: #25A84A;
+}
 .one .sort .day{
   padding: 0.4rem 1.2rem;
   margin: 0 0.1rem;
@@ -502,12 +504,14 @@ input.tgg-title {
   color:var(--first-clr);
   font-size: 7rem;
   font-weight: bolder;
+  text-shadow: 3px 0px rgba(7, 7, 7, 0.5);
 }
 .headerddd {
   color:var(--first-clr);
   font-size: 4rem;
   font-weight: bolder;
   padding-left: 7px;
+  text-shadow: 3px 0px rgba(7, 7, 7, 0.5);
 }
 
 .landing-paged {
@@ -536,6 +540,8 @@ input.tgg-title {
   width: 60%;
 }
 .landing-paged .contentd .text-contd .headerd {
+  color: #25A84A;
+  text-shadow: 3px 0px rgba(7, 7, 7, 0.5);
   font-size: 60px;
   font-weight: 900;
   line-height: 1.1;

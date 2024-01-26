@@ -34,9 +34,9 @@ import ResumePage from './components/ResumeMaker/ResumePage';
 
 
 function App() {
-  window.addEventListener("contextmenu", (e)=>{
-    e.preventDefault();
-  })
+  // window.addEventListener("contextmenu", (e)=>{
+  //   e.preventDefault();
+  // })
   useEffect(() => {
     // Function to change the title dynamically
     function changeTitle() {
