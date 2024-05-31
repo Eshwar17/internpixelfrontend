@@ -13,7 +13,7 @@ import {
   Img
 } from '@chakra-ui/react';
 import { RiMenu5Fill,RiDashboardFill } from 'react-icons/ri';
-import logo from "../../../assets/images/InternPixelLogo.png";
+import logo from "../../../assets/images/grappltechlogo.png";
 import { Link } from 'react-router-dom';
 
 const LinkButton = ({ url = '/', title = 'Home', onClose }) => (
@@ -54,9 +54,9 @@ function Header() {
       <Drawer placement="left" onClose={onClose} isOpen={isOpen}>
         <DrawerOverlay backdropFilter={'blur(1px)'} />
         <DrawerContent>
-          <DrawerHeader borderBottomWidth={'1px'}>
+          <DrawerHeader borderBottomWidth={'1px'}><center>
             {/* <img src={logo} alt="logo" width="400"/> */}
-            <Img src={logo} maxW="100%" h="auto" />
+            <Img src={logo} maxW="50%" h="auto" borderRadius={'23%'}/></center>
           </DrawerHeader>
           <DrawerBody>
             <VStack spacing={'6'} alignItems={'flex-start'}>
@@ -65,7 +65,7 @@ function Header() {
               <LinkButton onClose={onClose} url="/request" title="Apply For An Internship" />
               <LinkButton onClose={onClose} url="/ambassadorapply" title="Join Our Ambassador Program" />
               <LinkButton onClose={onClose} url="/workshops" title="Workshops & Hackathons" />
-              <LinkButton onClose={onClose} url="/resumemaker" title="InternPixel's Resume Maker" />
+              <LinkButton onClose={onClose} url="/resumemaker" title="GrapplTech's Resume Maker" />
               <Button variant={"ghost"} isDisabled="true" color={"black"}>Careers <sup style={{"color":"blue","fontSize":"11px"}}>&nbsp;&nbsp;No Open Positions</sup></Button>
               <LinkButton onClose={onClose} url="/contact" title="Contact Us" />
               <LinkButton onClose={onClose} url="/about" title="About Us" />

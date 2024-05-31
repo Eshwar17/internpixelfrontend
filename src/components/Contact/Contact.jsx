@@ -175,7 +175,7 @@ const Contact = () => {
           </div>
           <div id="chat-msg">
             <p>
-              Welcome to InternPixel, your gateway to exciting internship
+              Welcome to GrapplTech, your gateway to exciting internship
               opportunities!
             </p>
             <div id="chat-form">

@@ -137,7 +137,7 @@ const CampusAmbassador = () => {
           <Center>
             <Image
               src="https://www.mind-spark.org/ms21/campusAmbassador/images/participation.gif" // Add your image source here
-              alt="InternPixel Team"
+              alt="GrapplTech Team"
               borderRadius="lg"
               maxW="60%"
               objectFit="cover"
@@ -159,14 +159,14 @@ const CampusAmbassador = () => {
               textAlign={["center"]}
               mb={4}
             >
-              Why Join as a Campus Ambassador at InternPixel?
+              Why Join as a Campus Ambassador at GrapplTech?
             </Heading>
             <Text>
               Are you a student who thrives on taking the lead, has a passion
               for networking, and dreams of creating a positive impact on your
               campus community? Look no further - becoming a Campus Ambassador
-              at InternPixel might just be the perfect opportunity for you.
-              InternPixel is a dynamic platform committed to empowering students
+              at GrapplTech might just be the perfect opportunity for you.
+              GrapplTech is a dynamic platform committed to empowering students
               in their professional journeys, and we're on the lookout for
               enthusiastic and dedicated individuals like you to represent us on
               your campus.
@@ -177,7 +177,7 @@ const CampusAmbassador = () => {
               journey of growth, learning, and making a meaningful impact on
               your campus community. Together, we'll empower students to reach
               their full potential and create a brighter future. Join the
-              InternPixel family today and be the change you want to see in your
+              GrapplTech family today and be the change you want to see in your
               campus community!
             </Text>
             <Heading
@@ -258,7 +258,7 @@ const CampusAmbassador = () => {
           <Box my={"4"}>
             <FormLabel
               htmlFor="message"
-              children="Why do you want to be a Campus Ambassador for InternPixel?"
+              children="Why do you want to be a Campus Ambassador for GrapplTech?"
             />
             <Textarea
               required
@@ -308,7 +308,7 @@ const CampusAmbassador = () => {
           </div>
           <div id="chat-msg">
             <p>
-              Welcome to InternPixel, your gateway to exciting internship
+              Welcome to GrapplTech, your gateway to exciting internship
               opportunities!
             </p>
             <div id="chat-form">

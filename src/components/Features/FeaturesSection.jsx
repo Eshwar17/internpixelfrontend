@@ -3,7 +3,7 @@ import './FeaturesSection.css';
 
 const FeaturesSection = () => {
   return (
-    <>
+
       <div className="main1">
   <ul className="cards1">
     <li className="cards1_item">
@@ -21,7 +21,7 @@ const FeaturesSection = () => {
             <hr />
             <p>
               <strong>
-                At Internpixel, we understand the importance of offering live
+                At GrapplTech, we understand the importance of offering live
                 classes as a part of our internship program.
               </strong>{" "}
               Live classes provide our interns with the opportunity to learn
@@ -52,7 +52,7 @@ const FeaturesSection = () => {
             </p>
             <hr />
             <p>
-              Internpixel offers our interns the opportunity to work on real
+              GrapplTech offers our interns the opportunity to work on real
               client projects as part of our internship program. This provides
               valuable real-world experience and allows interns to develop
               professional skills that are essential for their career growth.
@@ -80,10 +80,10 @@ const FeaturesSection = () => {
         <div className="card1_content">
           <h2 className="card1_title">Dedicated Mentors</h2>
           <div className="card1_text">
-            <p>Personalized Guidance: Dedicated Mentors at Internpixel</p>
+            <p>Personalized Guidance: Dedicated Mentors at GrapplTech</p>
             <hr />
             <p>
-              At Internpixel, we believe that a mentor's guidance can make all
+              At GrapplTech, we believe that a mentor's guidance can make all
               the difference in an intern's journey. That's why we provide
               dedicated mentors to each intern, who offer personalized guidance,
               support, and feedback. Our mentors have years of experience in the
@@ -106,11 +106,11 @@ const FeaturesSection = () => {
           <div className="card1_text">
             <p>
               Diverse Learning Opportunities: Multiple Technologies at
-              Internpixel
+              GrapplTech
             </p>
             <hr />
             <p>
-              Internpixel offers exposure to a wide range of technologies,
+              GrapplTech offers exposure to a wide range of technologies,
               ensuring that our interns receive a diverse learning experience.
               Our program covers popular technologies such as Java, Python,
               React, and more, providing hands-on experience and the opportunity
@@ -132,11 +132,11 @@ const FeaturesSection = () => {
           <div className="card1_text">
             <p>
               Recognizing Your Accomplishments: Three Levels of Certificate at
-              Internpixel
+              GrapplTech
             </p>
             <hr />
             <p>
-              At Internpixel, we believe in recognizing our interns' hard work
+              At GrapplTech, we believe in recognizing our interns' hard work
               and accomplishments. That's why we provide three levels of
               certificates - Beginner, Intermediate, and Advanced - to
               acknowledge the skills and knowledge gained during the internship.
@@ -158,10 +158,10 @@ const FeaturesSection = () => {
         <div className="card1_content">
           <h2 className="card1_title">Bonding Over Lunch</h2>
           <div className="card1_text">
-            <p>Bonding Over Lunch: Team Lunches at Internpixel</p>
+            <p>Bonding Over Lunch: Team Lunches at GrapplTech</p>
             <hr />
             <p>
-              At Internpixel, we believe in fostering a supportive and
+              At GrapplTech, we believe in fostering a supportive and
               collaborative work environment. That's why we provide team lunches
               during the internship, where interns can bond over food and
               conversation. These team lunches create opportunities for
@@ -176,7 +176,6 @@ const FeaturesSection = () => {
   </ul>
 </div>
 
-    </>
   )
 }
 

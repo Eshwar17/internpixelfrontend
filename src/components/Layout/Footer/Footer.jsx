@@ -13,12 +13,12 @@ const Footer = () => {
             children="All Rights Reserved"
             color={"white"}
           />
-          {/* <h1 className="mainHeading1">InternPixel</h1> */}
+          {/* <h1 className="mainHeading1">GrapplTech</h1> */}
           <Heading
             size="sm"
             textAlign={"center"}
             fontWeight={"200"}
-            children="Copyright © 2024 | InternPixel"
+            children="Copyright © 2024 | GrapplTech"
             color={"white"}
           />
         </VStack>
@@ -45,7 +45,7 @@ const Footer = () => {
             {/* <TiSocialYoutubeCircular /> */}
             <TiSocialLinkedinCircular />
           </a>
-          <a href="https://twitter.com/InternPixel" target={"blank"}>
+          <a href="https://twitter.com/GrapplTech" target={"blank"}>
             {/* <TiSocialInstagramCircular /> */}
             <TiSocialTwitter />
           </a>

@@ -26,7 +26,6 @@ import Users from './components/Admin/Users/Users';
 import Members from './components/Members/Members';
 import CampusAmbassador from './components/CampusAmbassador/CampusAmbassador';
 import Services from './components/Testimonials/Services';
-import ResumeTemplate from './components/ResumeMaker/ResumeEditor';
 import ResumeEditor from './components/ResumeMaker/ResumeEditor';
 import ResumePage from './components/ResumeMaker/ResumePage';
 // import MyQuiz from './components/Quiz/MyQuiz';
@@ -41,9 +40,9 @@ function App() {
     // Function to change the title dynamically
     function changeTitle() {
       var titles = [
-        "InternPixel: Pixelate Your Career",
-        "InternPixel: Ignite Careers",
-        "InternPixel: Navigate Success"
+        "GrapplTech: Learn. Hire. Grow.",
+        "GrapplTech: Skill up. Hire up. Tech up.",
+        "GrapplTech: Don't struggle, Grappl with tech"
       ]; // Array of titles
       var index = 0; // Initial index
 

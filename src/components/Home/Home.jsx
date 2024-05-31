@@ -83,17 +83,17 @@ function Home() {
     <div className="contentd">
       <div className="text-contd">
         <h1 className="headerdd">
-         Pixelate
+        Grappl & Grow
         </h1>
         <svg width="349" height="60" viewBox="0 0 273 64" fill="none" xmlns="http://www.w3.org/2000/svg">
 <path d="M117.287 38.5286C111.994 38.7894 106.671 38.8618 101.392 39.3544C78.9596 41.4262 56.527 43.6429 34.0943 45.7582C32.0056 45.961 29.8882 45.903 27.7851 45.8016C20.5746 45.4684 17.9994 41.9188 19.8593 34.9935C20.174 33.82 20.4602 32.6176 20.8751 30.9514C24.3945 30.5458 27.9997 30.2415 31.5764 29.6765C34.9813 29.1404 38.3005 28.0683 41.7197 27.6771C44.8672 27.3149 48.0861 27.7061 51.2479 27.5033C53.7515 27.3439 56.2695 26.9962 58.7016 26.4022C63.0651 25.3591 67.3713 24.0842 71.7205 22.9251C72.3643 22.7513 73.4802 22.4615 73.6662 22.7368C76.6277 26.9528 78.0584 23.2584 79.9754 22.3022C103.066 20.7809 125.756 15.855 148.704 12.8705C130.606 13.6818 112.48 14.073 94.4107 15.4204C67.7576 17.4197 41.1474 20.1144 14.5086 22.5049C12.0765 22.7222 9.64444 22.9396 7.19802 23.0121C2.86314 23.128 -0.0840126 18.8685 0.00182675 13.1168C0.0733595 7.9011 3.29232 8.69797 6.86895 8.62553C16.6546 8.40821 26.426 7.72727 36.1974 7.07531C45.3536 6.46682 54.5098 5.68443 63.666 4.96004C78.4017 3.801 93.1089 2.36671 107.873 1.5409C116.514 1.0628 125.227 1.51189 133.897 1.59882C140.564 1.67126 147.159 -0.16873 153.955 2.03344C156.816 2.96067 160.507 0.874439 163.84 0.801999C177.818 0.526728 191.795 0.396382 205.773 0.396382C213.699 0.396382 221.61 0.932373 229.536 0.874421C241.096 0.787493 252.656 0.584711 264.201 0.019681C268.836 -0.212126 272.27 1.59886 272.928 5.71344C273.4 8.65449 271.44 12.0302 270.338 15.1451C270.167 15.6377 268.822 15.9129 268.021 15.9274C249.537 16.1158 230.995 15.4203 212.583 16.6373C191.524 18.0137 170.579 21.0706 149.591 23.4322C147.717 23.6495 145.886 24.2 144.04 24.5912C144.054 25.0548 144.083 25.5185 144.097 25.9966C152.195 25.9966 160.292 25.8082 168.39 26.0545C176.03 26.2863 183.669 27.1556 191.309 27.4309C196.96 27.6337 202.64 27.5613 208.277 27.1556C213.499 26.7934 216.846 29.691 217.261 35.689C217.562 40.0064 215.158 42.2666 210.222 42.6722C189.678 44.4108 169.134 46.1927 148.604 48.0327C146.773 48.1921 144.984 48.8151 143.139 49.7134C158.762 52.0459 174.728 52.553 189.206 59.5072L189.478 61.6369C187.317 62.4627 185.129 64.0564 183.011 63.9985C169.091 63.5493 155.199 62.7091 141.279 62.0426C125.527 61.2748 109.79 60.5938 94.0388 59.7825C91.807 59.6666 89.6181 59.0291 87.3862 58.6959C80.4905 57.6818 79.5605 53.5381 81.7208 45.7002C81.9783 44.744 83.2087 43.4546 84.0814 43.3676C90.1474 42.7736 96.428 41.3538 102.265 42.3825C108.059 43.3966 112.551 41.716 117.43 40.0209C117.373 39.5138 117.33 39.0213 117.273 38.5142L117.287 38.5286Z" fill="#FEBD00"/>
 </svg><h1 className="headerd">
-         Your Career
+         Connect with the tech talent you need, when you need it.
         </h1>
         <Text
               textAlign={["center", "left"]}
               fontSize={"1.2rem"}
-              children="Don't break the bank, break into your dream career with Internpixel's affordable bootcamps!"
+              children="Skill up. Hire up. Tech up."
             />
         <Link to="/internships">
               <Button size={"lg"} colorScheme="blue">
@@ -159,15 +159,13 @@ function Home() {
       {/* <h1 className="mainHeading1">InternPixel</h1> */}
       <Center>
       <h1 className="headerddd">
-         InternPixel
+         GrapplTech
         </h1></Center>
         <Center>
         <svg width="260" height="20" viewBox="0 0 628 20" fill="none" xmlns="http://www.w3.org/2000/svg">
 <path d="M627.986 1.00956C606.425 2.19536 584.864 3.33831 563.318 4.58126C526.8 6.68141 490.282 8.83876 453.764 10.9675C417.073 13.1105 380.369 15.2678 343.678 17.3822C326.496 18.368 309.299 19.8824 292.102 19.9967C278.063 20.0824 264.024 18.4966 249.986 17.5537C206.994 14.6535 164.016 11.6104 121.024 8.79587C90.6637 6.81001 60.2894 5.13845 29.9294 3.2526C19.9529 2.63826 9.97646 1.80961 0 0.466655C14.0388 0.466655 28.0632 0.466655 42.1021 0.466655C74.7875 0.495229 107.473 0.552373 140.158 0.552373C153.494 0.552373 166.858 -0.00475617 180.165 0.609576C188.347 0.981032 196.457 0.266665 204.611 0.580974C213.396 0.923857 222.195 0.566659 230.994 0.552373C239.779 0.552373 248.579 0.523809 257.364 0.652391C259 0.680964 260.608 1.46674 262.546 1.99535C264.986 -2.07638 269.996 1.48104 274.001 0.666691C274.876 0.480963 276.183 2.3668 276.786 2.88113C277.991 2.28108 279.671 0.680992 281.365 0.680992C317.237 0.580984 353.109 0.652418 388.981 0.680992C394.924 0.680992 400.867 0.680992 406.968 0.680992C407.212 2.56685 407.413 4.08124 407.743 6.56714C408.705 4.13839 409.35 2.50971 410.183 0.42384C418.021 0.42384 425.916 0.609499 433.811 0.352337C438.821 0.195182 442.223 1.16671 441.72 7.25288C441.964 5.58132 441.663 3.42406 442.61 2.38112C443.658 1.22389 445.811 0.852423 447.548 0.580974C449.429 0.295238 451.395 0.509558 453.821 0.509558C454.323 2.49542 454.812 4.45265 455.601 7.59575C455.73 1.95247 455.658 -0.819169 462.348 1.88103C467.228 3.85261 473.961 0.766681 479.875 0.738108C528.379 0.55238 576.897 0.552418 625.402 0.509558C626.263 0.509558 627.124 0.595229 628 0.63809C628 0.766671 628 0.880979 628 1.00956H627.986Z" fill="#FEBD00"/>
 </svg></Center>
-        <svg width="262" height="30" viewBox="0 0 262 65" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M236.27 23.8018C238.874 21.7236 241.478 19.6311 245.276 16.607C237.104 16.1341 230.544 15.7471 223.984 15.3888C218.344 15.0878 213.496 13.1243 209.323 9.183C206.489 6.50289 206.849 3.43581 208.69 1.21433C209.769 -0.0755639 213.05 -0.161543 215.179 0.153764C222.574 1.286 229.882 2.8912 237.248 4.22409C242.586 5.18434 247.995 5.77195 253.261 6.99018C257.792 8.0221 261.749 10.5876 261.993 15.6038C262.109 17.9973 260.699 21.351 258.828 22.8272C250.743 29.1907 242.312 35.1385 233.795 40.9287C232.486 41.8173 229.335 41.9176 228.343 40.986C226.688 39.4238 225.998 36.801 225.12 34.5222C224.919 33.9919 225.624 33.1177 226.329 31.3118C215.769 34.3073 206.115 36.801 196.634 39.8108C182.78 44.1964 169.17 49.356 155.229 53.3977C142.08 57.21 128.729 60.5064 115.291 63.1435C102.53 65.6516 92.9918 57.7546 92.7904 45.9306C92.7041 40.8713 89.6541 38.1196 85.0359 38.7932C75.7852 40.1404 66.4482 41.674 57.514 44.3254C47.3138 47.3495 37.43 51.4915 27.5607 55.5188C22.0506 57.7689 16.7994 60.6784 11.577 63.5592C7.36164 65.881 2.93051 65.4223 0.901976 61.997C-1.0834 58.6289 0.168249 55.0459 5.05976 52.896C17.864 47.2492 30.7258 41.7027 43.789 36.7007C52.7663 33.2467 62.0602 30.5952 71.3109 27.8864C80.6336 25.1633 89.7116 27.3418 97.8114 31.6701C100.746 33.2467 102.919 38.2916 103.393 42.0036C104.573 51.4198 104.472 52.5807 113.824 50.7032C131.879 47.0915 149.762 42.5626 167.587 37.8903C188.65 32.3724 209.554 26.2526 230.587 20.6344C232.27 20.1901 234.472 21.6233 236.428 22.1823C236.371 22.7269 236.299 23.2858 236.241 23.8305L236.27 23.8018Z" fill="#0963ac"/>
-</svg>
+        
       <Text
         textAlign={"center"}
         fontSize={"2rem"}
@@ -178,7 +176,7 @@ function Home() {
         textAlign={"center"}
         fontSize={"1rem"}
         
-        children="Internpixel is the ultimate platform for students and recent graduates to find internship opportunities across a wide range of industries. Our platform connects aspiring interns with top companies, offering them invaluable experience, skills, and contacts to jumpstart their careers. "
+        children="GrapplTech is the ultimate platform for students and recent graduates to find internship opportunities across a wide range of industries. Our platform connects aspiring interns with top companies, offering them invaluable experience, skills, and contacts to jumpstart their careers. "
       />
       {/* features */}
       <Features />
@@ -227,7 +225,7 @@ function Home() {
               textAlign={["center", "left"]}
               fontSize={"1rem"}
               pr="0"
-              children="At Internpixel, we know that coffee runs are an essential part of any internship experience. And while you're sipping on that latte, why not also gain some valuable skills and experience in your chosen industry? We promise we won't judge you if you spill your coffee during a video call with your boss, but we will encourage you to keep learning and growing in your internship. Join us today and let's make your coffee-fueled internship dreams a reality!"
+              children="At GrapplTech, we know that coffee runs are an essential part of any internship experience. And while you're sipping on that latte, why not also gain some valuable skills and experience in your chosen industry? We promise we won't judge you if you spill your coffee during a video call with your boss, but we will encourage you to keep learning and growing in your internship. Join us today and let's make your coffee-fueled internship dreams a reality!"
             />
             
             <Link to="/internships">
@@ -248,7 +246,7 @@ function Home() {
       {/* Features2 */}
       <Center>
       <h1 className="headerddd">
-      InternPixel Xperience
+      GrapplTech Xperience
         </h1></Center><Center>
       {/* <h1 className="mainHeading1">InternPixel Xperience</h1> */}
       <svg width="392" height="40" viewBox="0 0 392 50" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -264,7 +262,7 @@ function Home() {
       <Text
         textAlign={"center"}
         fontSize={"1rem"}
-        children="Immerse yourself in an unparalleled learning journey with InternPixel's unique features. Engage in live classes, work on real client projects, receive guidance from dedicated mentors, earn valuable certificates, explore multiple domains, and savor the camaraderie of team lunches. Prepare to level up your skills and create unforgettable memories as you embark on a transformative internship experience."
+        children="Immerse yourself in an unparalleled learning journey with GrapplTech's unique features. Engage in live classes, work on real client projects, receive guidance from dedicated mentors, earn valuable certificates, explore multiple domains, and savor the camaraderie of team lunches. Prepare to level up your skills and create unforgettable memories as you embark on a transformative internship experience."
       />
       <FeaturesSection />
       <Text children="" />
@@ -290,7 +288,7 @@ function Home() {
       <Alumni />
       {/* video */}
       <SomethingBigIsComingSection />
-      <div className="container2">
+      {/* <div className="container2">
         <video
           src={introVideo}
           autoPlay
@@ -299,10 +297,10 @@ function Home() {
           disablePictureInPicture
           disableRemotePlayback
         ></video>
-      </div>
+      </div> */}
     
       {/* features */}
-      <h1 className="mainHeading1">InternPixel's Trailblazing Path</h1><Center>
+      <h1 className="mainHeading1">GrapplTech's Trailblazing Path</h1><Center>
       <svg width="260" height="20" viewBox="0 0 628 20" fill="none" xmlns="http://www.w3.org/2000/svg">
 <path d="M627.986 1.00956C606.425 2.19536 584.864 3.33831 563.318 4.58126C526.8 6.68141 490.282 8.83876 453.764 10.9675C417.073 13.1105 380.369 15.2678 343.678 17.3822C326.496 18.368 309.299 19.8824 292.102 19.9967C278.063 20.0824 264.024 18.4966 249.986 17.5537C206.994 14.6535 164.016 11.6104 121.024 8.79587C90.6637 6.81001 60.2894 5.13845 29.9294 3.2526C19.9529 2.63826 9.97646 1.80961 0 0.466655C14.0388 0.466655 28.0632 0.466655 42.1021 0.466655C74.7875 0.495229 107.473 0.552373 140.158 0.552373C153.494 0.552373 166.858 -0.00475617 180.165 0.609576C188.347 0.981032 196.457 0.266665 204.611 0.580974C213.396 0.923857 222.195 0.566659 230.994 0.552373C239.779 0.552373 248.579 0.523809 257.364 0.652391C259 0.680964 260.608 1.46674 262.546 1.99535C264.986 -2.07638 269.996 1.48104 274.001 0.666691C274.876 0.480963 276.183 2.3668 276.786 2.88113C277.991 2.28108 279.671 0.680992 281.365 0.680992C317.237 0.580984 353.109 0.652418 388.981 0.680992C394.924 0.680992 400.867 0.680992 406.968 0.680992C407.212 2.56685 407.413 4.08124 407.743 6.56714C408.705 4.13839 409.35 2.50971 410.183 0.42384C418.021 0.42384 425.916 0.609499 433.811 0.352337C438.821 0.195182 442.223 1.16671 441.72 7.25288C441.964 5.58132 441.663 3.42406 442.61 2.38112C443.658 1.22389 445.811 0.852423 447.548 0.580974C449.429 0.295238 451.395 0.509558 453.821 0.509558C454.323 2.49542 454.812 4.45265 455.601 7.59575C455.73 1.95247 455.658 -0.819169 462.348 1.88103C467.228 3.85261 473.961 0.766681 479.875 0.738108C528.379 0.55238 576.897 0.552418 625.402 0.509558C626.263 0.509558 627.124 0.595229 628 0.63809C628 0.766671 628 0.880979 628 1.00956H627.986Z" fill="#FEBD00"/></svg></Center>
       <Text
@@ -313,7 +311,7 @@ function Home() {
       <Text
         textAlign={"center"}
         fontSize={"1rem"}
-        children="Unleash your potential with InternPixel's curated collection of trending and upcoming internships. Elevate your skills, embrace cutting-edge industries, and embark on a transformative career journey that paves the way for future innovation."
+        children="Unleash your potential with GrapplTech's curated collection of trending and upcoming internships. Elevate your skills, embrace cutting-edge industries, and embark on a transformative career journey that paves the way for future innovation."
       />
       <CardSlider />
       <TestimonialSlider />
@@ -341,7 +339,7 @@ function Home() {
           </div>
           <div id="chat-msg">
             <p>
-              Welcome to InternPixel, your gateway to exciting internship
+              Welcome to GrapplTech, your gateway to exciting internship
               opportunities!
             </p>
             <div id="chat-form">
