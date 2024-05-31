@@ -28,8 +28,8 @@ const Footer = () => {
           <Text>Bengaluru, Karnataka 560037</Text>
         </VStack>
         <VStack alignItems={["center", "flex-start"]} width="full">
-          <Text>Mail : support@internpixel.fun</Text>
-          <Text>careers@internpixel.fun</Text>
+          <Text>Mail : support@grappl.tech</Text>
+          <Text>careers@grappl.tech</Text>
           <Text>Phone : +91 8688561178</Text>
         </VStack>
         <HStack

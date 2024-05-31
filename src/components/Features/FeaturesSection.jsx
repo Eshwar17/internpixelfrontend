@@ -9,7 +9,7 @@ const FeaturesSection = () => {
     <li className="cards1_item">
       <div className="card1">
         <div className="card1_image">
-          <img src="https://img.freepik.com/free-vector/online-tutorials-concept_52683-37481.jpg?size=626&ext=jpg&ga=GA1.2.136392163.1683044531&semt=ais" />
+          <img src="https://img.freepik.com/free-vector/online-tutorials-concept_52683-37481.jpg?size=626&ext=jpg&ga=GA1.2.136392163.1683044531&semt=ais" alt='card'/>
         </div>
         <div className="card1_content">
           <h2 className="card1_title">Live Classes</h2>
@@ -41,7 +41,7 @@ const FeaturesSection = () => {
     <li className="cards1_item">
       <div className="card1">
         <div className="card1_image">
-          <img src="https://img.freepik.com/free-vector/businessmen-businesswoman-talking-desktop_1262-21452.jpg?size=626&ext=jpg&ga=GA1.1.136392163.1683044531&semt=ais" />
+          <img src="https://img.freepik.com/free-vector/businessmen-businesswoman-talking-desktop_1262-21452.jpg?size=626&ext=jpg&ga=GA1.1.136392163.1683044531&semt=ais" alt='card'/>
         </div>
         <div className="card1_content">
           <h2 className="card1_title">Real Client Projects</h2>
@@ -74,7 +74,7 @@ const FeaturesSection = () => {
       <div className="card1">
         <div className="card1_image">
           <span className="note1">GuidanceGuru</span>
-          <img src="https://img.freepik.com/free-vector/internship-job-training-illustration_23-2148751280.jpg?size=626&ext=jpg&ga=GA1.1.136392163.1683044531&semt=ais" />
+          <img src="https://img.freepik.com/free-vector/internship-job-training-illustration_23-2148751280.jpg?size=626&ext=jpg&ga=GA1.1.136392163.1683044531&semt=ais" alt='card'/>
           
         </div>
         <div className="card1_content">
@@ -98,7 +98,7 @@ const FeaturesSection = () => {
     <li className="cards1_item">
       <div className="card1">
         <div className="card1_image">
-          <img src="https://img.freepik.com/free-vector/web-development-programmer-engineering-coding-website-augmented-reality-interface-screens-developer-project-engineer-programming-software-application-design-cartoon-illustration_107791-3863.jpg?size=626&ext=jpg&ga=GA1.1.136392163.1683044531&semt=ais" />
+          <img src="https://img.freepik.com/free-vector/web-development-programmer-engineering-coding-website-augmented-reality-interface-screens-developer-project-engineer-programming-software-application-design-cartoon-illustration_107791-3863.jpg?size=626&ext=jpg&ga=GA1.1.136392163.1683044531&semt=ais" alt='card'/>
           
         </div>
         <div className="card1_content">
@@ -124,7 +124,7 @@ const FeaturesSection = () => {
     <li className="cards1_item">
       <div className="card1">
         <div className="card1_image">
-          <img src="https://img.freepik.com/free-vector/online-certification-concept_23-2148578825.jpg?size=626&ext=jpg&ga=GA1.1.136392163.1683044531&semt=ais" />
+          <img src="https://img.freepik.com/free-vector/online-certification-concept_23-2148578825.jpg?size=626&ext=jpg&ga=GA1.1.136392163.1683044531&semt=ais" alt='card'/>
           
         </div>
         <div className="card1_content">
@@ -152,7 +152,7 @@ const FeaturesSection = () => {
       <div className="card1">
         <div className="card1_image">
           <span className="note1">Featured</span>
-          <img src="https://img.freepik.com/free-vector/group-friends-sitting-table-talking-drinking-coffee-tea-tiny-people-friends-meeting-cheer-up-friend-friendship-support-concept_335657-623.jpg?size=626&ext=jpg&ga=GA1.1.136392163.1683044531&semt=ais" />
+          <img src="https://img.freepik.com/free-vector/group-friends-sitting-table-talking-drinking-coffee-tea-tiny-people-friends-meeting-cheer-up-friend-friendship-support-concept_335657-623.jpg?size=626&ext=jpg&ga=GA1.1.136392163.1683044531&semt=ais" alt='card'/>
           
         </div>
         <div className="card1_content">

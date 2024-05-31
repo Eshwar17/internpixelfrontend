@@ -136,7 +136,7 @@ const CampusAmbassador = () => {
         <Box>
           <Center>
             <Image
-              src="https://www.mind-spark.org/ms21/campusAmbassador/images/participation.gif" // Add your image source here
+              src="https://img.freepik.com/free-vector/we-are-hiring-persons-work_603843-2824.jpg?t=st=1717164637~exp=1717168237~hmac=0fc028af6f9230093e26ba682259ee52feb96e465aae4719ce578dab7ddfafc7&w=900" // Add your image source here
               alt="GrapplTech Team"
               borderRadius="lg"
               maxW="60%"

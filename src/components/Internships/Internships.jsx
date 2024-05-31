@@ -147,7 +147,7 @@ const Internship = ({
               title ===
                 "Data Alchemist: Embark on a Journey of Innovation with our Data Science Internship"
             ) {
-              window.location.href = "https://www.internpixel.fun/request";
+              window.location.href = "https://www.grappl.tech/request";
             } else {
               addToPlaylistHandler(id);
             }

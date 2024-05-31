@@ -11,10 +11,7 @@ import ResetPassword from './components/Auth/ResetPassword';
 import Contact from './components/Contact/Contact';
 import Request from './components/Request/Request';
 import About from './components/About/About';
-import Enroll from './components/Payments/Enroll';
 import NotFound from './components/Layout/NotFound/NotFound';
-import PaymentSuccess from './components/Payments/PaymentSuccess';
-import PaymentFail from './components/Payments/PaymentFail';
 import InternshipPage from './components/InternshipPage/InternshipPage';
 import Profile from './components/Profile/Profile';
 import ChangePassword from './components/Profile/ChangePassword';
@@ -33,9 +30,9 @@ import ResumePage from './components/ResumeMaker/ResumePage';
 
 
 function App() {
-  window.addEventListener("contextmenu", (e)=>{
-    e.preventDefault();
-  })
+  // window.addEventListener("contextmenu", (e)=>{
+  //   e.preventDefault();
+  // })
   useEffect(() => {
     // Function to change the title dynamically
     function changeTitle() {
@@ -80,10 +77,7 @@ function App() {
         <Route path="/register" element={<Register />} />
         <Route path="/forgetpassword" element={<ForgetPassword />} />
         <Route path="/resetpassword/:token" element={<ResetPassword />} />
-        <Route path="/enroll" element={<Enroll />} />
         <Route path="*" element={<NotFound />} />
-        <Route path="/paymentsuccess" element={<PaymentSuccess />} />
-        <Route path="/paymentfail" element={<PaymentFail />} />
         <Route path="/98S1u2d3h4a5k6a7rRN54" element={<Members />} />
         <Route path="/ambassadorapply" element={<CampusAmbassador />} />
         <Route path="/workshops" element={<Services />} />

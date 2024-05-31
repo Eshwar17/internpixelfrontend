@@ -16,18 +16,6 @@ const Sidebar = () => {
         url={'dashboard'}
         active={location.pathname === '/admin/dashboard'}
       />
-      {/* <LinkButton
-        Icon={RiAddCircleFill}
-        text="Create Internship"
-        url={'createinternship'}
-        active={location.pathname === '/admin/createinternship'}
-      />
-      <LinkButton
-        Icon={RiEyeFill}
-        text="Internships"
-        url={'internships'}
-        active={location.pathname === '/internships'}
-      /> */}
       <LinkButton
         Icon={RiUser3Fill}
         text="Pro Interns"

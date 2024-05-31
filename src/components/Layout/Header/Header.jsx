@@ -8,12 +8,11 @@ import {
   DrawerHeader,
   DrawerOverlay,
   VStack,
-  HStack,
   useDisclosure,
   Img
 } from '@chakra-ui/react';
-import { RiMenu5Fill,RiDashboardFill } from 'react-icons/ri';
-import logo from "../../../assets/images/grappltechlogo.png";
+import { RiMenu5Fill } from 'react-icons/ri';
+import logo from "../../../assets/images/grappltechlogoimg1.png";
 import { Link } from 'react-router-dom';
 
 const LinkButton = ({ url = '/', title = 'Home', onClose }) => (
@@ -25,19 +24,9 @@ const LinkButton = ({ url = '/', title = 'Home', onClose }) => (
 function Header() {
   const { isOpen, onOpen, onClose } = useDisclosure();
 
-  const isAuthenticated = true;
-  const user = {
-    role: "admin",
-  };
-  const logoutHandler = () => {
-    console.log("Logged Out");
-    onClose();
-  }
-
   return (
     <>
       <ColorModeSwitcher zIndex="1000"/>
-
       <Button
         onClick={onOpen}
         colorScheme={'blue'}
@@ -55,8 +44,7 @@ function Header() {
         <DrawerOverlay backdropFilter={'blur(1px)'} />
         <DrawerContent>
           <DrawerHeader borderBottomWidth={'1px'}><center>
-            {/* <img src={logo} alt="logo" width="400"/> */}
-            <Img src={logo} maxW="50%" h="auto" borderRadius={'23%'}/></center>
+            <Img src={logo} maxW="100%" h="auto"/></center>
           </DrawerHeader>
           <DrawerBody>
             <VStack spacing={'6'} alignItems={'flex-start'}>
@@ -69,37 +57,6 @@ function Header() {
               <Button variant={"ghost"} isDisabled="true" color={"black"}>Careers <sup style={{"color":"blue","fontSize":"11px"}}>&nbsp;&nbsp;No Open Positions</sup></Button>
               <LinkButton onClose={onClose} url="/contact" title="Contact Us" />
               <LinkButton onClose={onClose} url="/about" title="About Us" />
-
-              {/* <HStack
-                justifyContent={'space-evenly'}
-                position={'absolute'}
-                bottom={'2rem'}
-                width={'80%'}
-              >
-                {isAuthenticated?(<>
-                  <VStack>
-                    
-
-
-{
-  user && user.role==="admin" && <Link onClick={onClose} to='/admin/dashboard'>
-    <Button colorScheme={"purple"} variant={"ghost"}>
-    <RiDashboardFill style={{margin:'4px'}}/>
-    Leaderboard</Button>
-  </Link>
-}
-
-                  </VStack>
-                </>):(<>
-                  <Link onClick={onClose} to="/login">
-                    <Button colorScheme={'blue'}>Login</Button>
-                  </Link>
-                  <p>OR</p>
-                  <Link onClick={onClose} to="/register">
-                    <Button colorScheme={'blue'}>Sign Up</Button>
-                  </Link>
-                </>)}
-              </HStack> */}
             </VStack>
           </DrawerBody>
         </DrawerContent>
