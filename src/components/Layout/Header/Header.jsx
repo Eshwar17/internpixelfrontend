@@ -51,7 +51,7 @@ function Header() {
               <LinkButton onClose={onClose} url="/" title="Home" />
               <LinkButton onClose={onClose} url="/internships" title="Browse All Internships" />
               <LinkButton onClose={onClose} url="/request" title="Apply For An Internship" />
-              <LinkButton onClose={onClose} url="/ambassadorapply" title="Join Our Ambassador Program" />
+              <LinkButton onClose={onClose} url="/gtcommunitycomponents" title="GT Community Components" />
               <LinkButton onClose={onClose} url="/workshops" title="Workshops & Hackathons" />
               <LinkButton onClose={onClose} url="/resumemaker" title="GrapplTech's Resume Maker" />
               <Button variant={"ghost"} isDisabled="true" color={"black"}>Careers <sup style={{"color":"blue","fontSize":"11px"}}>&nbsp;&nbsp;No Open Positions</sup></Button>
