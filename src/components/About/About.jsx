@@ -210,10 +210,10 @@ const About = () => {
           <Text mt={4}>
             Founded in 2022, we've since grown into a trusted platform that has
             helped thousands of students kickstart their careers and hundreds of
-            companies find their next star intern.
+            companies find their next star exmployee.
           </Text>
           <Text mt={4}>
-            Join us in our mission to make the internship search process easier,
+            Join us in our mission to make the job search process easier,
             more efficient, and more rewarding for students and employers alike.
           </Text>
         </Box>
@@ -340,7 +340,7 @@ const About = () => {
       <>
         <div id="chat-box">
           <div id="chat-top">
-            PixelPal: Your Internship Guide{" "}
+            Grappie: Your Bootcamp Guide{" "}
             <span id="chat-top-right">
               <svg
                 id="close-box"
@@ -359,8 +359,7 @@ const About = () => {
           </div>
           <div id="chat-msg">
             <p>
-              Welcome to GrapplTech, your gateway to exciting internship
-              opportunities!
+              Welcome to GrapplTech, your gateway to exciting bootcamps!
             </p>
             <div id="chat-form">
               <div className="chat-in">

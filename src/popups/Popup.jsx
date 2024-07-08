@@ -5,7 +5,7 @@ import gift from "./gift.png";
 const Popup = (props) => {
   const [isOpen, setIsOpen] = useState(false);
   const [offerEndDate, setOfferEndDate] = useState(null);
-  const startDateTime = new Date('2024-06-01T00:00:00Z'); // Today's date
+  const startDateTime = new Date('2024-07-08T00:00:00Z'); // Today's date
 
   useEffect(() => {
     setTimeout(() => {
@@ -61,7 +61,7 @@ const Popup = (props) => {
         <div className="popup">
           <div className="popup-inner">
             <img className="gift-icon" src={gift} alt="Gift Icon" />
-            <h2>InternFest Sale</h2>
+            <h2>GrapplerFest Sale</h2>
             <p>
               Unlock a limited-time offer: Enjoy a staggering 80%+ off on our exclusive training program. Don't miss out on this incredible opportunity to enhance your skills and accelerate your career. Take a step towards success with GrapplTech's discounted training today!
             </p>

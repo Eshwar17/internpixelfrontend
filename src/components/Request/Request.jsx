@@ -215,13 +215,13 @@ const Request = () => {
           </Box>
 
           <Box my={"4"}>
-            <FormLabel htmlFor="domain" children="Internship Domain Name*" />
+            <FormLabel htmlFor="domain" children="Bootcamp Domain Name*" />
             <Select
               required
               name="domain"
               value={selectedDomain}
               onChange={(e) => setSelectedDomain(e.target.value)}
-              placeholder="Select the internship domain you are interested in"
+              placeholder="Select the bootcamp domain you are interested in"
               focusBorderColor="blue.500"
             >
               {internshipDomains.map((domain) => (
@@ -289,7 +289,7 @@ const Request = () => {
               Send
             </button></Center>
             <Center><Box my="2">
-            See available internships!{" "}
+            See available bootcamps!{" "}
             <Link to="/internships">
               <Button colorScheme={"blue"} variant="link">
                 Click
@@ -327,7 +327,7 @@ const Request = () => {
       <>
         <div id="chat-box">
           <div id="chat-top">
-            PixelPal: Your Internship Guide{" "}
+            Grappie: Your Bootcamp Guide{" "}
             <span id="chat-top-right">
               <svg
                 id="close-box"
@@ -346,7 +346,7 @@ const Request = () => {
           </div>
           <div id="chat-msg">
             <p>
-              Welcome to InternPixel, your gateway to exciting internship
+              Welcome to GrapplTech, your gateway to exciting
               opportunities!
             </p>
             <div id="chat-form">

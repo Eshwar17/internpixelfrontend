@@ -13,27 +13,27 @@ const CardSlider = () => {
               </div>
               <div className="card1_content">
                 <h2 className="card1_title">
-                  Data Science Explorer: Unleashing Insights Through Internship
+                  Data Science Explorer: Unleashing Insights Through Bootcamp
                 </h2>
                 <div className="card1_text">
                   <p>
                     <strong>Launch Date: Coming Soon</strong>
                   </p>
                   <p>
-                    Introducing the Most Awaited Internship on Data Science:
+                    Introducing the Most Awaited Bootcamp on Data Science:
                     Unleash Your Potential!
                   </p>
                   <hr />
                   <p>
                     Are you ready to dive into the exciting world of data
                     science? Get ready, because we are thrilled to announce the
-                    launch of the most awaited internship on data science! This
+                    launch of the most awaited bootcamp on data science! This
                     is your golden opportunity to gain hands-on experience,
                     unlock valuable insights, and embark on a transformative
                     journey in the realm of data analytics. As businesses
                     increasingly rely on data-driven decision-making, the demand
                     for skilled data scientists is skyrocketing. With our
-                    cutting-edge internship program, you'll acquire the
+                    cutting-edge bootcamp program, you'll acquire the
                     essential knowledge and skills to tackle complex data
                     challenges and become a sought-after professional in this
                     rapidly evolving field.
@@ -50,7 +50,7 @@ const CardSlider = () => {
               </div>
               <div className="card1_content">
                 <h2 className="card1_title">
-                  MERN Stack Maestro: Embark on an Internship Journey of
+                  MERN Stack Maestro: Embark on an Bootcamp Journey of
                   Full-Stack Web Development
                 </h2>
                 <div className="card1_text">
@@ -58,7 +58,7 @@ const CardSlider = () => {
                     <strong>Launch Date: Coming Soon</strong>
                   </p>
                   <p>
-                    Introducing the Most Awaited MERN Stack Internship: Unlock
+                    Introducing the Most Awaited MERN Stack Bootcamp: Unlock
                     the Power of Full-Stack Web Development!
                   </p>
                   <hr />
@@ -66,7 +66,7 @@ const CardSlider = () => {
                     Get ready to elevate your web development skills to new
                     heights because the moment you've been waiting for has
                     arrived! We are thrilled to announce the upcoming launch of
-                    the most awaited internship on MERN Stack. This is your
+                    the most awaited bootcamp on MERN Stack. This is your
                     golden opportunity to immerse yourself in the world of
                     full-stack web development, master cutting-edge
                     technologies, and unlock the potential to create dynamic and
@@ -83,21 +83,21 @@ const CardSlider = () => {
               </div>
               <div className="card1_content">
                 <h2 className="card1_title">
-                  Java Mastery: Ignite Your Career with a Core Java Internship
+                  Java Mastery: Ignite Your Career with a Core Java Bootcamp
                 </h2>
                 <div className="card1_text">
                   <p>
-                    <strong>Launch Date: 15-02-2024</strong>
+                    <strong>Launch Date: 15-08-2024</strong>
                   </p>
                   <p>
-                    Launching the Most Awaited Java Internship: Ignite Your
+                    Launching the Most Awaited Java Bootcamp: Ignite Your
                     Coding Journey!
                   </p>
                   <hr />
                   <p>
                     Are you ready to dive into the world of Java programming?
                     Brace yourself, because we are excited to announce the
-                    upcoming launch of the most awaited internship on Java! This
+                    upcoming launch of the most awaited bootcamp on Java! This
                     is your chance to immerse yourself in the power of Java,
                     master the fundamentals, and embark on a transformative
                     coding journey that will set the stage for a successful
@@ -115,14 +115,14 @@ const CardSlider = () => {
               <div className="card1_content">
                 <h2 className="card1_title">
                   DevOps Dynamo: Unleash Your Potential with a Core DevOps
-                  Internship
+                  Bootcamp
                 </h2>
                 <div className="card1_text">
                   <p>
                     <strong>Launch Date: Coming Soon</strong>
                   </p>
                   <p>
-                    Introducing the Most Awaited DevOps Internship: Empower Your
+                    Introducing the Most Awaited DevOps Bootcamp: Empower Your
                     Journey of Continuous Integration and Delivery!
                   </p>
                   <hr />
@@ -131,7 +131,7 @@ const CardSlider = () => {
                     practices and enhance collaboration between development and
                     operations teams? Get ready, because the moment you've been
                     waiting for is almost here! We are thrilled to announce the
-                    upcoming launch of the most awaited internship on DevOps.
+                    upcoming launch of the most awaited bootcamp on DevOps.
                     This is your golden opportunity to immerse yourself in the
                     world of DevOps, master cutting-edge tools and
                     methodologies, and pave the way for seamless and efficient
@@ -149,14 +149,14 @@ const CardSlider = () => {
               <div className="card1_content">
                 <h2 className="card1_title">
                   Testing Trailblazer: Embark on a Core Software Testing
-                  Internship Adventure
+                  Bootcamp Adventure
                 </h2>
                 <div className="card1_text">
                   <p>
                     <strong>Launch Date: Coming Soon</strong>
                   </p>
                   <p>
-                    Introducing the Most Awaited Software Testing Internship:
+                    Introducing the Most Awaited Software Testing Bootcamp:
                     Unleash Your Testing Prowess!
                   </p>
                   <hr />
@@ -165,7 +165,7 @@ const CardSlider = () => {
                     delivering flawless user experiences? Brace yourself,
                     because the moment you've been eagerly anticipating is just
                     around the corner! We are thrilled to announce the upcoming
-                    launch of the most awaited internship on software testing.
+                    launch of the most awaited bootcamp on software testing.
                     This is your golden opportunity to immerse yourself in the
                     world of testing, master industry-leading methodologies, and
                     pave the way for a successful career in ensuring software
@@ -183,14 +183,14 @@ const CardSlider = () => {
               <div className="card1_content">
                 <h2 className="card1_title">
                   Interview Success Navigator: Empowering You with a
-                  Comprehensive Interview Preparation Guide Internship
+                  Comprehensive Interview Preparation Guide Bootcamp
                 </h2>
                 <div className="card1_text">
                 <p>
                     <strong>Launch Date: Coming Soon</strong>
                   </p>
                   <p>
-                    Introducing the Most Awaited Interview Guidance Internship:
+                    Introducing the Most Awaited Interview Guidance Bootcamp:
                     Unlock Your Potential and Ace Your Next Interview!
                   </p>
                   <hr />
@@ -199,7 +199,7 @@ const CardSlider = () => {
                     recruiters, and land your dream job? Get ready, because the
                     moment you've been waiting for is just around the corner! We
                     are thrilled to announce the upcoming launch of the most
-                    awaited internship on interview guidance. This is your
+                    awaited bootcamp on interview guidance. This is your
                     golden opportunity to immerse yourself in the world of
                     interview preparation, master essential techniques, and gain
                     the confidence to excel in any interview scenario.

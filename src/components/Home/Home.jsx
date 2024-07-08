@@ -3,8 +3,8 @@ import { useEffect } from "react";
 import { Button, Stack, Text, VStack, Image, Box, Center } from "@chakra-ui/react";
 import "./home.css";
 import { Link } from "react-router-dom";
-import vg from "../../assets/images/hero.png";
-import vg1 from "../../assets/images/coffee.png";
+import vg from "../../assets/images/hero2.png";
+import vg1 from "../../assets/images/coffee1.png";
 import Features from "../Features/Features";
 import FeaturesSection from "../Features/FeaturesSection";
 import Alumni from "../alumni/Alumni";
@@ -94,7 +94,7 @@ function Home() {
               fontSize={"1.2rem"}
               children="Skill up. Hire up. Tech up."
             />
-        <Link to="/internships">
+        <Link to="/bootcamps">
               <Button size={"lg"} colorScheme="blue">
                 Explore Now
               </Button>
@@ -105,7 +105,7 @@ function Home() {
         {/* <img className="imgd" src="https://img.freepik.com/free-photo/3d-portrait-people_23-2150793919.jpg?size=626&ext=jpg&uid=R120138073&ga=GA1.1.377232785.1697539441&semt=ais" /> */}
         <Image
             className="vector-graphics"
-            boxSize={"md"}
+            boxSize={"lg"}
             src={vg}
             objectFit="contain"
           />
@@ -169,13 +169,13 @@ function Home() {
         textAlign={"center"}
         fontSize={"2rem"}
         color={"#FEBD00"}
-        children="Your Gateway to Landing the Perfect Internship!"
+        children="Your Gateway to Landing the Perfect Bootcamps!"
       />
       <Text
         textAlign={"center"}
         fontSize={"1rem"}
         
-        children="GrapplTech is the ultimate platform for students and recent graduates to find internship opportunities across a wide range of industries. Our platform connects aspiring interns with top companies, offering them invaluable experience, skills, and contacts to jumpstart their careers. "
+        children="GrapplTech is the ultimate platform for students and recent graduates to find bootcamps across a wide range of industries. Our platform connects aspiring grapplers with top companies, offering them invaluable experience, skills, and contacts to jumpstart their careers. "
       />
       {/* features */}
       <Features />
@@ -224,10 +224,10 @@ function Home() {
               textAlign={["center", "left"]}
               fontSize={"1rem"}
               pr="0"
-              children="At GrapplTech, we know that coffee runs are an essential part of any internship experience. And while you're sipping on that latte, why not also gain some valuable skills and experience in your chosen industry? We promise we won't judge you if you spill your coffee during a video call with your boss, but we will encourage you to keep learning and growing in your internship. Join us today and let's make your coffee-fueled internship dreams a reality!"
+              children="At GrapplTech, we know that coffee runs are an essential part of any bootcamp experience. And while you're sipping on that latte, why not also gain some valuable skills and experience in your chosen industry? We promise we won't judge you if you spill your coffee during a video call with your boss, but we will encourage you to keep learning and growing in your career. Join us today and let's make your coffee-fueled career dreams a reality!"
             />
             
-            <Link to="/internships">
+            <Link to="/bootcamps">
               <Button
                 size={"m"}
                 colorScheme="blue"
@@ -256,12 +256,12 @@ function Home() {
         textAlign={"center"}
         fontSize={"2rem"}
         color={"#FEBD00"}
-        children="Revolutionizing the Internship Experience with Unparalleled Features for Your Success"
+        children="Revolutionizing the Bootcamp Experience with Unparalleled Features for Your Success"
       />
       <Text
         textAlign={"center"}
         fontSize={"1rem"}
-        children="Immerse yourself in an unparalleled learning journey with GrapplTech's unique features. Engage in live classes, work on real client projects, receive guidance from dedicated mentors, earn valuable certificates, explore multiple domains, and savor the camaraderie of team lunches. Prepare to level up your skills and create unforgettable memories as you embark on a transformative internship experience."
+        children="Immerse yourself in an unparalleled learning journey with GrapplTech's unique features. Engage in live classes, work on real client projects, receive guidance from dedicated mentors, earn valuable certificates, explore multiple domains, and savor the camaraderie of team lunches. Prepare to level up your skills and create unforgettable memories as you embark on a transformative bootcamp experience."
       />
       <FeaturesSection />
       <Text children="" />
@@ -305,12 +305,12 @@ function Home() {
       <Text
         textAlign={"center"}
         fontSize={"1.7rem"}
-        children="Trending and Upcoming Internships for Tomorrow's Innovators"
+        children="Trending and Upcoming Bootcamps for Tomorrow's Innovators"
       />
       <Text
         textAlign={"center"}
         fontSize={"1rem"}
-        children="Unleash your potential with GrapplTech's curated collection of trending and upcoming internships. Elevate your skills, embrace cutting-edge industries, and embark on a transformative career journey that paves the way for future innovation."
+        children="Unleash your potential with GrapplTech's curated collection of trending and upcoming bootcamps. Elevate your skills, embrace cutting-edge industries, and embark on a transformative career journey that paves the way for future innovation."
       />
       <CardSlider />
       <TestimonialSlider />
@@ -319,7 +319,7 @@ function Home() {
       <>
         <div id="chat-box">
           <div id="chat-top">
-            PixelPal: Your Guide{" "}
+            Grappie: Your Bootcamp Guide{" "}
             <span id="chat-top-right">
               <svg
                 id="close-box"
@@ -338,8 +338,7 @@ function Home() {
           </div>
           <div id="chat-msg">
             <p>
-              Welcome to GrapplTech, your gateway to exciting internship
-              opportunities!
+              Welcome to GrapplTech, your gateway to exciting bootcamps!
             </p>
             <div id="chat-form">
               <div className="chat-in">

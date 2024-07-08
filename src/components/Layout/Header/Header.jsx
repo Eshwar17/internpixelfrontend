@@ -49,8 +49,8 @@ function Header() {
           <DrawerBody>
             <VStack spacing={'6'} alignItems={'flex-start'}>
               <LinkButton onClose={onClose} url="/" title="Home" />
-              <LinkButton onClose={onClose} url="/internships" title="Browse All Internships" />
-              <LinkButton onClose={onClose} url="/request" title="Apply For An Internship" />
+              <LinkButton onClose={onClose} url="/bootcamps" title="Browse All Bootcamps" />
+              <LinkButton onClose={onClose} url="/request" title="Apply For A Bootcamp" />
               <LinkButton onClose={onClose} url="/gtcommunitycomponents" title="GT Community Components" />
               <LinkButton onClose={onClose} url="/workshops" title="Workshops & Hackathons" />
               <LinkButton onClose={onClose} url="/resumemaker" title="GrapplTech's Resume Maker" />

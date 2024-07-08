@@ -31,7 +31,7 @@ const FaqPage = () => {
             </AccordionButton>
           </h2>
           <AccordionPanel>
-            GrapplTech is a platform that connects students and companies by providing internship opportunities, trainings(live sessions) and resources to help students advance their careers.
+            GrapplTech is a platform that connects students and companies by providing bootcamps, trainings(live sessions) and resources to help students advance their careers.
           </AccordionPanel>
         </AccordionItem>
 
@@ -39,12 +39,12 @@ const FaqPage = () => {
           <h2>
             <AccordionButton>
               <Box flex="1" textAlign="left">
-                How can I find internships on GrapplTech?
+                How can I find bootcamps on GrapplTech?
               </Box>
             </AccordionButton>
           </h2>
           <AccordionPanel>
-            To find internships on GrapplTech, you can browse through our internship(trainings included) listings and apply using the Apply Link.
+            To find bootcamps on GrapplTech, you can browse through our bootcamps listings and apply using the Apply Link.
           </AccordionPanel>
         </AccordionItem>
 
@@ -57,19 +57,19 @@ const FaqPage = () => {
             </AccordionButton>
           </h2>
           <AccordionPanel>
-          Yes, you have to pay as little as possible for our training programs, which are designed to enhance your skills and prepare you for internships. However, access to our internship listings and resources is provided to you for free. We believe in making valuable opportunities accessible, and that's why we offer affordable training options to help you excel in your career journey.
+          Yes, you have to pay as little as possible for our training programs, which are designed to enhance your skills and prepare you for your dream careers. However, access to some of our bootcamp listings is provided to you for free. We believe in making valuable opportunities accessible, and that's why we offer affordable training options to help you excel in your career journey.
           </AccordionPanel>
         </AccordionItem>
         <AccordionItem>
           <h2>
             <AccordionButton>
               <Box flex="1" textAlign="left">
-              Do I get stipend for internship?
+              Do I get placement support for bootcamp?
               </Box>
             </AccordionButton>
           </h2>
           <AccordionPanel>
-          Yes, at GrapplTech, we offer a two-phase internship program. Initially, you will be assigned an unpaid internship to gain valuable experience and build your skills. After the first phase, based on your performance and dedication, your internship may be extended, and you will receive a very competitive stipend. We believe in rewarding talent and hard work, and our stipends reflect our commitment to recognizing your contributions.
+          Yes, at GrapplTech, we offer perfect placement guidance.
           </AccordionPanel>
         </AccordionItem>
         <AccordionItem>
@@ -107,7 +107,7 @@ const FaqPage = () => {
             </AccordionButton>
           </h2>
           <AccordionPanel>
-            Yes, GrapplTech is available to students and companies worldwide. You can access our platform from anywhere to find internships or post internship opportunities.
+            Yes, GrapplTech is available to students and companies worldwide. You can access our platform from anywhere to find bootcamps or career opportunities.
           </AccordionPanel>
         </AccordionItem>
 
@@ -128,12 +128,12 @@ const FaqPage = () => {
           <h2>
             <AccordionButton>
               <Box flex="1" textAlign="left">
-                Do you offer internships in specific industries?
+                Do you offer bootcamps in specific industries?
               </Box>
             </AccordionButton>
           </h2>
           <AccordionPanel>
-            Yes, GrapplTech provides internship listings in various industries, including technology, finance, healthcare, and more. You can explore internships in your preferred industry on our platform.
+            Yes, GrapplTech provides bootcamps in various industries. You can explore bootcamp in your preferred domain on our platform.
           </AccordionPanel>
         </AccordionItem>
 
@@ -141,12 +141,12 @@ const FaqPage = () => {
           <h2>
             <AccordionButton>
               <Box flex="1" textAlign="left">
-                Can I apply to multiple internships at once?
+                Can I apply to multiple bootcamps at once?
               </Box>
             </AccordionButton>
           </h2>
           <AccordionPanel>
-            Yes, you can apply to multiple internships on GrapplTech. Simply browse the listings, review the requirements, and submit applications to the internships that interest you.
+            Yes, you can apply to multiple bootcamps on GrapplTech. Simply browse the listings, review the requirements, and submit applications to the bootcamps that interest you.
           </AccordionPanel>
         </AccordionItem>
 
@@ -155,12 +155,12 @@ const FaqPage = () => {
           <h2>
             <AccordionButton>
               <Box flex="1" textAlign="left">
-              During the internship, do you allow interns to work on real client projects?
+              During the bootcamp, do you allow grapplers to work on real client projects?
               </Box>
             </AccordionButton>
           </h2>
           <AccordionPanel>
-          Yes, at GrapplTech, we provide our interns with valuable hands-on experience. Interns have the opportunity to work on real client projects right from the inception. This practical exposure allows interns to collaborate with our clients, contribute to project development from scratch, and gain insights into real-world challenges and solutions. We believe in offering a dynamic learning environment that prepares interns for their future careers.
+          Yes, at GrapplTech, we provide our grapplers with valuable hands-on experience. Grapplers have the opportunity to work on real client projects right from the inception. This practical exposure allows grapplers to collaborate with our clients, contribute to project development from scratch, and gain insights into real-world challenges and solutions. We believe in offering a dynamic learning environment that prepares grapplers for their future careers.
           </AccordionPanel>
         </AccordionItem>
       </Accordion>

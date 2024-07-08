@@ -143,7 +143,7 @@ const Contact = () => {
           </Button></Center>
 
           <Box my={'4'}>
-            Register for an internship?{' '}
+            Register for a bootcamp?{' '}
             <Link to="/request">
               <Button colorScheme="blue" variant={'link'}>
                 Click
@@ -156,7 +156,7 @@ const Contact = () => {
       <>
         <div id="chat-box">
           <div id="chat-top">
-            PixelPal: Your Internship Guide{" "}
+            Grappie: Your Bootcamp Guide{" "}
             <span id="chat-top-right">
               <svg
                 id="close-box"
@@ -175,8 +175,7 @@ const Contact = () => {
           </div>
           <div id="chat-msg">
             <p>
-              Welcome to GrapplTech, your gateway to exciting internship
-              opportunities!
+              Welcome to GrapplTech, your gateway to exciting bootcamps!
             </p>
             <div id="chat-form">
               <div className="chat-in">

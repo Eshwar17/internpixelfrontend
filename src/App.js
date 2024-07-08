@@ -65,7 +65,7 @@ function App() {
       <Header />
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/internships" element={<Internships />} />
+        <Route path="/bootcamps" element={<Internships />} />
         <Route path="/internship/:id" element={<InternshipPage />} />
         <Route path="/contact" element={<Contact />} />
         <Route path="/request" element={<Request />} />

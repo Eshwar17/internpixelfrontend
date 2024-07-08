@@ -14,7 +14,7 @@ import {
 import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 
-const Internship = ({
+const Bootcamp = ({
   views,
   title,
   imageSrc,
@@ -132,20 +132,20 @@ const Internship = ({
           variant={"ghost"}
           onClick={() => {
             if (
-              title === "Front End Development" ||
-              title === "Bug Hunter Internship" ||
+              title === "Front End Bootcamp" ||
+              title === "Bug Hunter Bootcamp" ||
               title === "Back End Development" ||
               title === "Full Stack Development" ||
-              title === "Javapalooza: A Comprehensive Core Java Internship" ||
+              title === "Javapalooza: A Comprehensive Core Java Bootcamp" ||
               title === "C++ Wizardry: Unleashing the Magic of Programming" ||
-              title === "Python Programming Internship: Building Core Skills" ||
-              title === "Data Detective Internship(Data Analyst)" ||
+              title === "Python Programming Bootcamp: Building Core Skills" ||
+              title === "Data Detective Bootcamp(Data Analyst)" ||
               title ===
-                "Reactivate Your Coding Skills: Join Our ReactJS Internship Program!" ||
+                "Reactivate Your Coding Skills: Join Our ReactJS Bootcamp Program!" ||
               title ===
-                "JavaScript Ninja Internship: Mastering the Art of Web Development" ||
+                "JavaScript Ninja Bootcamp: Mastering the Art of Web Development" ||
               title ===
-                "Data Alchemist: Embark on a Journey of Innovation with our Data Science Internship"
+                "Data Alchemist: Embark on a Journey of Innovation with our Data Science Bootcamp"
             ) {
               window.location.href = "https://www.grappl.tech/request";
             } else {
@@ -211,7 +211,7 @@ const Internships = () => {
     <Container minH={"95vh"} maxW={"container.lg"} paddingY={"8"}>
       <Heading
         fontFamily={"Poppins"}
-        children="All Internships"
+        children="All Bootcamps"
         m={"8"}
         textAlign={"center"}
       />
@@ -253,11 +253,11 @@ const Internships = () => {
         justifyContent={["flex-start", "space-evenly"]}
         alignItems={["center", "flex-start"]}
       >
-        <Internship
+        <Bootcamp
           title={"Front End Development"}
           fontFamily={"Poppins"}
           description={
-            "Our front end development internship program using HTML, CSS, and JavaScript provides hands-on experience in building modern and responsive websites. Interns will learn front-end web development fundamentals, responsive design principles, and JavaScript programming concepts. By the end of the internship, they will have practical skills that can be applied to real-world projects. Join Us and upskill yourself for your better career!"
+            "Our front end development bootcamp program using HTML, CSS, and JavaScript provides hands-on experience in building modern and responsive websites. Interns will learn front-end web development fundamentals, responsive design principles, and JavaScript programming concepts. By the end of the bootcamp, they will have practical skills that can be applied to real-world projects. Join Us and upskill yourself for your better career!"
           }
           // views={views - 1489}
           imageSrc={
@@ -268,10 +268,10 @@ const Internships = () => {
           lectureCount={"32"}
           addToPlaylistHandler={addToPlaylistHandler}
         />
-        <Internship
+        <Bootcamp
           title={"Back End Development"}
           description={
-            "Looking to deepen your backend development skills? Our Node.js internship will teach you how to build scalable and efficient web applications using the powerful JavaScript runtime. Learn how to work with popular Node.js frameworks like Express. Gain real-world experience by building and deploying your own Node.js projects. Join our Node.js internship program and take your backend development skills to the next level!"
+            "Looking to deepen your backend development skills? Our Node.js bootcamp will teach you how to build scalable and efficient web applications using the powerful JavaScript runtime. Learn how to work with popular Node.js frameworks like Express. Gain real-world experience by building and deploying your own Node.js projects. Join our Node.js bootcamp program and take your backend development skills to the next level!"
           }
           // views={views - 1590}
           imageSrc={
@@ -282,10 +282,10 @@ const Internships = () => {
           lectureCount={"18"}
           addToPlaylistHandler={addToPlaylistHandler}
         />
-        <Internship
-          title={"Bug Hunter Internship"}
+        <Bootcamp
+          title={"Bug Hunter Bootcamp"}
           description={
-            "Looking for a challenging and rewarding internship that will boost your software testing skills? Look no further than our internship! You'll gain hands-on experience with test planning, execution, and automation while working on real-world projects. With expert mentorship, valuable certifications, and a collaborative team environment, this internship will give you the tools you need to succeed in your future career as a software tester."
+            "Looking for a challenging and rewarding bootcamp that will boost your software testing skills? Look no further than our bootcamp! You'll gain hands-on experience with test planning, execution, and automation while working on real-world projects. With expert mentorship, valuable certifications, and a collaborative team environment, this bootcamp will give you the tools you need to succeed in your future career as a software tester."
           }
           // views={views - 1600}
           imageSrc={
@@ -296,10 +296,10 @@ const Internships = () => {
           lectureCount={"28"}
           addToPlaylistHandler={addToPlaylistHandler}
         />
-        <Internship
-          title={"Data Alchemist (Data Science Internship)"}
+        <Bootcamp
+          title={"Data Alchemist (Data Science Bootcamp)"}
           description={
-            "Unleash the power of data with our Data Alchemist internship, where you'll embark on a transformative journey of innovation. Dive deep into the world of data science and discover the secrets hidden within vast datasets. Harness cutting-edge techniques, advanced analytics, and machine learning algorithms to extract valuable insights."
+            "Unleash the power of data with our Data Alchemist bootcamp, where you'll embark on a transformative journey of innovation. Dive deep into the world of data science and discover the secrets hidden within vast datasets. Harness cutting-edge techniques, advanced analytics, and machine learning algorithms to extract valuable insights."
           }
           // views={34}
           imageSrc={
@@ -310,10 +310,10 @@ const Internships = () => {
           lectureCount={"45"}
           addToPlaylistHandler={addToPlaylistHandler}
         />
-        <Internship
+        <Bootcamp
           title={"Full Stack Fusion (MERN Stack)"}
           description={
-            "Immerse yourself in the world of Full Stack Fusion with our MERN Stack internship. Unleash your potential as you delve into the dynamic combination of MongoDB, Express.js, React.js, and Node.js. Gain hands-on experience building robust web applications and master the art of seamless integration across the entire stack. Join us and become a data scientist."
+            "Immerse yourself in the world of Full Stack Fusion with our MERN Stack bootcamp. Unleash your potential as you delve into the dynamic combination of MongoDB, Express.js, React.js, and Node.js. Gain hands-on experience building robust web applications and master the art of seamless integration across the entire stack. Join us and become a data scientist."
           }
           // views={78}
           imageSrc={
@@ -324,10 +324,10 @@ const Internships = () => {
           lectureCount={"23"}
           addToPlaylistHandler={addToPlaylistHandler}
         />
-        <Internship
+        <Bootcamp
           title={"Interview Mastery Blueprint"}
           description={
-            "Unlock the secrets to interview success with our Interview Mastery Blueprint internship. Gain invaluable guidance and insights from industry experts as they provide personalized coaching and mentorship. Master the art of crafting compelling resumes, acing challenging interview questions, and showcasing your unique skills. Elevate your interview skills to new heights."
+            "Unlock the secrets to interview success with our Interview Mastery Blueprint bootcamp. Gain invaluable guidance and insights from industry experts as they provide personalized coaching and mentorship. Master the art of crafting compelling resumes, acing challenging interview questions, and showcasing your unique skills. Elevate your interview skills to new heights."
           }
           // views={3}
           imageSrc={
@@ -338,10 +338,10 @@ const Internships = () => {
           lectureCount={"14"}
           addToPlaylistHandler={addToPlaylistHandler}
         />
-        <Internship
-          title={"Javapalooza: A Comprehensive Core Java Internship"}
+        <Bootcamp
+          title={"Javapalooza: A Comprehensive Core Java Bootcamp"}
           description={
-            " The Core Java Internship is an opportunity for students to develop their Java programming skills and gain hands-on experience with the language. Through this internship, students will learn the fundamental concepts of Java programming, including object-oriented programming, data structures, and algorithms. Join now and upskill!"
+            " The Core Java Bootcamp is an opportunity for students to develop their Java programming skills and gain hands-on experience with the language. Through this bootcamp, students will learn the fundamental concepts of Java programming, including object-oriented programming, data structures, and algorithms. Join now and upskill!"
           }
           // views={views - 22}
           imageSrc={
@@ -352,10 +352,10 @@ const Internships = () => {
           lectureCount={"15"}
           addToPlaylistHandler={addToPlaylistHandler}
         />
-        <Internship
-          title={"Python Programming Internship: Building Core Skills"}
+        <Bootcamp
+          title={"Python Programming Bootcamp: Building Core Skills"}
           description={
-            "The Core Python Internship is an opportunity for students to learn the basics of Python programming language. In this internship, students will learn how to write Python scripts and programs, work with various data structures and modules, and develop real-world applications. The program will cover Python syntax, object-oriented programming."
+            "The Core Python Bootcamp is an opportunity for students to learn the basics of Python programming language. In this bootcamp, students will learn how to write Python scripts and programs, work with various data structures and modules, and develop real-world applications. The program will cover Python syntax, object-oriented programming."
           }
           // views={views - 1345}
           imageSrc={
@@ -366,10 +366,10 @@ const Internships = () => {
           lectureCount={"14"}
           addToPlaylistHandler={addToPlaylistHandler}
         />
-        <Internship
+        <Bootcamp
           title={"C++ Wizardry: Unleashing the Magic of Programming"}
           description={
-            "Join our C++ internship program to explore the possibilities of this powerful programming language and unlock your potential for innovation. You will gain hands-on experience, learn best practices and industry standards, and collaborate with experienced mentors to develop your skills further. Build a strong foundation and unleash your creativity."
+            "Join our C++ bootcamp program to explore the possibilities of this powerful programming language and unlock your potential for innovation. You will gain hands-on experience, learn best practices and industry standards, and collaborate with experienced mentors to develop your skills further. Build a strong foundation and unleash your creativity."
           }
           // views={views - 1234}
           imageSrc={
@@ -380,12 +380,12 @@ const Internships = () => {
           lectureCount={"12"}
           addToPlaylistHandler={addToPlaylistHandler}
         />
-        <Internship
+        <Bootcamp
           title={
-            "JavaScript Ninja Internship: Mastering the Art of Web Development"
+            "JavaScript Ninja Bootcamp: Mastering the Art of Web Development"
           }
           description={
-            "Join our JavaScript Ninja Internship program and take your web development skills to the next level. Learn from experienced mentors and work on real-world projects to gain hands-on experience. Develop your skills in JavaScript, jQuery, and other web technologies. Get certified at the end of the program and start your career as a web developer with confidence."
+            "Join our JavaScript Ninja Bootcamp program and take your web development skills to the next level. Learn from experienced mentors and work on real-world projects to gain hands-on experience. Develop your skills in JavaScript, jQuery, and other web technologies. Get certified at the end of the program and start your career as a web developer with confidence."
           }
           // views={"34"}
           imageSrc={
@@ -396,12 +396,12 @@ const Internships = () => {
           lectureCount={"24"}
           addToPlaylistHandler={addToPlaylistHandler}
         />
-        <Internship
+        <Bootcamp
           title={
-            "Reactivate Your Coding Skills: Join Our ReactJS Internship Program!"
+            "Reactivate Your Coding Skills: Join Our ReactJS Bootcamp Program!"
           }
           description={
-            "Our ReactJS Internship provides hands-on experience in building responsive and dynamic user interfaces using the latest front-end web development technologies. Join us to gain practical knowledge on ReactJS, Redux, and other related tools, and to work on real-world projects to enhance your skills and marketability. Join us to become a ReactJS pro!"
+            "Our ReactJS Bootcamp provides hands-on experience in building responsive and dynamic user interfaces using the latest front-end web development technologies. Join us to gain practical knowledge on ReactJS, Redux, and other related tools, and to work on real-world projects to enhance your skills and marketability. Join us to become a ReactJS pro!"
           }
           // views={"56"}
           imageSrc={
@@ -412,10 +412,10 @@ const Internships = () => {
           lectureCount={"20"}
           addToPlaylistHandler={addToPlaylistHandler}
         />
-        <Internship
-          title={"Data Detective Internship(Data Analyst)"}
+        <Bootcamp
+          title={"Data Detective Bootcamp(Data Analyst)"}
           description={
-            "Join our team as a Data Analyst Intern and become a data detective. Dive into the world of data analysis, unlock insights, and solve complex problems. Gain experience in data cleaning, visualization, and analysis while working with cutting-edge tools and technologies. Why worry about your future when you can analyze it with our Data Analyst Internship at InternPixel! Join us now!"
+            "Join our team as a Data Analyst grappler and become a data detective. Dive into the world of data analysis, unlock insights, and solve complex problems. Gain experience in data cleaning, visualization, and analysis while working with cutting-edge tools and technologies. Why worry about your future when you can analyze it with our Data Analyst Bootcamp at InternPixel! Join us now!"
           }
           // views={"42"}
           imageSrc={
@@ -426,10 +426,10 @@ const Internships = () => {
           lectureCount={"21"}
           addToPlaylistHandler={addToPlaylistHandler}
         />
-        <Internship
-          title={"Language Maverick Internship"}
+        <Bootcamp
+          title={"Language Maverick Bootcamp"}
           description={
-            "Looking to improve your English language skills and gain practical experience? Join our Language Maverick Internship and learn from experienced language experts. Sharpen your language skills by working on real-life projects and interacting with native English speakers. Get ready to take your language proficiency to the next level and stand out in the global job market."
+            "Looking to improve your English language skills and gain practical experience? Join our Language Maverick Bootcamp and learn from experienced language experts. Sharpen your language skills by working on real-life projects and interacting with native English speakers. Get ready to take your language proficiency to the next level and stand out in the global job market."
           }
           // views={"64"}
           imageSrc={
@@ -440,10 +440,10 @@ const Internships = () => {
           lectureCount={"121"}
           addToPlaylistHandler={addToPlaylistHandler}
         />
-        <Internship
+        <Bootcamp
           title={"Data Maestro(SQL and PostgreSQL)"}
           description={
-            "Learn to master the powerful tools of SQL and PostgreSQL as a Data Maestro intern at InternPixel. Gain hands-on experience with database design, data analysis, and data manipulation while working on real-world projects. Develop your technical skills and unlock new career opportunities with our expert guidance and mentorship. Join us and become a true data wizard!"
+            "Learn to master the powerful tools of SQL and PostgreSQL as a Data Maestro grappler at GrapplTech. Gain hands-on experience with database design, data analysis, and data manipulation while working on real-world projects. Develop your technical skills and unlock new career opportunities with our expert guidance and mentorship. Join us and become a true data wizard!"
           }
           // views={"23"}
           imageSrc={
@@ -454,10 +454,10 @@ const Internships = () => {
           lectureCount={"18"}
           addToPlaylistHandler={addToPlaylistHandler}
         />
-        <Internship
-          title={"Node Ninja Internship"}
+        <Bootcamp
+          title={"Node Ninja Bootcamp"}
           description={
-            "Join our Node.js Ninja Internship and level up your skills in developing scalable and efficient web applications using Node.js. You'll work on real-world projects, gain hands-on experience with popular libraries and frameworks. At the end of the program, you'll have a solid foundation in Node.js development and a certificate to prove it. Don't miss out on this opportunity."
+            "Join our Node.js Ninja Bootcamp and level up your skills in developing scalable and efficient web applications using Node.js. You'll work on real-world projects, gain hands-on experience with popular libraries and frameworks. At the end of the program, you'll have a solid foundation in Node.js development and a certificate to prove it. Don't miss out on this opportunity."
           }
           // views={"32"}
           imageSrc={
@@ -472,7 +472,7 @@ const Internships = () => {
       <>
         <div id="chat-box">
           <div id="chat-top">
-            PixelPal: Your Guide{" "}
+            Grappie: Your Guide{" "}
             <span id="chat-top-right">
               <svg
                 id="close-box"
@@ -491,7 +491,7 @@ const Internships = () => {
           </div>
           <div id="chat-msg">
             <p>
-              Welcome to InternPixel, your gateway to exciting internship
+              Welcome to GrapplTech, your gateway to excitin
               opportunities!
             </p>
             <div id="chat-form">

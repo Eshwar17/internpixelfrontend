@@ -22,8 +22,8 @@ const Features = () => {
     <div class="page2">
       <div>
         <div class="box b1">
-          <h2>Intern Chowdown</h2>
-          <p>At GrapplTech, we believe in creating a community of top-performing interns who are passionate about learning and growing. Rewarding our top 10 interns with team lunches to foster a positive team dynamic and celebrate their hard work and dedication. Join us at InternPixel and strive for excellence!</p>
+          <h2>Grappler Chowdown</h2>
+          <p>At GrapplTech, we believe in creating a community of top-performing grapplers who are passionate about learning and growing. Rewarding our top 10 grapplers with team lunches to foster a positive team dynamic and celebrate their hard work and dedication. Join us at GrapplTech and strive for excellence!</p>
           <img class="img" src={supervisor} width="120" alt="Supervisor" />
         </div>
       </div>
@@ -48,7 +48,7 @@ const Features = () => {
         <div class="box b3">
           <h2>Client Projects</h2>
           <p>
-          GrapplTech's client project feature provides students and recent graduates with the opportunity to work on real-world projects for top companies, gaining hands-on experience and valuable skills to add to their resumes. Join us today to take your internship experience to the next level!
+          GrapplTech's client project feature provides students and recent graduates with the opportunity to work on real-world projects for top companies, gaining hands-on experience and valuable skills to add to their resumes. Join us today to take your bootcamp experience to the next level!
           </p>
           <img class="img" src={calculator} alt="Calculator" />
         </div>
