@@ -17,7 +17,7 @@ const Popup = (props) => {
       }, 3000);
     }, 4000);
 
-    setOfferEndDate(new Date(startDateTime.getTime() + 30 * 24 * 60 * 60 * 1000));
+    setOfferEndDate(new Date(startDateTime.getTime() + 60 * 24 * 60 * 60 * 1000));
   }, []);
 
   useEffect(() => {
