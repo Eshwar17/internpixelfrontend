@@ -113,49 +113,6 @@ function Home() {
     </div>
   </div>
 </section>
-      {/* <div className="container">
-        <Stack
-          direction={["column", "row"]}
-          height="100%"
-          justifyContent={["center", "space-between"]}
-          alignItems="center"
-          spacing={["16", "56"]}
-        >
-          <VStack
-            width={"full"}
-            alignItems={["center", "flex-end"]}
-            spacing="8"
-          >
-            <h1 id="mainHeading">Pixelate Your Career</h1>
-            <Text
-              textAlign={["center", "left"]}
-              fontSize={"1.2rem"}
-              children="Don't break the bank, break into your dream career with Internpixel's affordable internships!"
-            />
-            
-            <Link to="/internships">
-              <Button size={"lg"} colorScheme="blue">
-                Explore Now
-              </Button>
-            </Link>
-          </VStack>
-          
-          <Image
-            className="vector-graphics"
-            boxSize={"md"}
-            src={vg}
-            objectFit="contain"
-          />
-        </Stack>
-      </div>
-       <Heading
-        children="InternPixel"
-        size="2xl"
-        m="4"
-        textAlign={"center"}
-      /> */}
-      
-      {/* <h1 className="mainHeading1">InternPixel</h1> */}
       <Center>
       <h1 className="headerddd">
          GrapplTech
@@ -313,6 +270,7 @@ function Home() {
         children="Unleash your potential with GrapplTech's curated collection of trending and upcoming bootcamps. Elevate your skills, embrace cutting-edge industries, and embark on a transformative career journey that paves the way for future innovation."
       />
       <CardSlider />
+
       <TestimonialSlider />
       {/* <Faq /> */}
       <FaqPage />

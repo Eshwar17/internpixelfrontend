@@ -16,7 +16,7 @@ bodys {
 .slider {
     background: transparent;
     box-shadow: 0 10px 20px -5px rgba(0, 0, 0, .125);
-    height: 200px;
+    height: 400px;
     margin: auto;
     overflow: hidden;
     position: relative;
@@ -25,7 +25,7 @@ bodys {
 .slider::before, .slider::after {
     background: linear-gradient(to right, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 0) 100%);
     content: "";
-    height: 200px;
+    height: 400px;
     position: absolute;
     width: 200px;
     z-index: 2;
