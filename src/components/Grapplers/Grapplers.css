@@ -30,7 +30,6 @@
   top: 0;
   transform: rotateZ(180deg);
 }
-
 .badge-slider::before {
   left: 0;
   top: 0;
@@ -38,13 +37,12 @@
 
 .badge-track {
   display: flex;
-  animation: scroll 40s linear infinite;
-  width: calc(250px * 14);
+  animation: scroll linear infinite;
 }
 
 .badge-slide {
   height: 500px;
-  width: auto;
+  width: 350px; /* Set the width of each badge slide */
   padding: 2.5rem;
 }
 
@@ -53,6 +51,6 @@
     transform: translateX(0);
   }
   100% {
-    transform: translateX(calc(-250px * 7));
+    transform: translateX(calc(-350px * ${badges.length}));
   }
 }

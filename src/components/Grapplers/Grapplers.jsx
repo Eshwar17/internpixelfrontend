@@ -34,7 +34,7 @@ const Grapplers = () => {
   return (
     <div className="body-container">
       <div className="badge-slider">
-        <div className="badge-track">
+        <div className="badge-track" style={{ width: `calc(350px * ${badges.length})`, animationDuration: `${badges.length*4}s` }}>
           {badges.map((badge, index) => (
             <div className="badge-slide" key={index}>
               <div dangerouslySetInnerHTML={{ __html: badge['Badge Code'] }} />
