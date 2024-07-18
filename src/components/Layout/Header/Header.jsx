@@ -54,7 +54,7 @@ function Header() {
               <LinkButton onClose={onClose} url="/gtcommunitycomponents" title="GT Community Components" />
               <LinkButton onClose={onClose} url="/workshops" title="Workshops & Hackathons" />
               <LinkButton onClose={onClose} url="/resumemaker" title="GrapplTech's Resume Maker" />
-              <Button variant={"ghost"} isDisabled="true" color={"black"}>Careers <sup style={{"color":"blue","fontSize":"11px"}}>&nbsp;&nbsp;No Open Positions</sup></Button>
+              <LinkButton onClose={onClose} url="/partnerregistration" title="Become A Partner" />
               <LinkButton onClose={onClose} url="/contact" title="Contact Us" />
               <LinkButton onClose={onClose} url="/about" title="About Us" />
             </VStack>

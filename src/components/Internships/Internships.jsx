@@ -114,7 +114,7 @@ const Bootcamp = ({
         backgroundColor={"green"}
         color={"white"}
         padding={2}
-        borderRadius={8}
+        borderRadius={4}
         // textTransform={"uppercase"}
         >★{lectureCount}</Heading>
         <h6>based on {views - 1560} reviews</h6>
@@ -268,11 +268,11 @@ const Internships = () => {
         <Bootcamp
           title={"Back End Development"}
           description={
-            "Looking to deepen your backend development skills? Our Node.js bootcamp will teach you how to build scalable and efficient web applications using the powerful JavaScript runtime. Learn how to work with popular Node.js frameworks like Express. Gain real-world experience by building and deploying your own Node.js projects. Join our Node.js bootcamp program and take your backend development skills to the next level!"
+            "Looking to deepen your backend development skills? Our Node.js bootcamp will teach you how to build scalable and efficient web applications using the powerful JavaScript runtime. Learn how to work with popular Node.js frameworks like Express. Gain real-world experience by building and deploying your own Node.js projects. Join our backend development bootcamp program and take your backend development skills to the next level!"
           }
           // views={views - 1590}
           imageSrc={
-            "https://cdn.dribbble.com/users/2131993/screenshots/9708020/media/839ef4840886e3c7e9af9fa9b4801617.png?compress=1&resize=400x300"
+            "https://cdn.pixabay.com/photo/2018/06/08/00/48/developer-3461405_1280.png"
           }
           id={"Eshwar"}
           creator={"2 Months"}
@@ -328,7 +328,7 @@ const Internships = () => {
         <Bootcamp
           title={"Interview Mastery Blueprint"}
           description={
-            "Unlock the secrets to interview success with our Interview Mastery Blueprint bootcamp. Gain invaluable guidance and insights from industry experts as they provide personalized coaching and mentorship. Master the art of crafting compelling resumes, acing challenging interview questions, and showcasing your unique skills. Elevate your interview skills to new heights."
+            "Unlock the secrets to interview success with our Interview Mastery Blueprint bootcamp. Gain invaluable guidance and insights from industry experts as they provide personalized coaching and mentorship. Master the art of crafting compelling resumes, acing challenging interview questions, and showcasing your unique skills. Elevate your interview skills."
           }
           // views={3}
           imageSrc={
@@ -422,7 +422,7 @@ const Internships = () => {
         <Bootcamp
           title={"Data Detective Bootcamp(Data Analyst)"}
           description={
-            "Join our team as a Data Analyst grappler and become a data detective. Dive into the world of data analysis, unlock insights, and solve complex problems. Gain experience in data cleaning, visualization, and analysis while working with cutting-edge tools and technologies. Why worry about your future when you can analyze it with our Data Analyst Bootcamp at InternPixel! Join us now!"
+            "Join our team as a Data Analyst grappler and become a data detective. Dive into the world of data analysis, unlock insights, and solve complex problems. Gain experience in data cleaning, visualization, and analysis while working with cutting-edge tools and technologies. Why worry about your future when you can analyze it with our Data Analyst Bootcamp at GrapplTech! Join us now and become a data analyst!"
           }
           // views={"42"}
           imageSrc={

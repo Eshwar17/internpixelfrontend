@@ -14,10 +14,7 @@ import {
 } from "@chakra-ui/react";
 import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
-import LuckyWheel from "../LuckyWheels/LuckyWheel";
-import LuckyWheelCA from "../LuckyWheels/LuckyWheelCA";
-import spinner11 from '../../assets/images/spinner11.png'
-import spinner22 from '../../assets/images/spinner22.png'
+
 
 const CampusAmbassador = () => {
   const [isDesktop, setIsDesktop] = useState(false);
@@ -123,9 +120,9 @@ const CampusAmbassador = () => {
 
   return (
     <Container w={"full"}>
-      <VStack h={"full"} justifyContent={"center"} spacing={"6"}>
+      <VStack h={"full"} justifyContent={"center"} spacing={"2"}>
         <Heading
-          children="Campus Ambassador Application Form"
+          children="GrapplTech Partner Program"
           pt={16}
           textAlign={"center"}
           fontFamily={"Poppins"}
@@ -136,7 +133,7 @@ const CampusAmbassador = () => {
         <Box>
           <Center>
             <Image
-              src="https://img.freepik.com/free-vector/we-are-hiring-persons-work_603843-2824.jpg?t=st=1717164637~exp=1717168237~hmac=0fc028af6f9230093e26ba682259ee52feb96e465aae4719ce578dab7ddfafc7&w=900" // Add your image source here
+              src="https://cdn.dribbble.com/users/1195555/screenshots/10739184/media/b1c7ee2733e393410a589bb6604ec711.gif" // Add your image source here
               alt="GrapplTech Team"
               borderRadius="lg"
               maxW="60%"
@@ -159,26 +156,11 @@ const CampusAmbassador = () => {
               textAlign={["center"]}
               mb={4}
             >
-              Why Join as a Campus Ambassador at GrapplTech?
+              Why Join as a Partner at GrapplTech?
             </Heading>
-            <Text>
-              Are you a student who thrives on taking the lead, has a passion
-              for networking, and dreams of creating a positive impact on your
-              campus community? Look no further - becoming a Campus Ambassador
-              at GrapplTech might just be the perfect opportunity for you.
-              GrapplTech is a dynamic platform committed to empowering students
-              in their professional journeys, and we're on the lookout for
-              enthusiastic and dedicated individuals like you to represent us on
-              your campus.
-            </Text>
-            <Text mt={4}>
-              So, are you ready to take your college experience to the next
-              level? Join us as a Campus Ambassador and embark on a rewarding
-              journey of growth, learning, and making a meaningful impact on
-              your campus community. Together, we'll empower students to reach
-              their full potential and create a brighter future. Join the
-              GrapplTech family today and be the change you want to see in your
-              campus community!
+            <Text textAlign={"center"}>
+            Becoming a GrapplTech Partner means joining a community of passionate educators, tech enthusiasts, and entrepreneurs who are committed to empowering learners worldwide. Our mission is to provide top-notch, accessible tech education, and we need your help to reach even more aspiring programmers, designers, and developers.
+As a GrapplTech Partner, you will have the opportunity to promote our high-quality bootcamps and courses, helping students achieve their goals while earning commissions for each successful referral. Our bootcamps cover in-demand skills such as C++, UI/UX design, software development, and more, ensuring that you are offering valuable and relevant content to your audience.
             </Text>
             <Heading
               as="h2"
@@ -187,23 +169,79 @@ const CampusAmbassador = () => {
               textAlign={["center"]}
               mb={4}
             >
-              Exclusive Rewards for Campus Ambassadors!
+              Benefits of Being a GrapplTech Partner
             </Heading>
-            <Text mt={4}>
-              Welcome to our Campus Ambassador Program! Get ready for an
-              exhilarating opportunity to win fantastic rewards every Friday.
-              Our program offers two thrilling spinners, one dedicated to Campus
-              Ambassadors (CA) in Group 1, featuring a collection of amazing
-              gifts, and the other, exclusively for CA Group 2, where a brand
-              new laptop is up for grabs! As a token of our appreciation for
-              your dedication and hard work, we've curated an array of exciting
-              gifts for CA Group 1 and a guaranteed chance to win a laptop for
-              CA Group 2. The anticipation builds each week as we spin the
-              wheels every Friday, granting our dedicated Campus Ambassadors
-              with delightful surprises. Join us in this rewarding journey as we
-              celebrate your commitment and contributions. Elevate your
-              experience with us and stand a chance to be one of our lucky
-              winners every week!
+            <Box mt={2}>
+            <Flex justifyContent="space-between" flexWrap="wrap">
+              {/* Education First */}
+              <Box flexBasis={["100%", "49%", "30%"]} textAlign="center" mb={4}>
+              
+                <Heading as="h3" fontSize="xl" fontFamily={"Poppins"} mt={2}>
+                Lucrative Commission Structure
+                </Heading>
+                <Text>
+                Earn competitive commissions for each student you refer who enrolls in our bootcamps. The more students you bring in, the higher your earnings.
+                </Text>
+              </Box>
+              {/* Community Driven */}
+              <Box flexBasis={["100%", "49%", "30%"]} textAlign="center" mb={4}>
+                
+                <Heading as="h3" fontSize="xl" fontFamily={"Poppins"} mt={2}>
+                High-Quality Live Bootcamps And Courses
+                </Heading>
+                <Text>
+                Promote courses that are meticulously designed by industry experts and cater to a wide range of tech enthusiasts, from beginners to advanced learners.
+                </Text>
+              </Box>
+              {/* Innovation Hub */}
+              <Box flexBasis={["100%", "49%", "30%"]} textAlign="center" mb={4}>
+                
+                <Heading as="h3" fontSize="xl" fontFamily={"Poppins"} mt={2}>
+                Extensive Marketing Support
+                </Heading>
+                <Text>
+                Access a wealth of marketing materials, including banners, social media content, and promotional videos, to help you effectively market our bootcamps.
+                </Text>
+              </Box>
+            </Flex>
+          </Box>
+          {/* Second Set */}
+          <Box mt={2}>
+            <Flex justifyContent="space-between" flexWrap="wrap">
+              {/* Education First */}
+              <Box flexBasis={["100%", "49%", "30%"]} textAlign="center" mb={4}>
+              
+                <Heading as="h3" fontSize="xl" fontFamily={"Poppins"} mt={2}>
+                Dedicated Partner Portal
+                </Heading>
+                <Text>
+                Use our intuitive partner portal to track your referrals, monitor your earnings, and access exclusive resources designed to help you succeed.
+                </Text>
+              </Box>
+              {/* Community Driven */}
+              <Box flexBasis={["100%", "49%", "30%"]} textAlign="center" mb={4}>
+                
+                <Heading as="h3" fontSize="xl" fontFamily={"Poppins"} mt={2}>
+                Exclusive Partner Discounts And Goodies
+                </Heading>
+                <Text>
+                Receive discounts on our courses and bootcamps for your personal growth and development. We even provide goodies for partners.
+                </Text>
+              </Box>
+              {/* Innovation Hub */}
+              <Box flexBasis={["100%", "49%", "30%"]} textAlign="center" mb={4}>
+                
+                <Heading as="h3" fontSize="xl" fontFamily={"Poppins"} mt={2}>
+                Community and Networking Opportunities
+                </Heading>
+                <Text>
+                Join a vibrant community of like-minded partners, share insights, and collaborate on initiatives to drive success.
+                </Text>
+              </Box>
+            </Flex>
+          </Box>
+            <Text mt={4} textAlign={"center"}>
+            Partnering with GrapplTech is not just about earning commissions; it’s about making a difference in the tech education landscape. If you are passionate about education and want to help others while growing your own business, the GrapplTech Partner Program is the perfect opportunity for you.
             </Text>
           </Box>
         </Flex>
@@ -212,23 +250,9 @@ const CampusAmbassador = () => {
           style={{
             display: "flex",
             justifyContent: "space-between",
-            padding: "5%",
+            padding: "2%",
           }}
         >
-          {isDesktop ? (
-            <>
-              <LuckyWheel />
-              <LuckyWheelCA />
-            </>
-          ) : (
-            <div>
-            <img src={spinner11} alt="Lucky Wheel"/>
-            <img src={spinner22} alt="Lucky Wheel"/>
-            <p>
-              Sorry, these wheels aren't built for thumb-twirling on tiny
-              screens. Laptop up for some wheelie fun!
-            </p></div>
-          )}
         </div>
         <form onSubmit={handleSubmit} style={{ width: "100%" }}>
           <Box my={"2"}>
@@ -258,7 +282,7 @@ const CampusAmbassador = () => {
           <Box my={"4"}>
             <FormLabel
               htmlFor="message"
-              children="Why do you want to be a Campus Ambassador for GrapplTech?"
+              children="Why do you want to be a partner for GrapplTech?"
             />
             <Textarea
               required

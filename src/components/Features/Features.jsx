@@ -4,19 +4,11 @@ import supervisor from './img/team-lunch1.jpg';
 import karma from './img/icon-karma.png';
 import calculator from './img/icon-calculator.png';
 import teamBuilder from './img/icon-team-builder.png';
-import { Box } from '@chakra-ui/react';
 
 const Features = () => {
   return (
     <>
     <div class="page1">
-      {/* <h1 class="h1">
-      GrapplTech 
-        <span> Your Gateway to Landing the Perfect Internship!</span>
-      </h1> */}
-      {/* <p>
-      GrapplTech is the ultimate platform for students and recent graduates to find internship opportunities across a wide range of industries. Our platform connects aspiring interns with top companies, offering them invaluable experience, skills, and contacts to jumpstart their careers. 
-      </p> */}
     </div>
 
     <div class="page2">

@@ -1,8 +1,22 @@
-import React, { useRef, useEffect } from 'react';
-import './LinkedInBadge.css'; // Import your CSS file for styling
+import React, { useEffect, useRef } from 'react';
+import './LinkedInBadge.css';
 
 const Linkedin = () => {
+    const badgesContainerRef = useRef(null);
+    useEffect(() => {
+        // Function to handle automatic scrolling
+        const scrollContainer = badgesContainerRef.current;
+        setTimeout(() => {
+          const script = document.createElement('script');
+          script.src = "https://platform.linkedin.com/badges/js/profile.js";
+          script.async = true;
+          script.defer = true;
+          script.type = "text/javascript";
+          document.body.appendChild(script);
+        }, 3000);});
+
     const badges = [
+        // Add your badges here as in the previous code
         `<div class="badge-base LI-profile-badge" data-locale="en_US" data-size="large" data-theme="light" data-type="VERTICAL" data-vanity="sneka16" data-version="v1"><a class="badge-base__link LI-simple-link" href="https://in.linkedin.com/in/sneka16?trk=profile-badge">Sneka P</a></div>`,
         `<div class="badge-base LI-profile-badge" data-locale="en_US" data-size="large" data-theme="light" data-type="HORIZONTAL" data-vanity="j-nithyasree" data-version="v1"><a class="badge-base__link LI-simple-link" href="https://in.linkedin.com/in/j-nithyasree?trk=profile-badge">J NITHYASREE</a></div>`,
         `<div class="badge-base LI-profile-badge" data-locale="en_US" data-size="large" data-theme="dark" data-type="VERTICAL" data-vanity="ayush9650" data-version="v1"><a class="badge-base__link LI-simple-link" href="https://in.linkedin.com/in/ayush9650?trk=profile-badge">Ayush Dubey</a></div>`,
@@ -42,54 +56,34 @@ const Linkedin = () => {
               "`,
               `<div class="badge-base LI-profile-badge" data-locale="en_US" data-size="large" data-theme="light" data-type="VERTICAL" data-vanity="harshitkk11" data-version="v1"><a class="badge-base__link LI-simple-link" href="https://in.linkedin.com/in/harshitkk11?trk=profile-badge">Harshit kumar</a></div>`
     ];
-    const badgesContainerRef = useRef(null);
+
+    
 
     useEffect(() => {
-        // Function to handle automatic scrolling
-        const scrollContainer = badgesContainerRef.current;
-        setTimeout(() => {
-          const script = document.createElement('script');
-          script.src = "https://platform.linkedin.com/badges/js/profile.js";
-          script.async = true;
-          script.defer = true;
-          script.type = "text/javascript";
-          document.body.appendChild(script);
-        }, 3000);
-
-        const scroll = () => {
-            const scrollWidth = scrollContainer.scrollWidth - scrollContainer.clientWidth;
-            if (scrollWidth > 0) {
-                let scrollPos = 0;
-                const scrollSpeed = 1; // Adjust scroll speed as needed
-
-                const scrollFunc = () => {
-                    scrollPos += scrollSpeed;
-                    if (scrollPos > scrollWidth) {
-                        scrollPos = 0;
-                    }
-                    scrollContainer.scrollLeft = scrollPos;
-                };
-
-                const interval = setInterval(scrollFunc, 90); // Adjust interval as needed
-
-                return () => clearInterval(interval);
+        const badgesContainer = badgesContainerRef.current;
+        let scrollAmount = 0;
+        const scrollInterval = setInterval(() => {
+            if (badgesContainer) {
+                if (scrollAmount >= badgesContainer.scrollHeight - badgesContainer.clientHeight) {
+                    scrollAmount = 0; // Reset scroll amount
+                    badgesContainer.scrollTo(0, 0);
+                } else {
+                    scrollAmount += 1; // Adjust scroll speed here
+                    badgesContainer.scrollTo(0, scrollAmount);
+                }
             }
-            
-        };
+        }, 20); // Adjust interval speed here
 
-        const intervalId = scroll();
-
-        return () => clearInterval(intervalId);
+        return () => clearInterval(scrollInterval);
     }, []);
 
     return (
         <div className="badges-container" ref={badgesContainerRef}>
-        
             {badges.map((badge, index) => (
                 <div key={index} dangerouslySetInnerHTML={{ __html: badge }} />
             ))}
         </div>
     );
-}
+};
 
 export default Linkedin;

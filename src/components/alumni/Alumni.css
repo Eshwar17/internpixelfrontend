@@ -2,7 +2,6 @@ bodys {
     align-items: center;
     background: transparent;
     display: flex;
-    /* height: 100vh; */
     justify-content: center;
 }
 @keyframes scroll {
@@ -16,7 +15,7 @@ bodys {
 .slider {
     background: transparent;
     box-shadow: 0 10px 20px -5px rgba(0, 0, 0, .125);
-    height: 400px;
+    height: 200px;
     margin: auto;
     overflow: hidden;
     position: relative;
