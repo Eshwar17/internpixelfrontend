@@ -22,15 +22,15 @@ const Footer = () => {
             color={"white"}
           />
         </VStack>
-        <VStack alignItems={["center", "flex-start"]} width="full">
+        {/* <VStack alignItems={["center", "flex-start"]} width="full">
           <Text size={"s"}>Roshini Tech Hub, PFS Club House,</Text>
           <Text>Marathahalli Main Rd, R.J.Gardens,</Text>
           <Text>Bengaluru, Karnataka 560037</Text>
-        </VStack>
+        </VStack> */}
         <VStack alignItems={["center", "flex-start"]} width="full">
           <Text>Mail : support@grappl.tech</Text>
           <Text>careers@grappl.tech</Text>
-          <Text>Phone : +91 8688561178</Text>
+          <Text>Phone : +91 8099523442</Text>
         </VStack>
         <HStack
           spacing={["2", "10"]}
