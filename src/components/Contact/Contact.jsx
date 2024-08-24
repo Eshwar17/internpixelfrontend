@@ -41,7 +41,7 @@ const Contact = () => {
         var msg = msgElement.value;
         var relmsg = msg.replace(/ /g, "%20");
         window.open(
-          "https://api.whatsapp.com/send?phone=8688561178&text=" + relmsg,
+          "https://api.whatsapp.com/send?phone=8099523442&text=" + relmsg,
           "_blank"
         );
       }
