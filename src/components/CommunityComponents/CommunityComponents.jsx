@@ -10,7 +10,6 @@ import {
   Icon,
   Button
 } from "@chakra-ui/react";
-import { Link } from "react-router-dom";
 import { HiLibrary } from "react-icons/hi";
 import { FaBusinessTime } from "react-icons/fa";
 import { FaCoffee } from "react-icons/fa";

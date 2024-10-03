@@ -5,7 +5,7 @@ import gift from "./gift.png";
 const Popup = (props) => {
   const [isOpen, setIsOpen] = useState(false);
   const [offerEndDate, setOfferEndDate] = useState(null);
-  const startDateTime = new Date('2024-07-08T00:00:00Z'); // Today's date
+  const startDateTime = new Date('2024-10-08T00:00:00Z'); // Today's date
 
   useEffect(() => {
     setTimeout(() => {
@@ -15,7 +15,7 @@ const Popup = (props) => {
       setTimeout(() => {
         setIsOpen(false);
       }, 3000);
-    }, 4000);
+    }, 5000);
 
     setOfferEndDate(new Date(startDateTime.getTime() + 60 * 24 * 60 * 60 * 1000));
   }, []);

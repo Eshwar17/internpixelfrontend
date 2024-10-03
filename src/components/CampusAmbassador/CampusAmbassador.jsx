@@ -300,7 +300,7 @@ As a GrapplTech Partner, you will have the opportunity to promote our high-quali
           </Center>
 
           <Box my={"4"}>
-            Register for an internship?{" "}
+            Register for a bootcamp?{" "}
             <Link to="/request">
               <Button colorScheme="blue" variant={"link"}>
                 Click
@@ -313,7 +313,7 @@ As a GrapplTech Partner, you will have the opportunity to promote our high-quali
       <>
         <div id="chat-box">
           <div id="chat-top">
-            PixelPal: Your Guide{" "}
+            Grappie: Your Guide{" "}
             <span id="chat-top-right">
               <svg
                 id="close-box"
@@ -332,8 +332,7 @@ As a GrapplTech Partner, you will have the opportunity to promote our high-quali
           </div>
           <div id="chat-msg">
             <p>
-              Welcome to GrapplTech, your gateway to exciting internship
-              opportunities!
+              Welcome to GrapplTech, your gateway to exciting bootcamps!
             </p>
             <div id="chat-form">
               <div className="chat-in">

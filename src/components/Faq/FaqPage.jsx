@@ -34,7 +34,18 @@ const FaqPage = () => {
             GrapplTech is a platform that connects students and companies by providing bootcamps, trainings(live sessions) and resources to help students advance their careers.
           </AccordionPanel>
         </AccordionItem>
-
+        <AccordionItem>
+          <h2>
+            <AccordionButton>
+              <Box flex="1" textAlign="left">
+              How does GrapplTech generate revenue?
+              </Box>
+            </AccordionButton>
+          </h2>
+          <AccordionPanel>
+          GrapplTech generates revenue through selling bootcamps, workshops, and corporate trainings, as well as by outsourcing skilled candidates and interns to companies. We earn one-time commissions from companies for successful candidate placements and commissions for outsourcing interns to paid internships.
+          </AccordionPanel>
+        </AccordionItem>
         <AccordionItem>
           <h2>
             <AccordionButton>

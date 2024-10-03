@@ -242,18 +242,8 @@ function Home() {
       />
       </Box>
       <Alumni />
-      {/* video */}
       <SomethingBigIsComingSection />
-      {/* <div className="container2">
-        <video
-          src={introVideo}
-          autoPlay
-          controls
-          controlsList="nodownload nofullscreen noremoteplayback"
-          disablePictureInPicture
-          disableRemotePlayback
-        ></video>
-      </div> */}
+      
     
       {/* features */}
       <h1 className="mainHeading1">GrapplTech's Trailblazing Path</h1><Center>
@@ -272,7 +262,6 @@ function Home() {
       <CardSlider />
 
       <TestimonialSlider />
-      {/* <Faq /> */}
       <FaqPage />
       <>
         <div id="chat-box">
