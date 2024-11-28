@@ -211,6 +211,7 @@ const Internships = () => {
   return (
     <Container minH={"95vh"} maxW={"container.lg"} paddingY={"8"}>
       <Heading
+      class="headerddd"
         fontFamily={"Poppins"}
         children="All Bootcamps"
         m={"8"}

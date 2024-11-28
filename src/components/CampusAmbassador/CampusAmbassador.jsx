@@ -122,6 +122,7 @@ const CampusAmbassador = () => {
     <Container w={"full"}>
       <VStack h={"full"} justifyContent={"center"} spacing={"2"}>
         <Heading
+        class="headerddd"
           children="GrapplTech Partner Program"
           pt={16}
           textAlign={"center"}

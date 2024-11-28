@@ -9,7 +9,7 @@ const FeaturesSection = () => {
     <li className="cards1_item">
       <div className="card1">
         <div className="card1_image">
-          <img src="https://img.freepik.com/free-vector/online-tutorials-concept_52683-37481.jpg?size=626&ext=jpg&ga=GA1.2.136392163.1683044531&semt=ais" alt='card'/>
+          <img src="https://i.pinimg.com/736x/df/a7/9a/dfa79af66cf07e118cd9c16c41a5e904.jpg" alt='card'/>
         </div>
         <div className="card1_content">
           <h2 className="card1_title">Live Classes</h2>

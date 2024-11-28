@@ -13,7 +13,7 @@ import {
 const FaqPage = () => {
   return (
     <Container maxW="container.lg" py={8}>
-      <Heading as="h1" mb={6} fontFamily={"Poppins"} textAlign="center" fontWeight={"bold"} fontSize="4xl">
+      <Heading class="headerddd" as="h1" mb={6} fontFamily={"Poppins"} textAlign="center" fontWeight={"bold"} fontSize="4xl">
         Frequently Asked Questions
       </Heading>
       <Center>

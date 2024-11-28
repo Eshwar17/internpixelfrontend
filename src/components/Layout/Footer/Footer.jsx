@@ -9,7 +9,7 @@ const Footer = () => {
       <Stack direction={["column", "row"]}>
         <VStack alignItems={["center", "flex-start"]} width="full">
           <Heading
-            className="mainHeading1"
+            class="mainHeading1"
             children="All Rights Reserved"
             color={"white"}
           />
@@ -22,11 +22,6 @@ const Footer = () => {
             color={"white"}
           />
         </VStack>
-        {/* <VStack alignItems={["center", "flex-start"]} width="full">
-          <Text size={"s"}>Roshini Tech Hub, PFS Club House,</Text>
-          <Text>Marathahalli Main Rd, R.J.Gardens,</Text>
-          <Text>Bengaluru, Karnataka 560037</Text>
-        </VStack> */}
         <VStack alignItems={["center", "flex-start"]} width="full">
           <Text>Mail : support@grappl.tech</Text>
           <Text>careers@grappl.tech</Text>

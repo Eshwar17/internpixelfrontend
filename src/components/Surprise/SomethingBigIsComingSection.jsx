@@ -12,7 +12,7 @@ const SomethingBigIsComingSection = () => {
   useEffect(() => {
     // Calculate the time left
     const today = new Date();
-    const targetDate = new Date("2024-12-01"); // Replace with your target date
+    const targetDate = new Date("2025-01-28"); // Replace with your target date
     const timeDifference = targetDate - today;
     const secondsLeft = Math.floor(timeDifference / 1000);
 
@@ -62,7 +62,7 @@ const SomethingBigIsComingSection = () => {
       {/* Text and Countdown on the right */}
       <Box w={{ base: "100%", md: "50%" }} p={8} borderRadius="md">
         <VStack align="center">
-          <Text fontSize={{ base: "5xl", md: "5xl" }} color={"blue.600"} textAlign={"center"} fontWeight="bold">
+          <Text class="headerddd" fontSize={{ base: "5xl", md: "5xl" }} color={"blue.600"} textAlign={"center"} fontWeight="bold">
           Remote Outsourcing: Coming Soon at GrapplTech!
           </Text>
           <svg width="260" height="20" viewBox="0 0 628 20" fill="none" xmlns="http://www.w3.org/2000/svg">

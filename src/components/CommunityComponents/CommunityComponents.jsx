@@ -23,6 +23,7 @@ function Services() {
     <>
       <Container maxW={"container.2xl"} padding={"2"}>
         <Heading
+        class="headerddd"
           children="LEGO for Web Developers: Build Anything with Grabbit & Go"
           fontFamily={"Poppins"}
           textAlign={["center"]}

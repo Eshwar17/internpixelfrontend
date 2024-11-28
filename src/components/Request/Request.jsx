@@ -164,7 +164,7 @@ const Request = () => {
     <Container className="requestHeading" h="100vh" mb={"20"}>
       <VStack h="full" justifyContent={"center"} spacing="2">
         <Heading
-          className="requesttitle"
+          class="headerddd"
           fontFamily={"Poppins"}
           children="Application"
           textAlign={"center"}
